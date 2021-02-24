@@ -1,0 +1,760 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>I/O · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="11-ex8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >I/O</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-9-io">Chapter 9: I/O</h1>
+<p>Interacting with real world data is where programming gets interesting. Mastering I/O opens up a world of information for your applications and is quite fun, too! With that, let&apos;s delve into working with various file types.</p>
+<h2 id="text-files">Text files</h2>
+<h3 id="opening-and-closing-files">Opening and closing files</h3>
+<p>In general, whenever you open a file, you will eventually need to close it. It&apos;s quite crucial to be circumspect with these housekeeping duties, lest you end up with corrupted data!</p>
+<p>Julia&apos;s way of dealing with files resembles that of Python and a number of other languages. First, using the <code>open(path)</code> function, you open a file. The function returns an object that represents the file within Julia, known sometimes as a <em>file handle</em>. Commonly, the variable file handles are assigned to is <code>f</code>, but this does not have to be the case.</p>
+<pre><code class="lang-julia">    f = open(<span class="hljs-string">&quot;textfile.txt&quot;</span>)
+</code></pre>
+<p>When you&apos;re done with your connection, use the <code>close()</code> function to close down the file handle:</p>
+<pre><code class="lang-julia">    close(f)
+</code></pre>
+<h3 id="reading-files">Reading files</h3>
+<p>Creating a file handle does not actually read the file - it merely checks where it is and figures out how to deal with it. As such, creating your file handle is usually pretty quick and memory-inexpensive, even if the file itself is very large.</p>
+<p>However, we want to get something out of the text we imported. For the rest of this chapter, I will be using Virgil&apos;s Aeneid to demonstrate text functions, which you can obtain for yourself <a href="http://www.gutenberg.org/cache/epub/228/pg228.txt" target="_blank">here</a> courtesy of Project Gutenberg.</p>
+<p>Once you have called the <code>open</code> function and assigned the file handle to <code>f</code>, you can start reading the file. Julia helpfully offers multiple ways to accomplish this, and it&apos;s useful to remember the ability to read a large file line-by-line once we enter the realm of handling large data sets.</p>
+<p>You might notice that using the read functions &apos;uses up&apos; the file. This is true - once you have &apos;read&apos; all lines, the file will be empty. This is handy for keeping track of how much has been already read and ensure that where a read process has been interrupted, you will know where to pick up the thread.</p>
+<h4 id="readall"><code>readall</code></h4>
+<p>The <code>readall</code> function allows you to read the entire file, which it contains in a massive string, with line breaks represented as newlines (<code>\n</code>):</p>
+<pre><code class="lang-julia">    julia&gt; readall(f)
+</code></pre>
+<pre><code class="lang-julia">    julia&gt; typeof(readall(f))
+    <span class="hljs-built_in">String</span>
+</code></pre>
+<h4 id="readlines"><code>readlines</code></h4>
+<p>Unlike <code>readall</code>, <code>readlines</code> creates an array of strings, each representing a line:</p>
+<pre><code class="lang-julia">    julia&gt; readlines(f)
+    <span class="hljs-number">14656</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Union</span>(<span class="hljs-built_in">UTF8String</span>,<span class="hljs-built_in">String</span>),<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;\ufeff  Arms, and the man I sing, who, forc&apos;d by fate,\r\n&quot;</span>
+    <span class="hljs-string">&quot;  And haughty Juno&apos;s unrelenting hate,\r\n&quot;</span>
+    <span class="hljs-string">&quot;  Expell&apos;d and exil&apos;d, left the Trojan shore.\r\n&quot;</span>
+    <span class="hljs-string">&quot;  Long labors, both by sea and land, he bore,\r\n&quot;</span>
+    <span class="hljs-string">&quot;  And in the doubtful war, before he won\r\n&quot;</span>
+    <span class="hljs-string">&quot;  The Latian realm, and built the destin&apos;d town;\r\n&quot;</span>
+    <span class="hljs-string">&quot;  His banish&apos;d gods restor&apos;d to rites divine,\r\n&quot;</span>
+    <span class="hljs-string">&quot;  And settled sure succession in his line,\r\n&quot;</span>
+    <span class="hljs-string">&quot;  From whence the race of Alban fathers come,\r\n&quot;</span>
+    <span class="hljs-string">&quot;  And the long glories of majestic Rome.\r\n&quot;</span>
+</code></pre>
+<p>You can technically iterate through it line by line, which is a useful function as it allows you to perform functions on smaller chunks of data.</p>
+<pre><code class="lang-julia">    i = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> readlines(f)
+        println(<span class="hljs-string">&quot;<span class="hljs-variable">$i</span> \t <span class="hljs-variable">$line</span>&quot;</span>)
+        i += <span class="hljs-number">1</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<pre><code class="lang-julia">    <span class="hljs-number">1</span>        Arms, and the man <span class="hljs-literal">I</span> sing, who, forc&apos;d by fate,
+
+    <span class="hljs-number">2</span>        And haughty Juno&apos;s unrelenting hate,
+
+    <span class="hljs-number">3</span>        Expell&apos;d and exil&apos;d, left the Trojan shore.
+</code></pre>
+<p>However, Julia has something far better to accomplish that, as we&apos;ll see in the next subsection.</p>
+<h4 id="eachline"><code>eachline</code></h4>
+<p><code>eachline</code> creates an iterator that you can use to go through and apply linewise functions. Let&apos;s see how many characters are in each line:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> eachline(f)
+        println(<span class="hljs-string">&quot;<span class="hljs-subst">$(length(line)</span>) \t <span class="hljs-variable">$line</span>&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<pre><code class="lang-julia">    <span class="hljs-number">46</span>        Now, <span class="hljs-keyword">in</span> clos&apos;d field, each other from afar
+    <span class="hljs-number">46</span>        They view; and, rushing on, <span class="hljs-keyword">begin</span> the war.
+    <span class="hljs-number">58</span>        They launch their spears; then hand to hand they meet;
+    <span class="hljs-number">51</span>        The trembling soil resounds beneath their feet:
+    <span class="hljs-number">56</span>        Their bucklers clash; thick blows descend from high,
+    <span class="hljs-number">51</span>        And flakes of fire from their hard helmets fly.
+</code></pre>
+<p>As we can see, the numbers are quite a bit off. This is ok - it&apos;s due to the indentation and the rather archaic spelling. What matters is that we can execute a function on each line of the function.</p>
+<h4 id="enumerate"><code>enumerate</code></h4>
+<p><code>enumerate</code> is like a bonus function &#x2013; it takes an iterable and creates an enumerator that provides the index along with the value.</p>
+<pre><code class="lang-julia">    julia&gt; arr = [<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>, <span class="hljs-string">&quot;d&quot;</span>]
+</code></pre>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> (index, value) <span class="hljs-keyword">in</span> enumerate(arr)
+       println(index, <span class="hljs-string">&quot; : &quot;</span>, value)
+       <span class="hljs-keyword">end</span>
+</code></pre>
+<pre><code class="lang-julia">    <span class="hljs-number">1</span> : a
+    <span class="hljs-number">2</span> : b
+    <span class="hljs-number">3</span> : c
+    <span class="hljs-number">4</span> : d
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11-ex8.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Handling errors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"I/O","level":"1.4.10","depth":2,"next":{"title":"Streams - TODO","level":"1.4.11","depth":2,"ref":"","articles":[]},"previous":{"title":"Handling errors","level":"1.4.9","depth":2,"path":"_chapters/11-ex8.md","ref":"_chapters/11-ex8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/12-ex9.md","mtime":"2021-02-24T18:37:29.883Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

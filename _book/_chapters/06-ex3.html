@@ -1,0 +1,944 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Types · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07-ex4.html" />
+    
+    
+    <link rel="prev" href="05-ex2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Types</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-3-types">Chapter 3: Types</h1>
+<h2 id="julias-type-system">Julia&apos;s type system</h2>
+<p>A type system describes a programming language&apos;s way of handling individual pieces of data and determining how to operate on them based on their type. Julia&apos;s type system is primarily <em>dynamic</em>, meaning that there is no need to tell Julia what type a particular value is. This is useful, in that you can write fairly complex applications without ever needing to specify types. You might, then, be tempted to disregard types as an advanced feature that you cannot be bothered right now. However, a good understanding of types is extremely helpful to mastering a functional language.</p>
+<p>Julia&apos;s dynamic system is augmented by the ability to specify types where needed. This has two advantages. First, type specification leads to more efficient code. It will make your code more stable, much faster and much more robust. At the same time, unlike in a statically typed language, you do not need to get your head around types at the very beginning. Thus, <strong>you can treat this chapter not so much as a tutorial exercise but as a reference you can come back to every now and then.</strong></p>
+<p>It&apos;s important to understand that in Julia, <em>types belong to values, not variables</em>. It&apos;s also important to understand the hierarchy of types in Julia.</p>
+<p>Types may be <em>abstract</em> or <em>concrete</em>. You can think of an abstract type as a type that is intended solely to act as supertypes of other types, rather than types of particular objects. Thus, no object that is not a type can have an abstract type as its type.</p>
+<p>Concrete types are intended to be the types of actual objects. They are always subtypes of abstract types. This is because concrete types cannot have subtypes, and also because you can&apos;t create types that don&apos;t have supertypes (<code>Any</code> is the default supertype for any type you create). Here is useful to mention an interesting property of Julia&apos;s type system: any two types always have a common ancestor type.</p>
+<p>If this feels incredibly convoluted, just bear with it for now. It will make much more sense once you get around to its practical implementations.</p>
+<h2 id="declaring-and-testing-types">Declaring and testing types</h2>
+<p>Julia&apos;s primary type operator is <code>::</code> (double-colons). It has three different uses, all fairly important, and it&apos;s crucial that you understand the different functions that <code>::</code> fulfills in the different contexts.</p>
+<h3 id="declaring-a-subtype">Declaring a (sub)type</h3>
+<p>In the context of a <em>statement</em>, such as a function, <code>::</code> appended to a variable means &apos;this variable is always to be of this type&apos;. In the following, we will create a function that returns <code>32</code> as <code>Int8</code> (for now, let&apos;s ignore that we don&apos;t know much about functions and we don&apos;t quite know what integer types exist &#x2013; these will all be explained shortly!).</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> restrict_this_integer()
+               x<span class="hljs-type">::</span><span class="hljs-built_in">Int8</span> = <span class="hljs-number">32</span>
+               x
+           <span class="hljs-keyword">end</span>
+    restrict_this_integer (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; p = restrict_this_integer()
+    <span class="hljs-number">32</span>
+
+    julia&gt; typeof(p)
+    <span class="hljs-built_in">Int8</span>
+</code></pre>
+<p>As we can see, the <code>::</code> within the function had the effect that the returned result would be represented as an 8-bit integer (<code>Int8</code>). Recall that this <em>only works in the context of a statement</em> &#x2013; thus simply entering <code>x::Int8</code> will yield a <code>typeassert</code> error, telling us that we have provided an integer literal, which Julia understands by default to be an <code>Int64</code> , to be assigned to a variable and shaped as an <code>Int8</code> &#x2013; which clearly doesn&apos;t work.</p>
+<h3 id="asserting-a-type">Asserting a type</h3>
+<p>In every other context, <code>::</code> means &apos;I assert this value is of this particular type&apos;. This is a great way to check a value for both abstract and concrete type.</p>
+<p>For instance, you are provided a variable <code>input_from_user</code>. How do you make sure it has the right kind of value?</p>
+<pre><code class="lang-julia">    julia&gt; input_from_user = <span class="hljs-number">128</span>
+    <span class="hljs-number">128</span>
+
+    julia&gt; input_from_user<span class="hljs-type">::</span><span class="hljs-built_in">Integer</span>
+    <span class="hljs-number">128</span>
+
+    julia&gt; input_from_user<span class="hljs-type">::</span><span class="hljs-built_in">Char</span>
+    ERROR: <span class="hljs-keyword">type</span>: typeassert: expected <span class="hljs-built_in">Char</span>, got <span class="hljs-built_in">Int64</span>
+</code></pre>
+<p>As you can see, if you specify the correct abstract type, you get the value returned, whereas in our second assertion, where we asserted that the value was of the type <code>Char</code> (used to store individual characters), we got a <code>typeassert</code> error, which we can catch later on and return to ensure that we get the right type of value.</p>
+<p>Remember that a type hierarchy is like a Venn diagram. Every <code>Int64</code> (a concrete type) is also an <code>Integer</code> (an abstract type). Therefore, asserting <code>input_from_user::Int64</code> will also yield <code>128</code>, while asserting a different concrete type, such as <code>Int32</code>, will yield a <code>typeassert</code> error. <code>Int</code> is just an alias for <code>Int64</code>.</p>
+<h3 id="specifying-acceptable-function-inputs">Specifying acceptable function inputs</h3>
+<p>While we have not really discussed function inputs, you should be familiar with the general idea of a function &#x2013; values go in, results go out. In Julia, you have the possibility to make sure your function only accepts values that you want it to. Consider creating a function that adds up only floating point numbers:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> addition(x<span class="hljs-type">::</span><span class="hljs-built_in">Float64</span>, y<span class="hljs-type">::</span><span class="hljs-built_in">Float64</span>)
+        x + y
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Calling it on two floating-point numbers will, of course, yield the expected result:</p>
+<pre><code class="lang-julia">    julia&gt; addition(<span class="hljs-number">3.14</span>, <span class="hljs-number">2.71</span>)
+    <span class="hljs-number">5.85</span>
+</code></pre>
+<p>But giving it a simpler task will raise an error:</p>
+<pre><code class="lang-julia">    julia&gt; addition(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+    ERROR: <span class="hljs-string">`addition`</span> has no method matching addition(<span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>, <span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>)
+</code></pre>
+<p>The real meaning of this error is a little complex, and refers to one of the base features of Julia called <em>multiple dispatch</em>. In Julia, you can create multiple functions with the same name that process different types of inputs, so e.g. an <code>add()</code> function can add up <code>Int</code> and <code>Float</code> inputs but concatenate <code>String</code> type inputs. Multiple dispatch effectively creates a table for every possible type for which the function is defined and looks up the right function at call time (so you can use both abstract and concrete types without a performance penalty). What the error complaining about the lack of a method matching <code>addition(::Int64, ::Int64)</code> means is that Julia cannot find a definition for the name <code>addition</code> that would accept two <code>Int64</code> values.</p>
+<h2 id="getting-the-type-of-a-value">Getting the type of a value</h2>
+<p>To obtain the type of a value, use the <code>typeof()</code> function:</p>
+<pre><code class="lang-julia">    julia&gt; typeof(<span class="hljs-number">32</span>)
+    <span class="hljs-built_in">Int64</span>
+</code></pre>
+<p><code>typeof()</code> is notable for treating tuples differently from most other collections. Calling <code>typeof()</code> on a tuple enumerates the types of each element, whereas calling it on, say, an <code>Array</code> value returns the <code>Array</code> notation of type (which looks for the most specific common type among the values, up to <code>Any</code>):</p>
+<pre><code class="lang-julia">    julia&gt; typeof([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;a&quot;</span>])
+    <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Any</span>,<span class="hljs-number">1</span>}
+
+    julia&gt; typeof((<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;a&quot;</span>))
+    (<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">String</span>)
+</code></pre>
+<p>Helpfully, the <code>isa()</code> function tells us whether something is a particular type:</p>
+<pre><code class="lang-julia">    julia&gt; isa(<span class="hljs-string">&quot;River&quot;</span>, <span class="hljs-built_in">String</span>)
+    <span class="hljs-literal">true</span>
+</code></pre>
+<p>And, of course, types have types (specifically, <code>DataType</code>)!</p>
+<pre><code class="lang-julia">    julia&gt; typeof(<span class="hljs-string">&quot;River&quot;</span>)
+    <span class="hljs-built_in">String</span> (constructor with <span class="hljs-number">2</span> methods)
+
+    julia&gt; typeof(ans)
+    <span class="hljs-built_in">DataType</span>
+</code></pre>
+<h3 id="exploring-the-type-hierarchy">Exploring the type hierarchy</h3>
+<p>The <code>&lt;:</code> operator can help you find out whether the left-side type is a subtype of the right-side type. Thus, we see that <code>Int64</code> is a subtype of <code>Integer</code>, but <code>String</code> isn&apos;t!</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-built_in">Int64</span> <span class="hljs-type">&lt;:</span> <span class="hljs-built_in">Integer</span>
+    <span class="hljs-literal">true</span>
+
+    julia&gt; <span class="hljs-built_in">String</span> <span class="hljs-type">&lt;:</span> <span class="hljs-built_in">Integer</span>
+    <span class="hljs-literal">false</span>
+</code></pre>
+<p>To reveal the supertype of a type, use the <code>supertype()</code> function:</p>
+<pre><code class="lang-julia">    julia&gt; supertype(<span class="hljs-built_in">String</span>)
+    <span class="hljs-built_in">AbstractString</span>
+</code></pre>
+<h2 id="composite-types">Composite types</h2>
+<p>Composite types, known to C coders as <code>structs</code>, are more complex object structures that you can define to hold a set of values. For instance, to have a Type that would accommodate geographic coordinates, you would use a composite type. Composite types are created with the <code>struct</code> keyword:</p>
+<pre><code class="lang-julia">    struct GeoCoordinates
+        lat<span class="hljs-type">::</span><span class="hljs-built_in">Float64</span>
+        lon<span class="hljs-type">::</span><span class="hljs-built_in">Float64</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>We can then create a new value with this type:</p>
+<pre><code class="lang-julia">    julia&gt; home = GeoCoordinates(<span class="hljs-number">51.7519</span>, <span class="hljs-number">1.2578</span>)
+    GeoCoordinates(<span class="hljs-number">51.7519</span>,<span class="hljs-number">1.2578</span>)
+
+    julia&gt; typeof(home)
+    GeoCoordinates (constructor with <span class="hljs-number">2</span> methods)
+</code></pre>
+<p>The values of a composite object are, of course, accessible using the dot notation you might be used to from many other programming languages:</p>
+<pre><code class="lang-julia">    julia&gt; home.lat
+    <span class="hljs-number">51.7519</span>
+</code></pre>
+<p>It is not possible to assign a new value to <code>home.lat</code>. So if we would instantiate the immutable <code>GeoCoordinates</code> type with the values above, then attempt to change one of its values, we would get an error:</p>
+<pre><code class="lang-julia">    julia&gt; home.lat = <span class="hljs-number">51.75</span>
+    ERROR: <span class="hljs-keyword">type</span> GeoCoordinates is <span class="hljs-keyword">immutable</span>
+</code></pre>
+<h3 id="creating-your-very-own-immutable">Creating your very own immutable</h3>
+<p>A <em>mutable</em> type is one which, once instantiated, can be changed. They are created the same way as composite types, except by using the <code>mutable</code> keyword in front of <code>struct</code>:</p>
+<pre><code class="lang-julia">    mutable struct GeoCoordinates
+        lat<span class="hljs-type">::</span><span class="hljs-built_in">Float64</span>
+        lon<span class="hljs-type">::</span><span class="hljs-built_in">Float64</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Once instantiated, you can change the values.  However, these values have to comply with the type&apos;s definition in that they have to be <em>convertible</em> to the type specified (in our case, <code>Float64</code>). So, for instance, an <code>Int64</code> input would be acceptable, since you can convert an <code>Int64</code> into a <code>Float64</code> easily. On the other hand, a <code>String</code> would not do, since you cannot convert it into an <code>Int64</code>.</p>
+<h3 id="type-unions">Type unions</h3>
+<p>Sometimes, it&apos;s useful to have a single alias for multiple types. To do so, you can create a <em>type union</em> using the constructor <code>Union</code>:</p>
+<pre><code class="lang-julia">    julia&gt; Numeric = <span class="hljs-built_in">Union</span>{<span class="hljs-built_in">Int</span>, <span class="hljs-built_in">Float64</span>}
+    <span class="hljs-built_in">Union</span>{<span class="hljs-built_in">Float64</span>, <span class="hljs-built_in">Int64</span>}
+
+    julia&gt; <span class="hljs-number">1</span><span class="hljs-type">::</span>Numeric
+    <span class="hljs-number">1</span>
+
+    julia&gt; <span class="hljs-number">3.14</span><span class="hljs-type">::</span>Numeric
+    <span class="hljs-number">3.14</span>
+</code></pre>
+<h2 id="from-start-to-finish-creating-a-custom-type">From start to finish: creating a custom type</h2>
+<p>When you hear LSD, you might be tempted of the groovy drug that turned the &apos;70s weird. It also refers to one of the biggest problems of early computing in Britain &#x2013; making computers make sense of Britain&apos;s odd pre-decimal currency system before it was abandoned in 1971. Under this system, there were 20 shillings (<code>s</code>) in a pound (<code>&#xA3;</code> or <code>L</code>) and twelve pence (<code>d</code>) in a shilling (so, 240 pence in a pound). This made electronic book-keeping in its earliest era in Britain rather difficult. Let&apos;s see how Julia would solve the problem.</p>
+<h3 id="type-definition">Type definition</h3>
+<p>First of all, we need a type <em>definition</em>. We also know that this would be a <em>composite</em> type, since we want it to hold three values (known in this context as &apos;fields&apos;) - one for each of pounds, shillings and pence. We also know that these would have to be integers.</p>
+<pre><code class="lang-julia">    struct LSD
+        pounds<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>
+        shillings<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>
+        pence<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>You don&apos;t strictly need to define types, but the narrower the types you define for fields when you create a new type, the faster compilation is going to be - thus, <code>pounds::Signed</code> is faster than <code>pounds</code>, and <code>pounds::Int</code> is faster than <code>pounds::Signed</code>. <strong>At any rate, avoid not defining any data types</strong>, which Julia will understand as referring to the global supertype <code>::Any</code>, unless that indeed is what you want your field to embrace. Generally prefer using concrete types to abstract types.</p>
+<h3 id="constructor-function">Constructor function</h3>
+<p>We have a good start, but not quite there yet. Every type can have a <em>constructor function</em>, the function executed when a new instance of a type is created. A constructor function is <em>inside the type definition</em> and <em>has the same name as the type</em>:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> LSD(l,s,d)
+        <span class="hljs-keyword">if</span> l &lt; <span class="hljs-number">0</span> || s &lt; <span class="hljs-number">0</span> || d &lt; <span class="hljs-number">0</span>
+            error(<span class="hljs-string">&quot;No negative numbers, please! We&apos;re British!&quot;</span>)
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">if</span> d &gt; <span class="hljs-number">12</span> || s &gt; <span class="hljs-number">20</span>
+            error(<span class="hljs-string">&quot;That&apos;s too many pence or shillings!&quot;</span>)
+        <span class="hljs-keyword">end</span>
+        new(l,s,d)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Don&apos;t worry if this looks a little strange &#x2013; since we haven&apos;t dealt with functions yet, most of this is going to be alien to you. What the function <code>LSD(l,s,d)</code> does is to, first, test whether any of <code>l</code>, <code>s</code> or <code>d</code> are negative or whether there are more pence or shillings than there could be in a shilling or a pound, respectively. In both of these cases, it raises an error. If the values do comply, it creates the new instance of the <code>LSD</code> composite type using the <code>new(l,s,d)</code> keyword.</p>
+<p>The full type definition, therefore, would look like this:</p>
+<pre><code class="lang-julia">    struct LSD
+        pounds<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>
+        shillings<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>
+        pence<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>
+
+        <span class="hljs-keyword">function</span> LSD(l,s,d)
+            <span class="hljs-keyword">if</span> l &lt; <span class="hljs-number">0</span> || s &lt; <span class="hljs-number">0</span> || d &lt; <span class="hljs-number">0</span>
+                error(<span class="hljs-string">&quot;No negative numbers, please! We&apos;re British!&quot;</span>)
+            <span class="hljs-keyword">end</span>
+            <span class="hljs-keyword">if</span> d &gt; <span class="hljs-number">12</span> || s &gt; <span class="hljs-number">20</span>
+                error(<span class="hljs-string">&quot;That&apos;s too many pence or shillings!&quot;</span>)
+            <span class="hljs-keyword">end</span>
+            new(l,s,d)
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>As we can see, we can now create valid prices in the old LSD system:</p>
+<pre><code class="lang-julia">    julia&gt; biscuits = LSD(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+    LSD(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+</code></pre>
+<p>And the constructor function makes sure we don&apos;t contravene the constraints we set up earlier</p>
+<pre><code class="lang-julia">    julia&gt; sausages = LSD(<span class="hljs-number">1</span>,<span class="hljs-number">25</span>,<span class="hljs-number">31</span>)
+    ERROR: That&apos;s too many pence or shillings!
+     <span class="hljs-keyword">in</span> LSD at none:<span class="hljs-number">11</span>
+
+    julia&gt; national_debt = LSD(-<span class="hljs-number">1000000000</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+    ERROR: No negative numbers, please! We&apos;re British!
+     <span class="hljs-keyword">in</span> LSD at none:<span class="hljs-number">8</span>
+</code></pre>
+<p>We can, of course, use dot notation to access constituent values of the type, the names of which derive from the beginning of our definition:</p>
+<pre><code class="lang-julia">    julia&gt; biscuits.pence
+    <span class="hljs-number">3</span>
+</code></pre>
+<h3 id="type-methods">Type methods</h3>
+<p>Let&apos;s see how our new type deals with some simple maths:</p>
+<pre><code class="lang-julia">    julia&gt; biscuits = LSD(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+    LSD(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+
+    julia&gt; gravy = LSD(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">5</span>)
+    LSD(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">5</span>)
+
+    julia&gt; biscuits + gravy
+    ERROR: <span class="hljs-string">`+`</span> has no method matching +(<span class="hljs-type">::</span>LSD, <span class="hljs-type">::</span>LSD)
+</code></pre>
+<p>Ooops, that&apos;s not great. What the error message means is that the function <code>+</code> (addition) has no &apos;method&apos; for two instances of type <code>LSD</code> (as you remember, <code>::</code> is short for &apos;type of&apos;). A &apos;method&apos;, in Julia, is a type-specific way for an operation or function to behave. As we will discuss it in detail later on, most functions and operators in Julia are actually shorthands for a bundle of multiple methods. Julia decides which of these to call given the input, a feature known as <em>multiple dispatch</em>. So, for instance, <code>+</code> given the input <code>::Int</code> means numerical addition, but something rather different for two Boolean values:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-literal">true</span> + <span class="hljs-literal">true</span>
+    <span class="hljs-number">2</span>
+</code></pre>
+<p>In fact, <code>+</code> is the &apos;shorthand&apos; for over a hundred methods. You can see all of these by calling <code>methods()</code> on <code>+</code>:</p>
+<pre><code class="lang-julia">    julia&gt; methods(+)
+    <span class="hljs-comment"># 117 methods for generic function &quot;+&quot;:</span>
+    +(x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">36</span>
+    +(x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>,y<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">39</span>
+    +(y<span class="hljs-type">::</span><span class="hljs-built_in">FloatingPoint</span>,x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">49</span>
+    +(A<span class="hljs-type">::</span><span class="hljs-built_in">BitArray</span>{N},B<span class="hljs-type">::</span><span class="hljs-built_in">BitArray</span>{N}) at bitarray.jl:<span class="hljs-number">848</span>
+</code></pre>
+<p>...and so on. What we need is there to be a method that accommodates the type <code>LSD</code>. We do that by creating a method of <code>+</code> for the type <code>LSD</code>. Again, the function is less important here (it will be trivial after reading the chapter on <em>Functions</em>), what matters is the idea of creating a method to augment an existing function/operator to handle our new type:</p>
+<pre><code class="lang-julia">     julia&gt; <span class="hljs-keyword">import</span> Base.+
+
+     julia&gt; <span class="hljs-keyword">function</span> +(a<span class="hljs-type">::</span>LSD, b<span class="hljs-type">::</span>LSD)
+              newpence = a.pence + b.pence
+              newshillings = a.shillings + b.shillings
+              newpounds = a.pounds + b.pounds
+              subtotal = newpence + newshillings * <span class="hljs-number">12</span> + newpounds * <span class="hljs-number">240</span>
+              (pounds, balance) = divrem(subtotal, <span class="hljs-number">240</span>)
+              (shillings, pence) = divrem(balance, <span class="hljs-number">12</span>)
+              LSD(pounds, shillings, pence)
+            <span class="hljs-keyword">end</span>
+</code></pre>
+<p>When entering it in the REPL, Julia tells us that <code>+</code> now has one more method:</p>
+<pre><code>+ (generic function with 118 methods)
+</code></pre><p>Indeed, <code>methods(+)</code> shows that the new method for two <code>LSD</code>s is registered:</p>
+<pre><code class="lang-julia">    julia&gt; methods(+)
+    <span class="hljs-comment"># 118 methods for generic function &quot;+&quot;:</span>
+    +(x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">36</span>
+    +(x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>,y<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">39</span>
+    ...
+    +(a<span class="hljs-type">::</span>LSD,b<span class="hljs-type">::</span>LSD) at none:<span class="hljs-number">2</span>
+</code></pre>
+<p>And now we know the price of biscuits and gravy:</p>
+<pre><code class="lang-julia">    julia&gt; biscuits + gravy
+    LSD(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">8</span>)
+</code></pre>
+<h3 id="representation-of-types">Representation of types</h3>
+<p>Every type has a particular &apos;representation&apos;, which is what we encountered every time the REPL showed us the value of an object after entering an expression or a literal. It probably won&apos;t surprise you that representations are methods of the <code>Base.show()</code> function, and a new method to &apos;pretty-print&apos; our <code>LSD</code> type (similar to creating a <code>__repr__</code> or <code>__str__</code> function in a Python class&apos;s declaration) can be created the same way:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> Base.show(io<span class="hljs-type">::</span><span class="hljs-built_in">IO</span>, money<span class="hljs-type">::</span>LSD)
+        print(io, <span class="hljs-string">&quot;&#xA3;<span class="hljs-subst">$(money.pounds)</span>, <span class="hljs-subst">$(money.shillings)</span>s, <span class="hljs-subst">$(money.pence)</span>d.&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p><code>Base.show</code> has two arguments: the output channel, which we do not need to concern ourselves with, and the second argument, which is the value to be displayed. We declared a function that used the <code>print()</code> function to use the output channel on which <code>Base.show()</code> is called, and display the second argument, which is a string formatted version of the <code>LSD</code> object.</p>
+<p>Our pretty-printing worked:</p>
+<pre><code class="lang-julia">    julia&gt; biscuits + gravy
+    &#xA3;<span class="hljs-number">0</span>, <span class="hljs-number">1</span>s, <span class="hljs-number">8</span>d.
+</code></pre>
+<p>Our new type is looking quite good!</p>
+<h3 id="what-next-for-lsd">What next for <code>LSD</code>?</h3>
+<p>Of course, the <code>LSD</code> type is far from ready. We need to define a list of other methods, from subtraction to division, but the general concept ought to be clear. A new type is easy to create, but when doing so, you as a developer need to keep in mind what you and your users will do with this new type, and create methods accordingly. Chapter [X] will discuss methods in depth, but this introduction should help you think intelligently about creating new types.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this chapter, we learned about the way Julia&apos;s type system is set up. The issue of types will be at the background of most of what we do in the future, so feel free to refer back to this chapter as frequently as you feel the need to. In the next chapter, we will be exploring collections, a category of types that share one important property &#x2013; they all act as &apos;envelopes&apos; for multiple elements, each with their distinct type.</p>
+<h2 id="appendix-julia-types-crib-sheet">Appendix: Julia types crib sheet</h2>
+<p>This is a selection of Julia&apos;s type tree, omitting quite a few elements. To see the full thing, you can use Tanmay Mohapatra&apos;s <a href="https://github.com/tanmaykm/julia_types" target="_blank"><code>julia_types.jl</code></a>.</p>
+<todo: insert="" nicely="" formatted="" crib="" sheet="" here="" &="" dendrogram="" version="" for="" print="" edition="">
+</todo:>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-ex2.html" class="navigation navigation-prev " aria-label="Previous page: Variables">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07-ex4.html" class="navigation navigation-next " aria-label="Next page: Collections">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Types","level":"1.4.4","depth":2,"next":{"title":"Collections","level":"1.4.5","depth":2,"path":"_chapters/07-ex4.md","ref":"_chapters/07-ex4.md","articles":[]},"previous":{"title":"Variables","level":"1.4.3","depth":2,"path":"_chapters/05-ex2.md","ref":"_chapters/05-ex2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/06-ex3.md","mtime":"2021-02-24T18:37:29.881Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

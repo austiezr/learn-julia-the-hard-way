@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Functions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11-ex8.html" />
+    
+    
+    <link rel="prev" href="09-ex6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-7-functions-and-methods">Chapter 7: Functions and methods</h1>
+<p>Julia is what is described as a <em>functional programming language</em>, meaning that functions are the principal building blocks of a Julia program (as opposed to objects and their instances in OOP). Introducing functions is the last part we are missing before we can start building fully-fledged applications to solve real world problems. Let&apos;s get cracking!</p>
+<h2 id="syntax-and-arguments">Syntax and arguments</h2>
+<h3 id="general-syntax-and-invocation">General syntax and invocation</h3>
+<p>There are two general ways to define a function. The first way is usually suited for simple, single-expression functions, while the second way is more suitable for longer functions that include multiple expressions.</p>
+<h4 id="single-expression-functions">Single expression functions</h4>
+<p>Single expression functions are written very similarly to their mathematical form:</p>
+<pre><code class="lang-julia">    julia&gt; geom_average(a,b) = sqrt(a^<span class="hljs-number">2</span> + b^<span class="hljs-number">2</span>)
+    geom_average (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; geom_average(<span class="hljs-number">3</span>,<span class="hljs-number">4</span>)
+    <span class="hljs-number">5.0</span>
+</code></pre>
+<h4 id="multiple-expression-functions">Multiple expression functions</h4>
+<p>If your function is more complex, and needs to evaluate multiple functions, this syntax is no longer suitable. The syntax to use in such cases uses a block, introduced by <code>function</code> and terminated by <code>end</code>, to describe the function:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> breakfast(pancakes, coffee)
+               println(<span class="hljs-string">&quot;<span class="hljs-variable">$coffee</span> cups of coffee and <span class="hljs-variable">$pancakes</span> pancakes, please.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    breakfast (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; breakfast(<span class="hljs-number">2</span>,<span class="hljs-number">4</span>)
+    <span class="hljs-number">4</span> cups of coffee and <span class="hljs-number">2</span> pancakes, please.
+</code></pre>
+<h4 id="return-values">Return values</h4>
+<p>In general, Julia returns the last value to come from the last calculation within the block:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> dinner(sausages, mash)
+               cost_of_sausages = sausages * <span class="hljs-number">0.85</span>
+               cost_of_mash = (mash == <span class="hljs-literal">true</span> ? <span class="hljs-number">0.60</span> : <span class="hljs-number">0.00</span>)
+               cost_of_sausages + cost_of_mash
+           <span class="hljs-keyword">end</span>
+    dinner (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; dinner(<span class="hljs-number">2</span>, <span class="hljs-literal">true</span>)
+    <span class="hljs-number">2.3</span>
+</code></pre>
+<p>While we haven&apos;t told Julia what we exactly want the function to return, it infers that it would probably be the result of the last calculation (<code>cost_of_sausages + cost_of_mash</code>).</p>
+<p>Now imagine that the fictitious canteen, who are so keen on calculating the cost of sausages and mash for dinner, get back to you and want the function to be changed. They are, it turns out, only interested in the cost of sausages. You could simply put <code>cost_of_sausages</code> to the very end of the function, before the <code>end</code> keyword, or you could use the <code>return</code> keyword, which will tell the function what to give back. Let&apos;s redefine <code>dinner(sausages, mash)</code> to fit the canteen&apos;s expectations using the <code>return</code> keyword:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> dinner(sausages, mash)
+               cost_of_sausages = sausages * <span class="hljs-number">0.85</span>
+               cost_of_mash = (mash == <span class="hljs-literal">true</span> ? <span class="hljs-number">0.60</span> : <span class="hljs-number">0.00</span>)
+               <span class="hljs-keyword">return</span> cost_of_sausages
+           <span class="hljs-keyword">end</span>
+    dinner (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; dinner(<span class="hljs-number">2</span>, <span class="hljs-literal">true</span>)
+    <span class="hljs-number">1.7</span>
+</code></pre>
+<p>As a matter of style, <code>return</code> is a good idea to use, even if the function would return the right value. Whoever ends up debugging the script will be grateful you told them what exactly a function ends up returning.</p>
+<h3 id="variable-numbers-of-positional-arguments--splats">Variable numbers of positional arguments: <code>...</code> (&apos;splats&apos;)</h3>
+<p>The above simple function had a definite number of arguments that had to be in a particular order. Arguments where the identity of the particular argument is determined by its position among the arguments are called <em>positional arguments</em> &#x2013; so in the example above, Julia knew the argument <code>2</code> related to <code>sausages</code>, not <code>mash</code>, because that&apos;s the position in which it was defined. But what if you don&apos;t know how many inputs you are likely to get for a particular function? Let us imagine a function, called <code>shout()</code>, that shouts the patrons&apos; orders back to the short-order cook. Some customers want a long list of items, others just one or two.</p>
+<p>One way to implement this is to expect an array argument:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> shout(food_array)
+        food_items = join(food_array, <span class="hljs-string">&quot;, &quot;</span>, <span class="hljs-string">&quot; and &quot;</span>)
+        println(<span class="hljs-string">&quot;Get this guy <span class="hljs-variable">$food_items</span>\!&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Invoking this with two arguments, we get</p>
+<pre><code class="lang-julia">    julia&gt; shout([<span class="hljs-string">&quot;some pancakes&quot;</span>, <span class="hljs-string">&quot;sausages with gravy&quot;</span>])
+    Get this guy some pancakes and sausages with gravy!
+</code></pre>
+<p>These are returned to the function as a tuple listing each element covered by the splats.</p>
+<p>What, however, if someone has more of an appetite? Our <code>shout()</code> function can accommodate it - the array just needs to get larger. This approach is perfectly viable, but regarded as a bit clumsy. What if I forget the array square brackets, for instance?</p>
+<pre><code class="lang-julia">    julia&gt; shout(<span class="hljs-string">&quot;pancakes&quot;</span>)
+    Get this guy p, a, n, c, a, k, <span class="hljs-literal">e</span> and s!
+</code></pre>
+<p>Well, that&apos;s not quite what I wanted! Fortunately, Julia allows us to have not merely multiple arguments but indeed an indefinite number. We effect this by suffixing the variable we wish to hold the positional arguments with three full stops <code>...</code>, also known as a &apos;splat&apos;:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> shout_mi(foods...)
+        food_items = join(foods, <span class="hljs-string">&quot;, &quot;</span>, <span class="hljs-string">&quot; and &quot;</span>)
+        println(<span class="hljs-string">&quot;Get this guy some <span class="hljs-variable">$food_items</span>\!&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Now our function performs perfectly, whether our customer is ravenous or he just wants some pancakes:</p>
+<pre><code class="lang-julia">    julia&gt; shout_mi(<span class="hljs-string">&quot;pancakes&quot;</span>)
+    Get this guy some pancakes!
+
+    julia&gt; shout_mi(<span class="hljs-string">&quot;pancakes&quot;</span>, <span class="hljs-string">&quot;sausages&quot;</span>, <span class="hljs-string">&quot;gravy&quot;</span>, <span class="hljs-string">&quot;a milkshake&quot;</span>)
+    Get this guy some pancakes, sausages, gravy and a milkshake!
+</code></pre>
+<p>What, however, if our customer does not seem to say anything? We would expect this to raise an error... but it doesn&apos;t:</p>
+<pre><code class="lang-julia">    julia&gt; shout_mi()
+    Get this guy some !
+</code></pre>
+<p>Therefore, we need be mindful of using a splatted positional argument right in the beginning, since it will accept the input of, well, no input! A common way to fix this is to require one positional argument, then add a splatted second argument. This way, if the function is called with no arguments at all, it will raise an error. A better way, perhaps, is to simply test for it ourselves:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> bulletproof_shout(foods...)
+        <span class="hljs-keyword">if</span> length(foods) &gt; <span class="hljs-number">0</span>
+            println(<span class="hljs-string">&quot;Get this guy some <span class="hljs-subst">$(join(foods, <span class="hljs-string">&quot;, &quot;</span>, <span class="hljs-string">&quot; and &quot;</span>)</span>)\!&quot;</span>)
+        <span class="hljs-keyword">else</span>
+            error(<span class="hljs-string">&quot;The customer needs to order something!&quot;</span>)
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>As you recall, the <code>foods</code> variable is passed on to us as a tuple. We can use the <code>length()</code> function on this tuple (although do note, we do test explicitly for <code>length(foods) &gt; 0</code>: a result of zero would not be &apos;falsey&apos;, so testing simply for <code>if length(foods)</code> would not cut it!), which will indicate how many elements the tuple has and raise an error if it is zero:</p>
+<pre><code class="lang-julia">    julia&gt; bulletproof_shout(<span class="hljs-string">&quot;sausages&quot;</span>, <span class="hljs-string">&quot;pancakes&quot;</span>, <span class="hljs-string">&quot;gravy&quot;</span>)
+    Get this guy some sausages, pancakes and gravy!
+
+    julia&gt; bulletproof_shout(<span class="hljs-string">&quot;sausages&quot;</span>)
+    Get this guy some sausages!
+
+    julia&gt; bulletproof_shout()
+    ERROR: The customer needs to order something!
+     <span class="hljs-keyword">in</span> bulletproof_shout at none:<span class="hljs-number">5</span>
+</code></pre>
+<p>Finally, the function works. The last marginal case that you might want to deal with is when the customer&apos;s order consists of an empty string <code>&quot;&quot;</code> or is the wrong type. These are further marginal cases and will not be explored here (although we will be looking at user input in quite a bit of detail in the second part of the book). The take-away is this - a good function (one you would let your grandmother use) needs to cater for a range of marginal cases and inputs. Splats are, however, somewhat performance-consuming and are best avoided in code that needs to run fast. In such situations, usability and performance need to be weighed and balanced.</p>
+<h3 id="slurping">Slurping</h3>
+<p>Actually, the <code>...</code> notation can be used for two different purposes.  In the preceding section, it is used to define a tuple variable that contains multiple arguments from the caller.  The second purpose to pass a tuple into a function as if they were passed as multiple arguments.</p>
+<p>Suppose that we create a wrapper function that calls <code>bulletproof_shout</code> and then orders the person to come back immediately.  </p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> shout_and_come_back(food...)
+            bulletproof_shout(food)
+            println(<span class="hljs-string">&quot;And, come back immediately!&quot;</span>)
+        <span class="hljs-keyword">end</span>
+    shout_and_come_back (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; shout_and_come_back(<span class="hljs-string">&quot;sausages&quot;</span>, <span class="hljs-string">&quot;pancakes&quot;</span>, <span class="hljs-string">&quot;gravy&quot;</span>)
+    Get this guy some (<span class="hljs-string">&quot;sausages&quot;</span>, <span class="hljs-string">&quot;pancakes&quot;</span>, <span class="hljs-string">&quot;gravy&quot;</span>)!
+    And, come back immediately!
+</code></pre>
+<p><em>Something&apos;s wrong!</em> The food is now shown incorrectly as if the tuple is printed without going through the <code>join()</code> function.   That is because the tuple itself was passed into the <code>bulletproof_shout</code> function as-is.  What we really want is to pass the tuple into the function as if they are spelled out as separate arguments.  To do that, we need to use the <code>...</code> notation:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> shout_and_come_back(food...)
+            bulletproof_shout(food...)
+            println(<span class="hljs-string">&quot;And, come back immediately!&quot;</span>)
+        <span class="hljs-keyword">end</span>
+    shout_and_come_back (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; shout_and_come_back(<span class="hljs-string">&quot;sausages&quot;</span>, <span class="hljs-string">&quot;pancakes&quot;</span>, <span class="hljs-string">&quot;gravy&quot;</span>)
+    Get this guy some sausages, pancakes and gravy!
+    And, come back immediately!
+</code></pre>
+<h3 id="optional-positional-arguments">Optional positional arguments</h3>
+<p>Positional arguments may be &apos;optional&apos;. This does not mean they are not used - they are optional only from the user&apos;s perspective, who will not be required to enter them. A perhaps better way to put this is that these arguments have <em>default values</em> that take effect if they are not provided at invocation. Consider the following function, which accepts 2D as well as 3D coordinates, and sets 2D coordinates, by default, on the <code>z = 0</code> plane:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> coords(x, y, z = <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">return</span>(x,y,z)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The result:</p>
+<pre><code class="lang-julia">    julia&gt; coords(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>)
+    (<span class="hljs-number">1</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>)
+
+    julia&gt; coords(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>)
+    (<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>)
+</code></pre>
+<p>Setting defaults allows you to prevent the inevitable error that would be triggered if <code>z = 0</code> were not provided for. Consider, for instance, what would happen if the value for <code>y</code>, for which no default value has been set, were to be missing:</p>
+<pre><code class="lang-julia">    julia&gt; coords(<span class="hljs-number">3</span>)
+    ERROR: <span class="hljs-string">`coords`</span> has no method matching coords(<span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>)
+</code></pre>
+<p>Julia is telling us, in its somewhat odd grammar, that the function <code>coords()</code> is not defined for a single input.</p>
+<h3 id="keyword-arguments">Keyword arguments</h3>
+<p>The drawback of positional arguments is that getting the order right can be an inconvenience. Wouldn&apos;t it be much easier, not the least from a documentation perspective, if we were allowed to give arguments names and use these names at invocation? With Julia, you can do so at your heart&apos;s content, as long as you put them at the end of your variables when defining the function and delimit keyword arguments from non-keyword arguments with a semicolon <code>;</code>, as in this snippet:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> buzzphrase(verb, adjective; subject=<span class="hljs-string">&quot;defence&quot;</span>, goal=<span class="hljs-string">&quot;world peace&quot;</span>)
+        println(<span class="hljs-string">&quot;<span class="hljs-subst">$(verb)</span>ing <span class="hljs-variable">$adjective</span> <span class="hljs-variable">$subject</span> for <span class="hljs-variable">$goal</span>.&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>In this function, <code>verb</code> and <code>adjective</code> are necessary positional arguments. However, you can use the keyword argument syntax for <code>subject</code> and <code>goal</code>. As you can see, both have defined default values &#x2013; this is necessary for keyword arguments in Julia. Thus,</p>
+<pre><code class="lang-julia">    buzzphrase(<span class="hljs-string">&quot;leverag&quot;</span>, <span class="hljs-string">&quot;effective&quot;</span>, subject=<span class="hljs-string">&quot;best practices&quot;</span>, goal=<span class="hljs-string">&quot;increased margins&quot;</span>)
+</code></pre>
+<p>is equivalent to</p>
+<pre><code class="lang-julia">    buzzphrase(<span class="hljs-string">&quot;leverag&quot;</span>, <span class="hljs-string">&quot;effective&quot;</span>, goal=<span class="hljs-string">&quot;increased margins&quot;</span>, subject=<span class="hljs-string">&quot;best practices&quot;</span>)
+</code></pre>
+<p>and yield the same results.</p>
+<h3 id="stabby-lambda-functions--">Stabby lambda functions: <code>-&gt;</code></h3>
+<p>Sometimes, you&apos;re in a hurry and need a throwaway function. Whether it&apos;s for <code>mapping</code> an Array or comparing values in a sort, sometimes you don&apos;t want to define a function. A number of languages refer to these as <em>anonymous functions</em>, because they do not have a defined name, or reserve a <code>lambda</code> keyword for this, harkening back to Alonzo Church&apos;s &apos;lambda calculus&apos; well before the advent of modern computers. Julia has a stylised arrow <code>-&gt;</code>, leading to the name <em>stabby lambda</em> for such functions.</p>
+<p>Assume you want to <code>map</code> the array of all primes under 10 <code>[2,3,5,7]</code> to a function <code>f</code> so that <code>f(x) = 2x^3 + x^2 - 2x + 4</code>. In case you&apos;re unfamiliar with <code>map()</code> functions, here&apos;s the elevator pitch: map functions take a function and an iterable and return an iterable of equal length, each element of which will be the result of feeding an element of the original iterable into the function. In Julia, <code>map()</code> takes two arguments - a function and an iterable. For the former, you can use a function defined in advance or use the stabby lambda notation that is the subject of this section.</p>
+<p>The mapping function would be written in the stabby lambda notation as</p>
+<pre><code class="lang-julia">    x -&gt; <span class="hljs-number">2</span>x^<span class="hljs-number">3</span> + x^<span class="hljs-number">2</span> - <span class="hljs-number">2</span>x + <span class="hljs-number">4</span>
+</code></pre>
+<p>somewhat similar to the maplet notation in mathematics. Thus, we would use the <code>map</code> function as follows:</p>
+<pre><code class="lang-julia">    julia&gt; map(x -&gt; <span class="hljs-number">2</span>x^<span class="hljs-number">3</span> + x^<span class="hljs-number">2</span> - <span class="hljs-number">2</span>x + <span class="hljs-number">4</span>, [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>])
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">20</span>
+      <span class="hljs-number">61</span>
+     <span class="hljs-number">269</span>
+     <span class="hljs-number">725</span>
+</code></pre>
+<p>The stabby lambda is a little controversial, being even <a href="https://julia-doc.readthedocs.io/en/latest/manual/style-guide/#do-not-write-x-fx" target="_blank">discouraged where it serves as a mere wrapper</a> by the official Julia Style Guide, for the reason that such functions are impossible to unit test and can make code confusing. In general, the advice that is often given to, and by, Python programmers about <code>lambda</code>s in Python holds for their stabby Julia equivalents: a stabby lambda should be <em>obviously and unambiguously true</em>, that is, it should be evident at first glance</p>
+<ul>
+<li>what it does,</li>
+<li>how it does what it does, and</li>
+<li>that it does what it&apos;s supposed to do correctly.</li>
+</ul>
+<p>In other words, consider a stabby lambda a sort of &apos;special pleading&apos; - you&apos;re arguing that the function is so trivially true, defining it in a long and extensive way would benefit the code less than what is gained by the brevity of the stabby lambda syntax. Passing functions directly is preferable: for instance, as the documentation notes, directly passing the function (<code>map(f, a)</code>) is preferable to passing an unnecessary self-returning stabby lambda (<code>map(x -&gt; f(x), a)</code>).</p>
+<h3 id="do-blocks"><code>do</code> blocks</h3>
+<p><code>do</code> blocks are another form of anonymous functions. Similarly to stabby lambdas, they introduce a functional process that doesn&apos;t need to be defined by name. Let&apos;s consider the stabby lambda in the previous example and try to rewrite it as a <code>do</code> block:</p>
+<pre><code class="lang-julia">    map([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]) <span class="hljs-keyword">do</span> x
+        <span class="hljs-number">2</span>x^<span class="hljs-number">3</span> + x^<span class="hljs-number">2</span> - <span class="hljs-number">2</span>x + <span class="hljs-number">4</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The <code>do</code> block is a bit of syntactic sugar that helps us avoid unduly long stabby lambdas, as well as do slightly more complex things that the stabby lambda&apos;s restricted format might not allow for, such as more complex testing than a stabby lambda coupled with a ternary operator would allow:</p>
+<pre><code class="lang-julia">    map([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]) <span class="hljs-keyword">do</span> x
+        <span class="hljs-keyword">if</span> mod(x, <span class="hljs-number">3</span>) == <span class="hljs-number">0</span>
+            x^<span class="hljs-number">2</span> + <span class="hljs-number">2</span>x - <span class="hljs-number">4</span>
+        <span class="hljs-keyword">elseif</span> mod(x, <span class="hljs-number">3</span>) == <span class="hljs-number">1</span>
+            <span class="hljs-number">2</span>x^<span class="hljs-number">3</span> + x^<span class="hljs-number">2</span> - <span class="hljs-number">2</span>x + <span class="hljs-number">4</span>
+        <span class="hljs-keyword">else</span>
+            <span class="hljs-number">2</span>x-<span class="hljs-number">4</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<h3 id="returning-multiple-values">Returning multiple values</h3>
+<p>A function needs to return a single object, but that object may take the shape of a collection containing multiple values. If your function does return multiple values from within the function, they will be returned as a tuple:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> squares(x, y)
+               <span class="hljs-keyword">return</span> x^<span class="hljs-number">2</span>, y^<span class="hljs-number">2</span>
+           <span class="hljs-keyword">end</span>
+    squares (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+
+    julia&gt; squares(<span class="hljs-number">2</span>,<span class="hljs-number">5</span>)
+    (<span class="hljs-number">4</span>,<span class="hljs-number">25</span>)
+
+    julia&gt; typeof(squares(<span class="hljs-number">2</span>,<span class="hljs-number">5</span>))
+    (<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>)
+</code></pre>
+<p>As we can see, the function returned two values of type <code>Int64</code>, in a tuple. For various reasons, you may prefer defining your own type to return, such as a composite type - this is up to you and Julia gives you considerable freedom in doing so.</p>
+<h3 id="scope-in-function-evaluation">Scope in function evaluation</h3>
+<p><em>Scope</em> in function evaluation refers to the availability of variables within or outside a function. Much of what has been said about scope in blocks in general applies here, but function evaluation has some peculiar quirks that are worth mentioning.</p>
+<h4 id="lexical-scoping">Lexical scoping</h4>
+<p>Julia implements <em>lexical scoping</em>, that is, the scope of a function is inherited not from its caller but its definition. Consider the following:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> foo()
+        println(x)
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-keyword">function</span> bar()
+        x = <span class="hljs-number">2</span>
+        foo()
+    <span class="hljs-keyword">end</span>
+
+    julia&gt; bar()
+    ERROR: x not defined
+     <span class="hljs-keyword">in</span> bar at none:<span class="hljs-number">3</span>
+</code></pre>
+<p>This is not unexpected, since the assignment of <code>x</code> to 2 is &apos;not visible&apos; to the function <code>foo</code> when it&apos;s called. In other words, the assignment of <code>x</code> is <em>outside the scope</em> of the function. Therefore, it does not <code>see</code> the variable&apos;s definition and this yields an undefined variable error.</p>
+<h4 id="global-variables">Global variables</h4>
+<p>A variable defined in the global scope is available to all functions:</p>
+<pre><code class="lang-julia">    julia&gt; x = <span class="hljs-number">2</span>
+    <span class="hljs-number">2</span>
+
+    julia&gt; foo()
+    <span class="hljs-number">2</span>
+</code></pre>
+<p>While this is very helpful, global variables incur an immense performance penalty. Their use is generally discouraged unless absolutely necessary.</p>
+<h2 id="higher-order-functions">Higher order functions</h2>
+<p>In general, the idea of a <em>higher order function</em> serves to distinguish functions that accept a function as an argument from other functions, sometimes referred to as <em>first-order functions</em>. In functional programming, higher order functions are much more important than in OOP or other paradigms, and indeed even if you return to your OOP roots, an understanding of higher order functions will help you enormously in dealing with the implementations of higher order functions in your language of choice: since most higher-order functions are so useful for munging data, most programming languages do have implementations of <code>map()</code>, <code>sort()</code> and other archetypal higher order functions.</p>
+<h3 id="functions-that-accept-functions-as-arguments">Functions that accept functions as arguments</h3>
+<p>We have already introduced <code>map()</code>, a typical higher-order function, above. While higher-order functions appear to be somewhat complex, they are actually easier than they seem. A function is an object like any other, and so can be fed into another function as an argument. You will not, generally, need to do anything special for your function to accept a function as an argument, except make sure you are calling the function provided to you.</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> greet(x)
+        str = x()
+        println(<span class="hljs-string">&quot;Hello, <span class="hljs-variable">$str</span>\!&quot;</span>)
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-keyword">function</span> tell_me_where_I_live()
+        <span class="hljs-keyword">return</span>(<span class="hljs-string">&quot;world&quot;</span>)
+    <span class="hljs-keyword">end</span>
+
+    julia&gt; greet(tell_me_where_I_live)
+    Hello, world!
+</code></pre>
+<p>Quite importantly, when you are passing a function to another function as an argument, <em>you are not passing a call, you&apos;re passing the function object</em> - so don&apos;t forget to skip the parentheses <code>()</code>!</p>
+<h4 id="operators-and-higher-order-functions">Operators and higher-order functions</h4>
+<p>Operators, such as <code>+</code>, are just clever aliases for functions. Thus, there is no reason why they couldn&apos;t be passed into a function:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> oper(x, y, z)
+        <span class="hljs-keyword">return</span> x(y, z)
+    <span class="hljs-keyword">end</span>
+
+    julia&gt; oper(+, <span class="hljs-literal">&#x3C0;</span>, <span class="hljs-literal">e</span>)
+    <span class="hljs-number">5.859874482048838</span>
+</code></pre>
+<p>In this case, the operator <code>+</code> was fed into our function (which did nothing but execute the operator fed in as <code>x</code> on <code>y</code> and <code>z</code>).</p>
+<h3 id="functions-that-return-functions">Functions that return functions</h3>
+<p>Just as accepting functions is perfectly permissible, a function can return a function as a result. Consider a function that returns an exponential function based on your input as the exponent.</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> create_exponential_function(exponent)
+        exp_func = <span class="hljs-keyword">function</span>(x)
+            <span class="hljs-keyword">return</span> x^exponent
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">return</span> exp_func
+    <span class="hljs-keyword">end</span>
+
+    julia&gt; power_of_five = create_exponential_function(<span class="hljs-number">5</span>)
+    (anonymous <span class="hljs-keyword">function</span>)
+
+    julia&gt; power_of_five(<span class="hljs-number">5</span>)
+    <span class="hljs-number">3125</span>
+</code></pre>
+<p>The function above can be written more concisely with the stabby lambda syntax we encountered earlier:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> create_exponential_function(exponent)
+        y -&gt;  y^exponent
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<h3 id="currying">Currying</h3>
+<p>Some languages, including some functional languages, support a feature called <em>currying</em>, named not after the Indian spice but after logician Haskell Curry (namesake of the <code>Haskell</code> language). A curried function is one that has multiple arguments. If it is provided with values for all of them, it returns a value. If it is provided with only part of them, it returns a function that takes the missing values as arguments.</p>
+<p>Currying was <a href="https://github.com/JuliaLang/julia/issues/554" target="_blank">proposed</a> for Julia in 2012, but voted down, not least because it would have been difficult to accommodate within multiple dispatch.</p>
+<h2 id="methods-and-multiple-dispatch">Methods and multiple dispatch</h2>
+<h3 id="understanding-multiple-dispatch">Understanding multiple dispatch</h3>
+<p>When you call a function on a number of arguments, Julia needs to decide how exactly that function makes sense for those arguments. In this sense, functions are not so much names for individual functions but for bunches of conceptually similar functions, with Julia deciding which particular one to call. Consider the <code>*</code> operator (which, like all operators, is a function):</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-literal">&#x3C0;</span> * <span class="hljs-literal">e</span>
+    <span class="hljs-number">8.539734222673566</span>
+
+    julia&gt; <span class="hljs-string">&quot;sausages &quot;</span> * <span class="hljs-string">&quot;mash&quot;</span>
+    <span class="hljs-string">&quot;sausages mash&quot;</span>
+</code></pre>
+<p>As the example above shows, the <code>*</code> function can take various types, and it has various actions defined for each - for numeric types, this involves multiplication, while for strings, <code>*</code> means concatenation. The feature of Julia that allows the call of the right implementation of a function based on arguments is called <em>multiple dispatch</em>, and the implementations are referred to as <em>methods</em>. Each function may have a number of methods defined for various data types, and it may have no methods at all defined for some. Finally, the error message we get when we use the &apos;wrong&apos; type of input starts to make sense:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-number">2</span> * <span class="hljs-string">&quot;sausage&quot;</span>
+    ERROR: <span class="hljs-string">`*`</span> has no method matching *(<span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>, <span class="hljs-type">::</span><span class="hljs-built_in">String</span>)
+    Closest candidates are:
+      *(<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>, <span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>)
+      *(<span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>, <span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>)
+      *(<span class="hljs-type">::</span><span class="hljs-built_in">Real</span>, <span class="hljs-type">::</span><span class="hljs-built_in">Complex</span>{T<span class="hljs-type">&lt;:</span><span class="hljs-built_in">Real</span>})
+      ...
+</code></pre>
+<p>What Julia is referring to in this instance is that <code>*</code> is not defined for one <code>Int64</code> and one <code>String</code> operator. In other words, the function <code>*</code> has no method defined that would take these two particular kinds, after which it then recommends various options (some fairly unexpected, for instance, <code>::Number</code> * <code>::Bool</code> is perfectly valid &#x2013; it multiplies the <code>::Number</code> by 1 if the <code>::Bool</code> is <code>true</code> and 0 if it is <code>false</code>).</p>
+<h3 id="building-methods">Building methods</h3>
+<p>To construct a method, you can simply declare the function for a particular data type. Let&apos;s consider a function that adds numbers and concatenates strings (for now, only two of each - the function can be expanded using the splat <code>...</code> syntax easily).</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> merge_together(a<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>, b<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>)
+        a + b
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This is great. It does a great job at adding up numbers:</p>
+<pre><code class="lang-julia">    julia&gt; merge_together(<span class="hljs-number">2</span>, <span class="hljs-literal">&#x3C0;</span>)
+    <span class="hljs-number">5.141592653589793</span>
+</code></pre>
+<p>It&apos;s less adept at doing the string concatenation part we need it to do:</p>
+<pre><code class="lang-julia">    julia&gt; merge_together(<span class="hljs-string">&quot;Sausages with&quot;</span>, <span class="hljs-string">&quot; mash&quot;</span>)
+    ERROR: <span class="hljs-string">`merge_together`</span> has no method matching merge_together(<span class="hljs-type">::</span><span class="hljs-built_in">String</span>, <span class="hljs-type">::</span><span class="hljs-built_in">String</span>)
+</code></pre>
+<p>Therefore, we will need to define a method for <code>merge_together()</code> that will accept <code>String</code> arguments. When Julia tells us a method is missing, it will give us the concrete data type of the argument we have entered. This is useful, but try to resist the temptation to define <code>merge_together</code> for <code>::String</code>. In general, if your use case relates not to the concrete type but to the broader, <em>abstract</em> type (such as ours, where our use case is really <em>all</em> strings, not just <code>String</code>), it&apos;s good practice to use the broadest abstract type that will include only the data types that you need. In this case, it is not <code>String</code> but its abstract ancestor, <code>AbstractString</code> (in case you forgot your handy inheritance dendrogram, you can look at the supertype of any type by using <code>supertype(String)</code> with the name of the type you&apos;re interested in). Let&apos;s define <code>merge_together</code> for two <code>::AbstractString</code> objects:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> merge_together(a<span class="hljs-type">::</span><span class="hljs-built_in">AbstractString</span>, b<span class="hljs-type">::</span><span class="hljs-built_in">AbstractString</span>)
+        a * b
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>That&apos;s it, folks! Julia helpfully tells us that <code>merge_together</code> now has two methods. Using <code>methods(merge_together)</code>, we can list these:</p>
+<pre><code class="lang-julia">    julia&gt; methods(merge_together)
+    <span class="hljs-comment"># 2 methods for generic function &quot;merge_together&quot;:</span>
+    merge_together(a<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>,b<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>) at none:<span class="hljs-number">2</span>
+    merge_together(a<span class="hljs-type">::</span><span class="hljs-built_in">AbstractString</span>,b<span class="hljs-type">::</span><span class="hljs-built_in">AbstractString</span>) at none:<span class="hljs-number">2</span>
+</code></pre>
+<p>Let&apos;s give the second one, for strings, a try:</p>
+<pre><code class="lang-julia">    julia&gt; merge_together(<span class="hljs-string">&quot;Sausages with&quot;</span>, <span class="hljs-string">&quot; mash&quot;</span>)
+    <span class="hljs-string">&quot;Sausages with mash&quot;</span>
+</code></pre>
+<p>It works! In general, when creating a function, you need to be circumspect as to what you want to use it for and what it needs to be able to deal with. There is no need for a function to have methods for all data types. So far, we have generally not defined the data types of arguments. This is a bad practice, and when you are building functions, you should always think of yourself as building methods at the same time, and define the types you want your function to accept.</p>
+<h3 id="call-order-and-method-ambiguities">Call order and method ambiguities</h3>
+<p>Consider the following function <code>f</code>:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> f(x)
+        <span class="hljs-keyword">return</span> x
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-keyword">function</span> f(x<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>)
+        <span class="hljs-keyword">return</span> x^<span class="hljs-number">2</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The first definition, lacking a type restriction, is deemed by Julia to accept inputs of type <code>Any</code> - that is, any type. The second method, however, only takes inputs of type <code>Int</code>. As such, it is more specific (or, if you please, &apos;further downstream on the type dendrogram&apos;). The result is that when you call <code>f(2)</code>, the second, more specific method will be called, even if technically, the argument <code>2</code> would be acceptable for both. This is a sensible approach, since the broader the type, the more likely that the method is intended to be a &apos;catch-all&apos; to mop up cases that have not been caught by any of the subtypes.</p>
+<p>However, for functions with multiple arguments, it is possible that there is no unique method that is more unambiguous than the others. Consider the following:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> g(x<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>, y)
+        <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>x^<span class="hljs-number">2</span> - <span class="hljs-number">2</span>y
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-keyword">function</span> g(x, y<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>x - <span class="hljs-number">2</span>y^<span class="hljs-number">2</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Which of these functions is &apos;more definite&apos; when called as, say, <code>g(6, 8)</code>? The answer is &apos;neither&apos;, and Julia says so much when declaring the second method:</p>
+<pre><code class="lang-julia">    Warning: New definition
+        g(<span class="hljs-built_in">Any</span>,<span class="hljs-built_in">Int64</span>) at none:<span class="hljs-number">2</span>
+    is ambiguous with:
+        g(<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Any</span>) at none:<span class="hljs-number">2.</span>
+    To fix, define
+        g(<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>)
+    before the new definition.
+    g (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">2</span> methods)
+</code></pre>
+<p>A method <code>g(x::Int64, y::Int64)</code> will be more specific than either of the previously defined methods, and as such capable of dealing with the indefinite middle.</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> g(x<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>, y<span class="hljs-type">::</span><span class="hljs-built_in">Int</span>)
+        <span class="hljs-keyword">return</span> x^<span class="hljs-number">2</span> - y^<span class="hljs-number">2</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<h3 id="parametric-methods">Parametric methods</h3>
+<p>A parametric method, similar to parametric types, is one in which a logical relationship is asserted between types, rather than an actual type name. You may think of parameters as &apos;variables&apos; for type assertions. The parameter - by convention, but not by necessity, <code>T</code> for type - is enclosed in curly braces <code>{}</code> and interposed between the function name and its arguments:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> identical_types{T}(x<span class="hljs-type">::</span>T, y<span class="hljs-type">::</span>T)
+        ...
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This function would accept arguments of the same type, regardless of what that type is. You can restrict the possible values <code>T</code> might take based on type hierarchy:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> identical_numbers{T<span class="hljs-type">&lt;:</span><span class="hljs-built_in">Number</span>}(x<span class="hljs-type">::</span>T, y<span class="hljs-type">::</span>T)
+        ...
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This function allows for any inputs that are both identical <em>and</em> descendants of the <code>Number</code> supertype. Contrast that with</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> divergent_numbers(x<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>, y<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>)
+        ...
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>which accepts inputs that are descendants of the <code>Number</code> supertype, regardless of whether their type matches or not.</p>
+<h3 id="inspecting-methods">Inspecting methods</h3>
+<p>Entering a function object into the REPL, but not calling the function object, will indicate the number of methods under the function:</p>
+<pre><code class="lang-julia">    julia&gt; +
+    + (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">150</span> methods)
+</code></pre>
+<p>You can inspect methods available under a function by using the <code>method()</code> command and passing the function or operator as argument:</p>
+<pre><code class="lang-julia">    julia&gt; methods(+)
+    <span class="hljs-comment"># 150 methods for generic function &quot;+&quot;:</span>
+    +(x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">34</span>
+    +(x<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>,y<span class="hljs-type">::</span><span class="hljs-built_in">Bool</span>) at bool.jl:<span class="hljs-number">37</span>
+    ...
+    +(a,b,c) at operators.jl:<span class="hljs-number">83</span>
+    +(a,b,c,xs...) at operators.jl:<span class="hljs-number">84</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="09-ex6.html" class="navigation navigation-prev " aria-label="Previous page: Control flow">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11-ex8.html" class="navigation navigation-next " aria-label="Next page: Handling errors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Functions","level":"1.4.8","depth":2,"next":{"title":"Handling errors","level":"1.4.9","depth":2,"path":"_chapters/11-ex8.md","ref":"_chapters/11-ex8.md","articles":[]},"previous":{"title":"Control flow","level":"1.4.7","depth":2,"path":"_chapters/09-ex6.md","ref":"_chapters/09-ex6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/10-ex7.md","mtime":"2021-02-24T18:37:29.883Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

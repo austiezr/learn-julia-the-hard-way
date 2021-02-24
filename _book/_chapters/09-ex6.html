@@ -1,0 +1,1102 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Control flow · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-ex7.html" />
+    
+    
+    <link rel="prev" href="08-ex5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Control flow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-6-control-flow">Chapter 6: Control flow</h1>
+<p>So far, we&apos;ve looked at variables, types, strings and collections &#x2013; in short, the things programs operate on. Control flow is where we start to delve into <em>how</em> to engineer programs that do what we need them to.</p>
+<p>We will be encountering two new things in this chapter. First, we will be coming across a number of <em>keywords</em>. Functional languages are generally known for having a minimum of keywords, but they usually still need some. A keyword is a word that has a particular role in the syntax of Julia. Keywords are <em>not functions</em>, and therefore are <em>not called</em> (so no need for parentheses at the end!).</p>
+<p>The second new concept is that of <em>blocks</em>. Blocks are chunks of expressions that are &apos;set aside&apos; because they are, for instance, executed if a certain criterion is met. Blocks start with a starting expression, are followed by indented lines and end on an unindented line with the <code>end</code> keyword. A typical block would be:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">if</span> variable1 &gt; variable2
+        println(<span class="hljs-string">&quot;Variable 1 is larger than Variable 2.&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>In Julia, blocks are normally indented as a matter of convention, but as long as they&apos;re validly terminated with the <code>end</code> keyword, it&apos;s all good. They are not surrounded by any special characters (such as curly braces <code>{}</code> that are common in Java or JavaScript) or terminators after the condition (such as the colon <code>:</code> in Python). It is up to you whether you put the condition in parentheses <code>()</code>, but this is not required and is not an unambiguously useful feature at any rate. <code>if</code> and <code>elseif</code> are keywords, and as such they are not &apos;called&apos; but invoked, so using the parentheses would not be technically appropriate.</p>
+<h2 id="conditions-truth-values-and-comparisons">Conditions, truth values and comparisons</h2>
+<p>Much of control flow depends on the evaluation of particular conditions. Thus, for instance, an <code>if</code>/<code>else</code> construct may perform one action if a condition is true and a different one if it is false. Therefore, it is important to understand the role comparisons play in control flow and their effective (and idiomatic) use.</p>
+<h3 id="comparison-operators">Comparison operators</h3>
+<p>Julia has six comparison operators. Each of these acts differently depending on what types it is used on, therefore we&apos;ll take the effect of each of these operators in turn depending on their types. Unlike a number of programming languages, Julia&apos;s Unicode support means it can use a wider range of symbols as operators, which makes for prettier code but might be inadvisable &#x2013; the difference between <code>&gt;=</code> and <code>&gt;</code> is less ambiguous than the difference between <code>&#x2265;</code> and <code>&gt;</code>, especially at small resolutions.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code> or <code>isequal(x,y)</code></td>
+<td>equality</td>
+</tr>
+<tr>
+<td><code>!=</code> or <code>&#x2260;</code></td>
+<td>inequality</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>less than</td>
+</tr>
+<tr>
+<td><code>&lt;=</code> or <code>&#x2264;</code></td>
+<td>less or equal</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>greater than</td>
+</tr>
+<tr>
+<td><code>&gt;=</code> or <code>&#x2265;</code></td>
+<td>greater or equal</td>
+</tr>
+</tbody>
+</table>
+<h4 id="numeric-comparison">Numeric comparison</h4>
+<p>When comparing numeric types, the comparison operators act as one would expect them, with some conventions that derive from the <a href="http://en.wikipedia.org/wiki/IEEE_floating_point" target="_blank">IEEE 754 standard</a> for floating point values.</p>
+<p>Numeric comparison can accommodate three &apos;special&apos; values: <code>-Inf</code>, <code>Inf</code> and <code>NaN</code>, which might be familiar from <code>R</code> or other programming languages. The paradigms for these three are that</p>
+<ul>
+<li><code>NaN</code> is not equal to, larger than or less than anything, including itself (<code>NaN == NaN</code> yields <code>false</code>),</li>
+<li><code>-Inf</code> and <code>Inf</code> are each equal to themselves but not the other (<code>-Inf == -Inf</code> yields <code>true</code> but <code>-Inf == Inf</code> is false),</li>
+<li><code>Inf</code> is greater than everything except <code>NaN</code>,</li>
+<li><code>-Inf</code> is smaller than everything except <code>NaN</code>.</li>
+<li><code>-0</code> is equal to <code>0</code> or <code>+0</code>, but not smaller.</li>
+</ul>
+<p>Julia also provides a function called <code>isequal()</code>, which at first sight appears to mirror the <code>==</code> operator, but has a few peculiarities:</p>
+<ul>
+<li><code>NaN != NaN</code>, but <code>isequal(NaN, NaN)</code> yields true,</li>
+<li><code>-0.0 == 0.0</code>, but <code>isequal(-0.0, 0.0)</code> yields false.</li>
+</ul>
+<h4 id="char-comparisons"><code>Char</code> comparisons</h4>
+<p><code>Char</code> comparison is based on the <em>integer value</em> of every <code>Char</code>, which is its position in the code table (which you can obtain by using <code>int()</code>: <code>int(&apos;a&apos;) = 97</code>).</p>
+<p>As a result, the following will hold:</p>
+<ul>
+<li>A <code>Char</code> of a lowercase letter will be larger than the <code>Char</code> of the same letter in uppercase: <code>&apos;A&apos; &gt; &apos;a&apos;</code> yields false,</li>
+<li>A <code>Char</code> plus or minus an integer yields a <code>Char</code>, which is the initial character offset by the integer: <code>&apos;A&apos; + 4</code> yields <code>&apos;E&apos;</code>.</li>
+<li>A <code>Char</code> minus another <code>Char</code> yields an <code>Int</code>, which is the offset between the two characters: <code>&apos;E&apos; - &apos;A&apos;</code> yields <code>4</code>.</li>
+</ul>
+<p>A lot of this is a little counter-intuitive, but what you need to remember is that <code>Char</code>s are merely numerical references to where the character is located, and this is used to do comparisons.</p>
+<h4 id="string-comparisons"><code>String</code> comparisons</h4>
+<p>For <code>AbstractString</code> descendants, comparison will be based on <em>lexicographical comparison</em> &#x2013; or, to put it in human terms, where they would relatively be in a lexicon.</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;truths&quot;</span> &gt; <span class="hljs-string">&quot;sausages&quot;</span>
+    <span class="hljs-literal">true</span>
+</code></pre>
+<p>For words starting with the same characters in different cases, lowercase characters come after (i.e. are larger than) uppercase characters, much like in <code>Char</code> comparisons:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;Truths&quot;</span> &lt; <span class="hljs-string">&quot;truths&quot;</span>
+    <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="chaining-comparisons">Chaining comparisons</h4>
+<p>Julia allows you to execute multiple comparisons &#x2013; this is, indeed, encouraged, as it allows you to reflect mathematical relationships better and clearer in code. Comparison chaining associates from right to left:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-number">3</span> &lt; <span class="hljs-literal">&#x3C0;</span> &lt; <span class="hljs-number">4</span>
+    <span class="hljs-literal">true</span>
+
+    julia&gt; <span class="hljs-number">5</span> &#x2265; <span class="hljs-literal">&#x3C0;</span> &lt; <span class="hljs-number">12</span> &gt; <span class="hljs-number">3</span>*<span class="hljs-literal">e</span>
+    <span class="hljs-literal">true</span>
+</code></pre>
+<h4 id="combining-comparisons">Combining comparisons</h4>
+<p>Comparisons can be combined using the boolean operators <code>&amp;&amp;</code> (<code>and</code>) and <code>||</code> (<code>or</code>). The truth table of these operators is</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Expression</th>
+<th><code>a</code></th>
+<th><code>b</code></th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>a &amp;&amp; b</code></td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>a || b</code></td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore,</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-literal">&#x3C0;</span> &gt; <span class="hljs-number">2</span> &amp;&amp; <span class="hljs-literal">&#x3C0;</span> &lt; <span class="hljs-number">3</span>
+    <span class="hljs-literal">false</span>
+
+    julia&gt; <span class="hljs-literal">&#x3C0;</span> &gt; <span class="hljs-number">2</span> || <span class="hljs-literal">&#x3C0;</span> &lt; <span class="hljs-number">3</span>
+    <span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="truthiness">Truthiness</h3>
+<p>No, it&apos;s not the Colbert version. Truthiness refers to whether a variable that is not a boolean variable (<code>true</code> or <code>false</code>) is evaluated as true or false.</p>
+<h4 id="definition-truthiness">Definition truthiness</h4>
+<p>Julia is fairly strict with existence truthiness. A non-existent variable being tested for doesn&apos;t yield <code>false</code>, it yields an error.</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">if</span> seahawks
+               println(<span class="hljs-string">&quot;We know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">else</span>
+               println(<span class="hljs-string">&quot;We don&apos;t know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    ERROR: seahawks not defined
+</code></pre>
+<p>Now let&apos;s create an empty array named <code>seahawks</code> which will, one day, accommodate their lineup:</p>
+<pre><code class="lang-julia">    julia&gt; seahawks = <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">String</span>}
+    <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">String</span>,N}
+</code></pre>
+<p>Will existence of the array, empty though it may be, yield a truthy result? Not in Julia. It will yield, again, an error:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">if</span> seahawks
+               println(<span class="hljs-string">&quot;We know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">else</span>
+               println(<span class="hljs-string">&quot;We don&apos;t know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    ERROR: <span class="hljs-keyword">type</span>: non-boolean (<span class="hljs-built_in">DataType</span>) used <span class="hljs-keyword">in</span> boolean context
+</code></pre>
+<h4 id="value-truthiness">Value truthiness</h4>
+<p>Nor will common values yield the usual truthiness results. 0, which in some languages would yield a <code>false</code>, will again result in an error:</p>
+<pre><code class="lang-julia">    julia&gt; seahawks = <span class="hljs-number">0</span>
+    <span class="hljs-number">0</span>
+
+    julia&gt; <span class="hljs-keyword">if</span> seahawks
+               println(<span class="hljs-string">&quot;We know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">else</span>
+               println(<span class="hljs-string">&quot;We don&apos;t know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    ERROR: <span class="hljs-keyword">type</span>: non-boolean (<span class="hljs-built_in">Int64</span>) used <span class="hljs-keyword">in</span> boolean context
+</code></pre>
+<p>The same goes for any other value. The bottom line, for you as a programmer, is that anything but <code>true</code> or <code>false</code> as the result of evaluating a condition yields an <code>error</code> and if you wish to make use of what you would solve with truthiness in another language, you might need to explicitly test for existence or value by using a function in your conditional expression that tests for existence or value, respectively.</p>
+<h4 id="implementing-definition-truthiness">Implementing definition truthiness</h4>
+<p>To implement definition truthiness, Julia helpfully provides the <code>isdefined()</code> function, which yields true if a symbol is defined. Be sure to pass the symbol, not the value, to the function by prefacing it with a colon <code>:</code>, as in this case:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">if</span> isdefined(:seahawks)
+               println(<span class="hljs-string">&quot;We know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">else</span>
+               println(<span class="hljs-string">&quot;We don&apos;t know the Seahawks&apos; lineup.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    We know the Seahawks&apos; lineup.
+</code></pre>
+<h2 id="ifelseifelse--and-boolean-switching"><code>if</code>/<code>elseif</code>/<code>else</code>, <code>?</code>/<code>:</code> and boolean switching</h2>
+<p><em>Conditional evaluation</em> refers to the programming practice of evaluating a block of code if, and only if, a particular <em>condition</em> is met (i.e. if the expression used as the condition returns <code>true</code>). In Julia, this is implemented using the <code>if</code>/<code>elseif</code>/<code>else</code> syntax, the <em>ternary operator</em>, <code>?:</code> or boolean switching:</p>
+<h3 id="ifelseifelse-syntax"><code>if</code>/<code>elseif</code>/<code>else</code> syntax</h3>
+<p>A typical conditional evaluation block consists of an <code>if</code> statement and a condition.</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">if</span> <span class="hljs-string">&quot;A&quot;</span> == <span class="hljs-string">&quot;A&quot;</span>
+        println(<span class="hljs-string">&quot;Aristotle was right.&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Julia further allows you to include as many further cases as you wish, using <code>elseif</code>, and a catch-all case that would be called <code>else</code> and have no condition attached to it:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">if</span> weather == <span class="hljs-string">&quot;rainy&quot;</span>
+        println(<span class="hljs-string">&quot;Bring your umbrella.&quot;</span>)
+    <span class="hljs-keyword">elseif</span> weather == <span class="hljs-string">&quot;windy&quot;</span>
+        println(<span class="hljs-string">&quot;Dress up warm!&quot;</span>)
+    <span class="hljs-keyword">elseif</span> weather == <span class="hljs-string">&quot;sunny&quot;</span>
+        println(<span class="hljs-string">&quot;Don&apos;t forget sunscreen!&quot;</span>)
+    <span class="hljs-keyword">else</span>
+        println(<span class="hljs-string">&quot;Check the darn weather yourself, I have no idea.&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>For <code>weather = &quot;rainy&quot;</code>, this predictably yields</p>
+<pre><code class="lang-julia">    Bring your umbrella.
+</code></pre>
+<p>while for <code>weather = &quot;warm&quot;</code>, we get</p>
+<pre><code>    Check the darn weather yourself, I have no idea.
+</code></pre><h3 id="ternary-operator-">Ternary operator <code>?</code>/<code>:</code></h3>
+<p>The ternary operator is a useful way to put a reasonably simple conditional expression into a single line of code. The ternary operator <em>does not create a block</em>, therefore there is no need to suffix it with the <code>end</code> keyword. Rather, you enter the condition, then separate it with a <code>?</code> from the result of the true and the false outcomes, each in turn separated by a colon <code>:</code>, as in this case:</p>
+<pre><code class="lang-julia">    julia&gt; x = <span class="hljs-number">0.3</span>
+    <span class="hljs-number">0.3</span>
+
+    julia&gt; x &lt; <span class="hljs-literal">&#x3C0;</span>/<span class="hljs-number">2</span> ? sin(x) : cos(x)
+    <span class="hljs-number">0.29552020666133955</span>
+</code></pre>
+<p>Ternary operators are great for writing simple conditionals quickly, but can make code unduly confusing. A number of style guides generally recommend using them sparingly. Some programmers, especially those coming from Java, like using a multiline notation, which makes it somewhat more legible while still not requiring a block to be created:</p>
+<pre><code class="lang-julia">    julia&gt; x &lt; <span class="hljs-literal">&#x3C0;</span>/<span class="hljs-number">2</span> ?
+               sin(x) :
+               cos(x)
+    <span class="hljs-number">0.29552020666133955</span>
+</code></pre>
+<h3 id="boolean-switching--and-">Boolean switching <code>||</code> and <code>&amp;&amp;</code></h3>
+<p>Boolean switching, which the Julia documentation refers to as <em>short-circuit evaluation</em>, allows you quickly evaluate using boolean operators. It uses two operators:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operator</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>a || b</code></td>
+<td>Execute <code>b</code> if <code>a</code> evaluates to <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>a &amp;&amp; b</code></td>
+<td>Execute <code>b</code> if <code>a</code> evaluates to true</td>
+</tr>
+</tbody>
+</table>
+<p>These derive from the boolean use of <code>&amp;&amp;</code> and <code>||</code>, where <code>&amp;&amp;</code> means <code>and</code> and <code>||</code> means <code>or</code> - the logic being that for a <code>&amp;&amp;</code> operator, if <code>a</code> is false, <code>a &amp;&amp; b</code> will be false, <code>b</code>&apos;s value regardless. <code>||</code>, on the other hand, will necessarily be true if <code>a</code> is true. It might be a bit difficult to get one&apos;s head around it, so what you need to remember is the following equivalence:</p>
+<ul>
+<li><code>if &lt;condition&gt; &lt;statement&gt;</code> is equivalent to <code>condition &amp;&amp; statement</code>, and</li>
+<li><code>if !&lt;condition&gt; &lt;statement&gt;</code> is equivalent to <code>condition || statement</code>.</li>
+</ul>
+<p>Thus, let us consider the following:</p>
+<pre><code class="lang-julia">    julia&gt; is_this_a_prime = <span class="hljs-number">7</span>
+    <span class="hljs-number">7</span>
+
+    julia&gt; isprime(is_this_a_prime) &amp;&amp; println(<span class="hljs-string">&quot;Yes, it is.&quot;</span>)
+    Yes, it is.
+
+    julia&gt; isprime(is_this_a_prime) || println(<span class="hljs-string">&quot;No, it isn&apos;t.&quot;</span>)
+    <span class="hljs-literal">true</span>
+
+    julia&gt; is_this_a_prime = <span class="hljs-number">8</span>
+    <span class="hljs-number">8</span>
+
+    julia&gt; isprime(is_this_a_prime) || println(<span class="hljs-string">&quot;No, it isn&apos;t.&quot;</span>)
+    No, it isn&apos;t.
+</code></pre>
+<p>It is rather counter-intuitive, but the alternative to it executing the code after the boolean operator is returning <code>true</code> or <code>false</code>. This should not necessarily trouble us, since our focus on getting our instructions executed. Outside the REPL, what each of these functions return is irrelevant.</p>
+<h2 id="while"><code>while</code></h2>
+<p>With <code>while</code>, we&apos;re entering the world of repeated (or <em>iterative</em>) evaluation. The idea of <code>while</code> is quite simple: as long as a condition is met, execution will continue. The famed words of the pirate captain whose name has never been submitted to history can be rendered in a <code>while</code> clause thus:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">while</span> morale != improved
+        continue_flogging()
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p><code>while</code>, along with <code>for</code>, is a <em>loop operator</em>, meaning - unsurprisingly - that it creates a loop that is executed over and over again until the conditional variable changes. While <code>for</code> loops generally need a limited range in which they are allowed to run, <code>while</code> loops can sometimes become infinite and turn into <em>runaway loops</em>. This is best avoided, not the least because it tends to crash systems or at the very least take up capacity for no good reason.</p>
+<h3 id="breaking-a-while-loop-break">Breaking a <code>while</code> loop: <code>break</code></h3>
+<p>A <code>while</code> loop can be terminated by the <code>break</code> keyword prematurely (that is, before it has reached its condition). Thus, the following loop would only be executed five times, not ten:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>
+        i += <span class="hljs-number">1</span>
+        println(<span class="hljs-string">&quot;The value of i is &quot;</span>, i)
+        <span class="hljs-keyword">if</span> i == <span class="hljs-number">5</span>
+            <span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The result is:</p>
+<pre><code class="lang-julia">    The value of i is <span class="hljs-number">1</span>
+    The value of i is <span class="hljs-number">2</span>
+    The value of i is <span class="hljs-number">3</span>
+    The value of i is <span class="hljs-number">4</span>
+    The value of i is <span class="hljs-number">5</span>
+</code></pre>
+<p>This is because after five evaluations, the conditional would have evaluated to true and led to the <code>break</code> keyword breaking the loop.</p>
+<h3 id="skipping-over-results-continue">Skipping over results: <code>continue</code></h3>
+<p>Let&apos;s assume we have suffered a grievous blow to our heads and forgotten all we knew about <code>for</code> loops and negation. Through some odd twist of fate, we absolutely <em>need</em> to list all non-primes from one to ten, and we need to use a <code>while</code> loop for this.</p>
+<p>The <code>continue</code> keyword instructs a loop to finish evaluating the current value of the iterator and go to the next. As such, you would want to put it as early as possible - there is no use instructing Julia to stop looking at the current iterator when other (possibly time consuming) istructions have been already executed. The following loop uses the <code>continue</code> keyword to skip a value if it is prime:</p>
+<pre><code class="lang-julia">    i = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>
+        i += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">if</span> isprime(i)
+            <span class="hljs-keyword">continue</span>
+        <span class="hljs-keyword">else</span>
+            println(i, <span class="hljs-string">&quot; is not a prime number&quot;</span>)
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The result reads:</p>
+<pre><code class="lang-julia">    <span class="hljs-number">1</span> is not a prime number
+    <span class="hljs-number">4</span> is not a prime number
+    <span class="hljs-number">6</span> is not a prime number
+    <span class="hljs-number">8</span> is not a prime number
+    <span class="hljs-number">9</span> is not a prime number
+    <span class="hljs-number">10</span> is not a prime number
+</code></pre>
+<h2 id="for"><code>for</code></h2>
+<p>Like <code>while</code>, <code>for</code> is a loop operator. Unlike <code>while</code>, it operates not <em>as long as</em> a condition is met but rather until it has burned through an <em>iterable</em>. As we have seen, a number of objects consist of smaller chunks and are capable of being iterated over this, one by one. The archetypical iterable is a <code>Range</code> object. In the following, we will use a <code>Range</code> literal (created by a colon <code>:</code>) from one to 10 in steps of 2, and get Julia to tell us which numbers in that range are primes:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:<span class="hljs-number">2</span>:<span class="hljs-number">10</span>
+               println(isprime(i))
+           <span class="hljs-keyword">end</span>
+    <span class="hljs-literal">false</span>
+    <span class="hljs-literal">true</span>
+    <span class="hljs-literal">true</span>
+    <span class="hljs-literal">true</span>
+    <span class="hljs-literal">false</span>
+</code></pre>
+<h3 id="iterating-over-indexable-collections">Iterating over indexable collections</h3>
+<p>Other iterables include indexable collections:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> [<span class="hljs-string">&apos;r&apos;</span>, <span class="hljs-string">&apos;o&apos;</span>, <span class="hljs-string">&apos;y&apos;</span>, <span class="hljs-string">&apos;g&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>, <span class="hljs-string">&apos;v&apos;</span>]
+               println(j)
+           <span class="hljs-keyword">end</span>
+    r
+    o
+    y
+    g
+    b
+    i
+    v
+</code></pre>
+<p>This includes, incidentally, multidimensional arrays &#x2013; but don&apos;t forget the direction of iteration (column by column, top-down):</p>
+<pre><code class="lang-julia">    julia&gt; md_array = [<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">5</span>; <span class="hljs-number">8</span> <span class="hljs-number">13</span> <span class="hljs-number">21</span> <span class="hljs-number">34</span> <span class="hljs-number">55</span>; <span class="hljs-number">89</span> <span class="hljs-number">144</span> <span class="hljs-number">233</span> <span class="hljs-number">377</span> <span class="hljs-number">610</span>]
+    <span class="hljs-number">3</span>x5 <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">2</span>}:
+      <span class="hljs-number">1</span>    <span class="hljs-number">1</span>    <span class="hljs-number">2</span>    <span class="hljs-number">3</span>    <span class="hljs-number">5</span>
+      <span class="hljs-number">8</span>   <span class="hljs-number">13</span>   <span class="hljs-number">21</span>   <span class="hljs-number">34</span>   <span class="hljs-number">55</span>
+     <span class="hljs-number">89</span>  <span class="hljs-number">144</span>  <span class="hljs-number">233</span>  <span class="hljs-number">377</span>  <span class="hljs-number">610</span>
+
+    julia&gt; <span class="hljs-keyword">for</span> each <span class="hljs-keyword">in</span> md_array
+               println(each)
+           <span class="hljs-keyword">end</span>
+    <span class="hljs-number">1</span>
+    <span class="hljs-number">8</span>
+    <span class="hljs-number">89</span>
+    ...
+    <span class="hljs-number">55</span>
+    <span class="hljs-number">610</span>
+</code></pre>
+<h3 id="iterating-over-dicts">Iterating over dicts</h3>
+<p>As we have seen, dicts are non-indexable. Nevertheless, Julia can iterate over a dict. There are two ways to accomplish this.</p>
+<h4 id="tuple-iteration">Tuple iteration</h4>
+<p>In tuple iteration, each key-value pair is seen as a tuple and returned as such:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> statistician <span class="hljs-keyword">in</span> statisticians
+               println(<span class="hljs-string">&quot;<span class="hljs-subst">$(statistician[<span class="hljs-number">1</span>])</span> lived <span class="hljs-subst">$(statistician[<span class="hljs-number">2</span>])</span>.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    Galton lived <span class="hljs-number">1822</span>-<span class="hljs-number">1911.</span>
+    Pearson lived <span class="hljs-number">1857</span>-<span class="hljs-number">1936.</span>
+    Gosset lived <span class="hljs-number">1876</span>-<span class="hljs-number">1937.</span>
+</code></pre>
+<p>While this does the job, it is not particularly graceful. It is, however, useful if we need to have the key and the value in the same object, such as in the case of conversion scripts often encountered in &apos;data munging&apos;.</p>
+<h4 id="key-value-kv-iteration">Key-value (<code>k,v</code>) iteration</h4>
+<p>A better way to iterate over a dict assigns two variables, rather than one, as iterators, one each for the key and the value. In this syntax, the above could be re-written as:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> (name,years) <span class="hljs-keyword">in</span> statisticians
+               println(<span class="hljs-string">&quot;<span class="hljs-variable">$name</span> lived <span class="hljs-variable">$years</span>.&quot;</span>)
+           <span class="hljs-keyword">end</span>
+</code></pre>
+<h3 id="iteration-over-strings">Iteration over strings</h3>
+<p>Iteration over a string results in iteration over each character. The individual characters are interpreted as objects of type <code>Char</code>:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> each <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;Sausage&quot;</span>
+               println(<span class="hljs-string">&quot;<span class="hljs-variable">$each</span> is of the type <span class="hljs-subst">$(typeof(each)</span>)&quot;</span>)
+           <span class="hljs-keyword">end</span>
+    S is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+    a is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+    u is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+    s is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+    a is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+    g is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+    <span class="hljs-literal">e</span> is of the <span class="hljs-keyword">type</span> <span class="hljs-built_in">Char</span>
+</code></pre>
+<h2 id="compound-expressions-beginend-and-">Compound expressions: <code>begin</code>/<code>end</code> and <code>;</code></h2>
+<p>A <em>compound expression</em> is somewhat similar to a function in that it is a pre-defined sequence of functions that is executed one by one. Compound expressions allow you to execute small and concise blocks of code in sequence and return the result of the last calculation. There are two ways to create compound expressions, using a <code>begin</code>/<code>end</code> syntax creating a block or surrounding the compound expression with parentheses <code>()</code> and delimiting each instruction with <code>;</code>.</p>
+<h3 id="beginend-blocks"><code>begin</code>/<code>end</code> blocks</h3>
+<p>A <code>begin</code>/<code>end</code> structure creates a block and returns the result of the last line evaluated.</p>
+<pre><code class="lang-julia">    julia&gt; circumference = <span class="hljs-keyword">begin</span>
+               r = <span class="hljs-number">3</span>
+               <span class="hljs-number">2</span>*r*<span class="hljs-literal">&#x3C0;</span>
+           <span class="hljs-keyword">end</span>
+    <span class="hljs-number">18.84955592153876</span>
+</code></pre>
+<h3 id="syntax"><code>;</code> syntax</h3>
+<p>One of the benefits of compound expressions is the ability to put a lot into a small space. This is where the <code>;</code> syntax shines. Somewhat similar to anonymous functions or <code>lambda</code>s in other languages, such as Python, you can simplify the calculation above to</p>
+<pre><code class="lang-julia">    julia&gt; circumference = (r = <span class="hljs-number">3</span>; <span class="hljs-number">2</span>*r*<span class="hljs-literal">&#x3C0;</span>)
+    <span class="hljs-number">18.84955592153876</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-ex5.html" class="navigation navigation-prev " aria-label="Previous page: Strings">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-ex7.html" class="navigation navigation-next " aria-label="Next page: Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Control flow","level":"1.4.7","depth":2,"next":{"title":"Functions","level":"1.4.8","depth":2,"path":"_chapters/10-ex7.md","ref":"_chapters/10-ex7.md","articles":[]},"previous":{"title":"Strings","level":"1.4.6","depth":2,"path":"_chapters/08-ex5.md","ref":"_chapters/08-ex5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/09-ex6.md","mtime":"2021-02-24T18:37:29.882Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

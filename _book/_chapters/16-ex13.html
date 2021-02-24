@@ -1,0 +1,796 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Writing good Julia · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Writing good Julia</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-7-writing-good-julia-functions">Chapter 7: Writing good Julia functions</h1>
+<p>Writing good functions is not an art - it&apos;s something you can learn with reasonably little practice. A good function, by our definition, is one that is</p>
+<ul>
+<li><em>performant</em>: it consumes as few resources as needed,</li>
+<li><em>type-stable</em>: it always returns the same type of object, and</li>
+<li><em>legible</em>: Julia is a fairly easy to read language, and so should your code be.</li>
+</ul>
+<p>These desiderata aren&apos;t always compatible with each other, and it is your job as a programmer to figure out how to balance them, with their application in mind. The following therefore are not strict requirements, they are ways to accomplish each of the individual objectives.</p>
+<h2 id="performant-code">Performant code</h2>
+<p>Generally, the more complex an operation, the more the impact of performance optimisations is. The <code>O</code> (&apos;big O&apos;) notation expresses this aptly. Consider two functions, one running at linear time $O(n)$ and one running at exponential time $O(2^n)$. For a sufficiently small number of elements, the difference might not be visible. However, as the number of elements grows, the performance gaps are going to be huge, and well-written functions are the difference between a calculation taking minutes versus hours or even days.</p>
+<h3 id="define-arguments-types-whenever-you-can-and-however-precisely-you-can">Define arguments&apos; types, whenever you can and however precisely you can</h3>
+<p>When it comes to arguments, have a good think about what your function is supposed to do and what types it can, and what types it cannot, ingest. Planning first (or, <a href="http://programmers.stackexchange.com/questions/59152/code-documentation-first" target="_blank">according to some, even documenting first</a>) is a good idea - it will help you have an understanding of the needs of your code.</p>
+<p>A functional programming language with multiple dispatch challenges you to <em>think in methods, not functions</em>. Create small, narrow methods that do something for particular and narrowly defined types, rather than broad functions. Especially to programmers coming from OOP thinking, the idea that functions are not atomic and actually break down into methods is difficult to digest. However, it&apos;s worth the try - functions that Julia doesn&apos;t have to &apos;guess&apos; about evaluate much faster. Defining types precisely is also a sieve for incorrect input types. Programmers from other paradigms might be used to having to test whether inputs are the right format &#x2013; in Julia, this is a &apos;built-in&apos; feature: as long as you define your code precisely, it <em>will</em> accept only the right kind of data and raise an error for any other call. I call this a win-win!</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> add_integers_badly(x, y)
+        x = int(x)
+        y = int(y)
+        x + y
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The function above is problematic because it says one thing and does another. On its face, it accepts all kinds of values. In reality, however, not only is the function meant to only work with numeric types (since <code>x + y</code> has a very specific meaning for other types), it is in fact meant to enforce a particular type (<code>Int</code> types) by using a type conversion command (<code>int()</code>). If so, it would be easier to simply limit the function to accepting the right kind of input type. Not only would this prevent the overhead penalty of converting data types, it would provide for type-stable and performant code that tells readers (and automated documentation generators) what the function takes in.</p>
+<h3 id="time-your-functions-time-your-changes">Time your functions, time your changes</h3>
+<p>Julia includes a very convenient macro, <code>@time</code>, that helps you keep track of the time and memory allocation of your functions. It pays to check the execution time of your functions, in particular when you have made changes that you think will affect performance. It&apos;s easiest to use the REPL or IJulia to time functions. Define your function first, then invoke it following the macro <code>@time</code>. In the following, we will define a Fibonacci function <code>fib(n) = n &lt; 2 ? n : fib(n - 1) + fib(n - 2)</code>, and look at its speed in detecting the 32nd Fibonacci number:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@time</span> fib(<span class="hljs-number">32</span>)
+    elapsed time: <span class="hljs-number">0.028219738</span> seconds (<span class="hljs-number">33112</span> bytes allocated)
+    <span class="hljs-number">2178309</span>
+</code></pre>
+<p>You can also use <code>@elapsed</code>, <code>@time</code>&apos;s younger sibling, which returns only the elapsed seconds:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@elapsed</span> fib(<span class="hljs-number">32</span>)
+    <span class="hljs-number">0.028076393</span>
+</code></pre>
+<p>However, <code>@time</code> is vastly superior. Runaway memory is the first sign that something is not going well with your application.</p>
+<h3 id="write-short-concise-functions">Write short, concise functions</h3>
+<p>The core ideology, and key success factor, of *NIX systems was to conceive of a complex system as a sum of small applications that did one thing, and did it well. Many, such as <code>grep</code>, have been in use for decades with much success. The same idea applies for Julia. Not only will it make your code better (it&apos;s easier to forget something in the middle of a big, complicated function), it will also make your code faster. This is because Julia&apos;s compiler can benefit from type-specialising code at function boundaries. Julia&apos;s own documentation has a great documentation of this feature:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> strange_twos(n)
+        a = <span class="hljs-built_in">Array</span>(randbool() ? <span class="hljs-built_in">Int64</span> : <span class="hljs-built_in">Float64</span>, n)
+        <span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>:n
+            a[i] = <span class="hljs-number">2</span>
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">return</span> a
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>When Julia&apos;s compiler is handed this code, it does not know at the time of executing the loop what the value of <code>a</code> is - only that it can be one of <code>Array{Int64}</code> or <code>Array{Float64}</code>. As such, it will have to provide for both outcomes. A better pair of functions would separate the inner and outer loops:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> fill_twos!(a)
+        <span class="hljs-keyword">for</span> i=<span class="hljs-number">1</span>:length(a)
+            a[i] = <span class="hljs-number">2</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+
+    <span class="hljs-keyword">function</span> fast_strange_twos(n)
+        a = <span class="hljs-built_in">Array</span>(randbool() ? <span class="hljs-built_in">Int64</span> : <span class="hljs-built_in">Float64</span>, n)
+        fill_twos!(a)
+        <span class="hljs-keyword">return</span> a
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The result is that when calling <code>fast_strange_twos(n)</code>, Julia&apos;s interpreter will know whether to compile <code>fill_twos()</code> for <code>Int64</code> or <code>Float64</code>. This will yield a performance benefit:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@time</span> strange_twos(<span class="hljs-number">16</span>)
+    elapsed time: <span class="hljs-number">0.000767759</span> seconds (<span class="hljs-number">7120</span> bytes allocated)
+
+    julia&gt; <span class="hljs-meta">@time</span> fast_strange_twos(<span class="hljs-number">16</span>)
+    elapsed time: <span class="hljs-number">0.009221679</span> seconds (<span class="hljs-number">179592</span> bytes allocated)
+</code></pre>
+<p>Wait a second! That&apos;s actually 12 times slower! What happened? Let&apos;s see if it&apos;s just an accident.</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@time</span> fast_strange_twos(<span class="hljs-number">16</span>)
+    elapsed time: <span class="hljs-number">9.286e-6</span> seconds (<span class="hljs-number">256</span> bytes allocated)
+</code></pre>
+<p>That looks much closer to what we expected. The reason is that when we called <code>fast_strange_twos()</code> the first time, the time included the JIT compiler&apos;s compilation time. The lesson is to run every function once before testing the time it takes, and where multiple functions can result in multiple types, we might need to understand that unless the JIT compiler has encountered each type, there might be anomalous results. At second execution, we were lucky - the random number generator had the program retrieve the same type of number to fill the array. Then we ran it again:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@time</span> fast_strange_twos(<span class="hljs-number">16</span>)
+    elapsed time: <span class="hljs-number">0.002645026</span> seconds (<span class="hljs-number">6600</span> bytes allocated)
+</code></pre>
+<p>This time, the numbers to fill the array were different. As a result, it took a little longer. However, from this point on, until I close down the REPL, the <code>fast_strange_twos()</code> function will evaluate at the same time and at the same memory cost.</p>
+<h3 id="danger-zone">Danger zone</h3>
+<p>Julia allows you something called <em>performance annotations</em>, one of which is <code>@inbounds</code>. This speeds up array processing by circumventing bounds checking. Thus, for instance, a function to calculate the dot product of two arrays, might make use of this function:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> dotproduct(x<span class="hljs-type">::</span><span class="hljs-built_in">Array</span>, y<span class="hljs-type">::</span><span class="hljs-built_in">Array</span>)
+        result = zero(eltype(x))
+        <span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>:length(x)
+            <span class="hljs-meta">@inbounds</span> result += x[i] * y[i]
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">return</span> result
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>In this case, <code>@inbounds</code> is safe because we know that due to the way <code>i</code> is defined (<code>1:length(x)</code>), there will never be an <code>i</code> that exceeds the length of <code>x</code> that would result in an out-of-bounds subscript. As such, bounds checking is more or less superfluous. To see the effect this has on execution time, let&apos;s compare it with the same function without the bounds checking disabled, called <code>slow_dotproduct</code>:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@time</span>(dotproduct([<span class="hljs-number">1234</span>, <span class="hljs-number">5747</span>, <span class="hljs-number">2243243</span>, <span class="hljs-number">535345</span>, <span class="hljs-number">76345</span>, <span class="hljs-number">2346</span>], [<span class="hljs-number">23468</span>, <span class="hljs-number">4563</span>, <span class="hljs-number">2457</span>, <span class="hljs-number">124556</span>, <span class="hljs-number">27563</span>, <span class="hljs-number">63456</span>]))
+    elapsed time: <span class="hljs-number">1.4494e-5</span> seconds (<span class="hljs-number">288</span> bytes allocated)
+    <span class="hljs-number">74500427955</span>
+
+    julia&gt; <span class="hljs-meta">@time</span>(slow_dotproduct([<span class="hljs-number">1234</span>, <span class="hljs-number">5747</span>, <span class="hljs-number">2243243</span>, <span class="hljs-number">535345</span>, <span class="hljs-number">76345</span>, <span class="hljs-number">2346</span>], [<span class="hljs-number">23468</span>, <span class="hljs-number">4563</span>, <span class="hljs-number">2457</span>, <span class="hljs-number">124556</span>, <span class="hljs-number">27563</span>, <span class="hljs-number">63456</span>]))
+    elapsed time: <span class="hljs-number">0.004523183</span> seconds (<span class="hljs-number">105816</span> bytes allocated)
+    <span class="hljs-number">74500427955</span>
+</code></pre>
+<p>Not only did the bounds-checking dot product require over 350 times the allocated memory of our non-bounds-checking product, but it also took over 300 times the execution time of the faster process. This might be inperceptible, since even the slower function took only 4.5ms to execute, but at a scale, these differences extrapolate to massive performance gains through good but circumspect programming. Just be sure you eliminate bounds checking only where you have a good reason to assume you will not need it because your own script provides for it.</p>
+<h2 id="type-stable-code">Type-stable code</h2>
+<p><em>Type-stable</em> is functional programmer speak for code in which variables don&apos;t change their type. The reason why this is important is that type conversion represents an overhead that, at scale, slows down the process dramatically. Consider the following example:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> badly_written(n<span class="hljs-type">::</span><span class="hljs-built_in">Integer</span>)
+        result = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:n
+            result += cos(rand())
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">return</span> result
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This function adds the cosine of a pseudorandom number (<code>rand()</code> generates a pseudorandom number using Julia&apos;s Mersenne twister implementation) to a result variable that is initialised as zero, which will be interpreted by Julia as an <code>Int64</code>. What we do know about cosines, however, is that they generally do not tend to yield integers, and indeed what we do know about Julia is that the cosine function will yield even results expressible as integers as floating-point results (try <code>cos(2&#x3C0;)</code>). Therefore, we know that before it can do anything, Julia will need to convert <code>result</code>, an <code>Int64</code>, to a <code>Float</code> type it can add another <code>Float</code> to. This, effectively, is wasted time.</p>
+<p>A better function, thus, would be</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> well_written(n<span class="hljs-type">::</span><span class="hljs-built_in">Integer</span>)
+        result = <span class="hljs-number">0.0</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:n
+            result += cos(rand())
+        <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">return</span> result
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Just how significant is the performance difference? After doing a dry run of running each function once, which allows the JIT compiler to compile the function so that we avoid the issues we discussed above, we get the following:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-meta">@time</span> badly_written(<span class="hljs-number">100000</span>)
+    elapsed time: <span class="hljs-number">0.006668156</span> seconds (<span class="hljs-number">3200048</span> bytes allocated)
+
+    julia&gt; <span class="hljs-meta">@time</span> well_written(<span class="hljs-number">100000</span>)
+    elapsed time: <span class="hljs-number">0.001911581</span> seconds (<span class="hljs-number">64</span> bytes allocated)
+</code></pre>
+<p>Not only did type conversion (just once!) make our code about 3.5 times slower, it also made it consume 50,000 (!) times the memory. Type stability makes for faster and more performant code.</p>
+<h2 id="legible-code">Legible code</h2>
+<p>Julia is a <em>high-level language</em>, meaning that it is closer to natural languages than low-level languages are. In fact, it could, like Python, be described as &apos;executable pseudocode&apos;, with a minimum of syntax, eschewing unnecessary braces and parentheses and instead using a clear, legible indented structure. However, it&apos;s not difficult to write illegible code in Julia &#x2013; indeed, the Stack Exchange <a href="http://codegolf.stackexchange.com/" target="_blank">Code Golf</a> board, where users specialise in cramming their solution into the shortest possible sequence, has quite a lot of it. Unless you&apos;re code golfing, your code should be beautiful and legible.</p>
+<p>Unfortunately, legible means different things to different people, and that&apos;s how style guides came to be. Julia, being a young language, does not have as many and as thoroughly debated style guides as, say, Python&apos;s <code>PEP8</code> or various JavaScript style guides. The following seeks to point out a few of the most salient points of writing idiomatic Julia, as observed from core packages and prominent Julia packages, as well as the <a href="http://julia.readthedocs.org/en/latest/manual/style-guide/" target="_blank">official Style Guide</a> and John Myles White&apos;s <a href="https://github.com/johnmyleswhite/Style.jl" target="_blank">Style.jl</a>. Both are definitely worth reading - the former is more a high-level overview while the latter is very specific. However, coding is a matter of judgment and as a programmer, one of the things you are paid for is your sense of judgment, both in resolving the occasional inconsistencies within and among style guides by balancing countervailing objectives and in deciding whether to follow particular rules. Sure, the style guide says to stick to 80 characters a line, but should I break an 81 character line? The conventions suggest to eschew <code>lowercase_separated_names</code> and <code>CamelCase</code>, but what if the name is too long and cannot be sensibly abbreviated (a problem people encounter in the educational context quite often, as the author did while writing this book and trying to balance adherence to writing more understandable code)?</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Writing good Julia","level":"1.4.14","depth":2,"next":{"title":"PART 2: Applied Julia","level":"1.5","depth":1,"ref":"","articles":[{"title":"Quadratic solver - TODO","level":"1.5.1","depth":2,"ref":"","articles":[]},{"title":"FizzBuzz - TODO","level":"1.5.2","depth":2,"ref":"","articles":[]},{"title":"Bob - TODO","level":"1.5.3","depth":2,"ref":"","articles":[]},{"title":"Levenshtein distance - TODO","level":"1.5.4","depth":2,"ref":"","articles":[]},{"title":"Dice - TODO","level":"1.5.5","depth":2,"ref":"","articles":[]},{"title":"Great Circle distances - TODO","level":"1.5.6","depth":2,"ref":"","articles":[]},{"title":"Data frames - TODO","level":"1.5.7","depth":2,"ref":"","articles":[]},{"title":"Plotting a time series - TODO - TODO","level":"1.5.8","depth":2,"ref":"","articles":[]},{"title":"Consuming a RESTful API - TODO","level":"1.5.9","depth":2,"ref":"","articles":[]},{"title":"Shell management from Julia - TODO","level":"1.5.10","depth":2,"ref":"","articles":[]},{"title":"Moving average in a DataFrame - TODO","level":"1.5.11","depth":2,"ref":"","articles":[]},{"title":"Naive Bayes classifier - TODO","level":"1.5.12","depth":2,"ref":"","articles":[]},{"title":"Fun with nucleotide sequences - TODO","level":"1.5.13","depth":2,"ref":"","articles":[]},{"title":"? Save the Apollo astronauts ? (waiting for perm) - TODO","level":"1.5.14","depth":2,"ref":"","articles":[]},{"title":"Twulia! - TODO","level":"1.5.15","depth":2,"ref":"","articles":[]},{"title":"Longest Collatz sequence - TODO","level":"1.5.16","depth":2,"ref":"","articles":[]}]},"previous":{"title":"Unit testing - TODO","level":"1.4.13","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/16-ex13.md","mtime":"2021-02-24T18:37:29.884Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

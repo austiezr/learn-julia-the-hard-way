@@ -1,0 +1,8 @@
+output/
+.dexy/
+.trash/
+_book
+book.pdf
+.idea/
+_book/gitbook/
+gitbook/

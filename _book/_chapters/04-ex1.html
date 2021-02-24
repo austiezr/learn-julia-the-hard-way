@@ -1,0 +1,787 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Printing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05-ex2.html" />
+    
+    
+    <link rel="prev" href="03-ex0.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Printing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-1-lets-get-printing">Chapter 1: Let&apos;s get printing!</h1>
+<p>In this exercise, we will familiarise ourselves with the Julia REPL and print a few things.</p>
+<h2 id="get-to-know-and-love-the-repl">Get to know and love the REPL</h2>
+<p>The great thing about REPLs is that they make learning a language a lot easier - especially a language that is at least partly intended to allow you to quickly prototype complex ideas in a few lines of code, manipulate your code, iterate until you get the desired results, then flesh it out or tidy it up.</p>
+<p>Using the REPL isn&apos;t complicated, but it might be unusual at first if you have not used much of a similarly constructed REPL (such as Prelude, the Haskell REPL). It helps to remember a few commands and tricks for the future.</p>
+<h3 id="modes">Modes</h3>
+<p>Julia&apos;s REPL has four &apos;modes&apos;, each indicated in the prompt.</p>
+<h4 id="julia">Julia</h4>
+<p>Prompt: <code>julia&gt;</code></p>
+<p>In this mode, you interact with the Julia engine directly. Pressing Return/Enter executes the command in the current line and prints the result. You can also access the result of the last operation in the ans variable. If you don&apos;t wish for Julia to print the result, conclude your line with a ; (semicolon).</p>
+<h4 id="help">Help</h4>
+<p>Prompt: <code>help&gt;</code></p>
+<p>By typing ? at the beginning of a line, you can enter the help mode. Entering anything searches the Julia documentation for that word:</p>
+<pre><code class="lang-julia">    help?&gt; besselj
+    INFO: Loading help data...
+    Base.besselj(nu, x)
+       Bessel <span class="hljs-keyword">function</span> of the first kind of order <span class="hljs-string">&quot;nu&quot;</span>, J_\nu(x).
+</code></pre>
+<p>To leave help mode, use the Backspace key.</p>
+<h4 id="shell">Shell</h4>
+<p>Prompt: <code>shell&gt;</code></p>
+<p>To execute shell commands, enter <code>;</code>. The REPL prompt will change to <code>shell&gt;</code>, and anything you enter will be executed as a shell command.</p>
+<p>To leave shell mode, use the Backspace key.</p>
+<h4 id="search">Search</h4>
+<p>Prompt: <code>(reverse-i-search)</code></p>
+<p>By pressing <code>^R</code> (Ctrl+R), you can initiate a reverse search of your history, including from previous sessions. It will show you any commands that match the pattern you have entered.</p>
+<h3 id="key-bindings">Key bindings</h3>
+<p>The Julia REPL uses a few key bindings that might be very familiar to those who have used *nix based systems frequently in the past. Most importantly, to exit the REPL, you can use <code>^D</code> (Ctrl+D), which will also close your shell, and you can abort a current operation using <code>^C</code> (Ctrl+C).</p>
+<p>There are many more key bindings that the Julia REPL recognises, but these should be enough to get you off the ground.</p>
+<h3 id="autocompletion-and-unicode-entry">Autocompletion and Unicode entry</h3>
+<p>Julia&apos;s autocomplete feature recognizes the <code>Tab</code> key trigger, your new best friend. Julia also knows Unicode math, so this is valid Julia:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-number">2</span>*<span class="hljs-number">2.5</span>*<span class="hljs-literal">&#x3C0;</span>
+    <span class="hljs-number">15.707963267948966</span>
+</code></pre>
+<p>Pressing the <code>Tab</code> key on a LaTeX symbol name autocompletes to Unicode symbols:</p>
+<pre><code class="lang-julia">    julia&gt; \sqrt[Tab]<span class="hljs-number">2</span>
+    julia&gt; &#x221A;<span class="hljs-number">2</span>
+    <span class="hljs-number">1.4142135623730951</span>
+</code></pre>
+<p>For all Unicode completions, check out <a href="https://docs.julialang.org/en/latest/manual/unicode-input/#Unicode-Input-1" target="_blank">the Unicode conversion table in the Julia documentation</a>. Remember, you can also use Unicode symbols in saved code.</p>
+<h2 id="lets-say-something">Let&apos;s say something!</h2>
+<p>In the following, we&apos;ll be exploring a few ways to say hello to Julia. Each of these has their place in the coder&apos;s arsenal, and while you will eventually use the REPL a little less and your text editor a little more, you will probably use the REPL quite a bit to test out new ideas. Think of the REPL as your lab and the text editor as your drawing board &#x2013; scientists who spend all their time in the lab eventually go mad, while those who are always at the drawing board rarely discover much!</p>
+<h3 id="using-the-repl">Using the REPL</h3>
+<p>A REPL interface repeats everything you enter. This makes saying hello to the world rather simple &#x2013; simply declare a variable containing the string literal &quot;Hello, Julia!&quot; or, even simpler, just declare the string literal. Let&apos;s see both of these in action in the REPL.</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+
+    julia&gt; v = <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+
+    julia&gt; v
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+</code></pre>
+<h3 id="using-println">Using <code>println()</code></h3>
+<p>Now for some actual coding. Time to invoke our first real function. The <code>println</code> function prints the string representation of an object.</p>
+<pre><code class="lang-julia">    julia&gt; println(<span class="hljs-string">&quot;Hello, Julia!&quot;</span>)
+    Hello, Julia!
+</code></pre>
+<p>You might notice that the &quot;Hello, Julia!&quot; string is not printed between quotes. This is to indicate that rather than part of the REPL&apos;s print cycle, it is a system output.</p>
+<h3 id="using-string-concatenation">Using string concatenation</h3>
+<p>String concatenation is just a fancy name for putting strings together. In this case, we create two variables that represent strings, then use the string() function to put them together. The <code>string()</code> function concatenates each of its positional arguments.</p>
+<pre><code class="lang-julia">    julia&gt; what = <span class="hljs-string">&quot;Hello&quot;</span>
+    <span class="hljs-string">&quot;Hello&quot;</span>
+
+    julia&gt; whom = <span class="hljs-string">&quot;Julia&quot;</span>
+    <span class="hljs-string">&quot;Julia&quot;</span>
+
+    julia&gt; string(what, <span class="hljs-string">&quot;, &quot;</span>, whom, <span class="hljs-string">&quot;!&quot;</span>)
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+</code></pre>
+<p>Julia also allows for variables to be called within string literals. So the above is equivalent to:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;<span class="hljs-subst">$(what)</span>, <span class="hljs-subst">$(whom)</span>\!&quot;</span>
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+</code></pre>
+<p>And this is true even for maths (or any function!)</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;2 plus 2 is <span class="hljs-subst">$(<span class="hljs-number">2</span>+<span class="hljs-number">2</span>)</span>.&quot;</span>
+    <span class="hljs-string">&quot;2 plus 2 is 4.&quot;</span>
+</code></pre>
+<h2 id="running-julia-programs">Running Julia programs</h2>
+<p>To run a Julia program, you have two options &#x2013; either include it in another program or the REPL, or specify it as a positional argument in the command line.</p>
+<p>Let&apos;s open a file in our favourite text editor, call it <code>hello.jl</code> (the commonly accepted file name for a Julia program), and enter</p>
+<pre><code class="lang-julia">    println(<span class="hljs-string">&quot;hello world&quot;</span>)
+</code></pre>
+<p>We now have two ways to launch it.</p>
+<p>By opening the REPL, we can <code>include</code> the file. This will evaluate everything in the file, then return the result of the last valid expression.</p>
+<pre><code class="lang-julia">    julia&gt; include(<span class="hljs-string">&quot;hello.jl&quot;</span>)
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+</code></pre>
+<p>Alternatively, you can merely grace your command line with your greeting to Julia by launching Julia with the appropriate argument:</p>
+<pre><code class="lang-julia">    $ julia hello.jl
+    <span class="hljs-string">&quot;Hello, Julia!&quot;</span>
+</code></pre>
+<p>Finally, you can use the shebang comment at the beginning of a file to make it shell executable. For instance, you could write:</p>
+<pre><code class="lang-julia"><span class="hljs-comment">#!/usr/bin/env julia</span>
+
+println(<span class="hljs-string">&quot;Hello, Julia\!&quot;</span>)
+</code></pre>
+<p>This then allows you to execute your file from the command line by simply typing <code>./hello.jl</code> (provided that the file is executable - you may need to use <code>chmod</code> to make it so!).</p>
+<h2 id="chapter-conclusion">Chapter Conclusion</h2>
+<p>The journey of a thousand miles begins with a single step. If REPLs are something new to you (they are rarely used with a number of OOP languages, and most people using it in Python are using functional(ish) paradigms), then this chapter was two steps at the very least. Give yourself a pat on the back and a cookie, and play around with Julia. See you soon with the next chapter!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-ex0.html" class="navigation navigation-prev " aria-label="Previous page: The Setup">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05-ex2.html" class="navigation navigation-next " aria-label="Next page: Variables">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Printing","level":"1.4.2","depth":2,"next":{"title":"Variables","level":"1.4.3","depth":2,"path":"_chapters/05-ex2.md","ref":"_chapters/05-ex2.md","articles":[]},"previous":{"title":"The Setup","level":"1.4.1","depth":2,"path":"_chapters/03-ex0.md","ref":"_chapters/03-ex0.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/04-ex1.md","mtime":"2021-02-24T18:37:29.880Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

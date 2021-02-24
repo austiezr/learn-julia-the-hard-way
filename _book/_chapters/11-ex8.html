@@ -1,0 +1,854 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Handling errors · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12-ex9.html" />
+    
+    
+    <link rel="prev" href="10-ex7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Handling errors</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-8-handling-errors">Chapter 8: Handling errors</h1>
+<p>Error (or exception) handling is an essential feature of writing all but trivial programs. Let&apos;s face it &#x2013; s**t happens, and sometimes the best-written programs encounter errors. Well-written code handles errors gracefully and as early as possible.</p>
+<p>Over the years, two main &apos;approaches&apos; to error handling have emerged. Those advocating the <strong>LBYL</strong> approach (<strong>L</strong>ook <strong>b</strong>efore <strong>y</strong>ou <strong>l</strong>eap) support validating every of data well before they are used and only use data that has passed the test. LBYL code is lengthy, and looks very solid. In recent years, an approach known as <strong>EAFP</strong> has emerged, asserting the old Marine Corps motto that it is <strong>e</strong>asier to <strong>a</strong>sk <strong>f</strong>orgiveness than <strong>p</strong>ermission. EAFP code relies heavily on exception handling and <code>try</code>/<code>catch</code> constructs to deal with the occasional consequences of having leapt before looking. While EAFP is generally regarded with more favour in recent years than LBYL, especially in the Python community, which all but adopted it as its official mantra, both approaches have merits (and serious drawbacks). Julia is particularly suited to an amalgam of the two methods, so whichever of them suits you, your coding style and your use case more, you will find Julia remarkably accommodating.</p>
+<h2 id="creating-and-raising-exceptions">Creating and raising exceptions</h2>
+<p>Julia has a number of built-in exception types, each of which can be thrown when unexpected conditions occur.</p>
+<todo: table="" of="" exceptions="" and="" their="" meanings="">
+
+<p>Note that these are exception types, rather than particular exceptions, therefore despite their un-function-like appearance, they will need to be called, using parentheses.</p>
+<h3 id="throwing-exceptions">Throwing exceptions</h3>
+<p>The <code>throw</code> function allows you to raise an exception:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">if</span> circumference &gt; <span class="hljs-number">0</span>
+        circumference/<span class="hljs-number">2</span><span class="hljs-literal">&#x3C0;</span>
+    <span class="hljs-keyword">elseif</span> circumference == <span class="hljs-number">0</span>
+        throw(<span class="hljs-built_in">DivideError</span>())
+    <span class="hljs-keyword">else</span>
+        throw(<span class="hljs-built_in">DomainError</span>())
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>As noted above, exception types need to be called to get an <code>Exception</code> object. Hence, <code>throw(DomainError)</code> would be incorrect.</p>
+<p>In addition, some exceptions take arguments that elucidate upon the error at hand. Thus, for instance, <code>UndefVarError</code> takes a symbol as an argument, referring to the symbol invoked without being defined:</p>
+<pre><code class="lang-julia">    julia&gt; throw(<span class="hljs-built_in">UndefVarError</span>(:thisvariabledoesnotexist))
+    ERROR: thisvariabledoesnotexist not defined
+</code></pre>
+<h3 id="throwing-a-generic-errorexception">Throwing a generic <code>ErrorException</code></h3>
+<p>The <code>error</code> function throws a generic <code>ErrorException</code>. This will interrupt execution of the function or block immediately. Consider the following example, courtesy of Julia&apos;s <a href="http://docs.julialang.org/en/latest/manual/control-flow/#errors" target="_blank">official documentation</a>. First, we define a function <code>fussy_sqrt</code> that raises an <code>ErrorException</code> using the function <code>error</code> if <code>x &lt; 0</code>:</p>
+<pre><code class="lang-julia">    julia&gt; fussy_sqrt(x) = x &gt;= <span class="hljs-number">0</span> ? sqrt(x) : error(<span class="hljs-string">&quot;negative x not allowed&quot;</span>)
+</code></pre>
+<p>Then, the following verbose wrapper is created:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">function</span> verbose_fussy_sqrt(x)
+             println(<span class="hljs-string">&quot;before fussy_sqrt&quot;</span>)
+             r = fussy_sqrt(x)
+             println(<span class="hljs-string">&quot;after fussy_sqrt&quot;</span>)
+             <span class="hljs-keyword">return</span> r
+           <span class="hljs-keyword">end</span>
+    verbose_fussy_sqrt (generic <span class="hljs-keyword">function</span> with <span class="hljs-number">1</span> method)
+</code></pre>
+<p>Now, if <code>fussy_sqrt</code> encounters an argument <code>x &lt; 0</code>, an error is raised and execution is aborted. In that case, the second message (<code>after fussy_sqrt</code>) would never come to be displayed:</p>
+<pre><code class="lang-julia">    julia&gt; verbose_fussy_sqrt(<span class="hljs-number">2</span>)
+    before fussy_sqrt
+    after fussy_sqrt
+    <span class="hljs-number">1.4142135623730951</span>
+
+    julia&gt; verbose_fussy_sqrt(-<span class="hljs-number">1</span>)
+    before fussy_sqrt
+    ERROR: negative x not allowed
+     <span class="hljs-keyword">in</span> verbose_fussy_sqrt at none:<span class="hljs-number">3</span>
+</code></pre>
+<h3 id="creating-your-own-exceptions">Creating your own exceptions</h3>
+<p>You can create your own custom exception that inherits from the superclass <code>Exception</code> by</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">type</span> MyException <span class="hljs-type">&lt;:</span> <span class="hljs-built_in">Exception</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>If you wish your exception to take arguments, which can be useful in returning a useful error message, you will need to amend the above data type to include fields for the the arguments, then create a method under <code>Base.showerror</code> that implements the error message:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">type</span> MyExceptionTree <span class="hljs-type">&lt;:</span> <span class="hljs-built_in">Exception</span>
+        var<span class="hljs-type">::</span><span class="hljs-built_in">String</span>
+    <span class="hljs-keyword">end</span>
+
+    Base.showerror(io<span class="hljs-type">::</span><span class="hljs-built_in">IO</span>, <span class="hljs-literal">e</span><span class="hljs-type">::</span>MyExceptionTree) = print(io, <span class="hljs-string">&quot;Something is wrong with &quot;</span>, <span class="hljs-literal">e</span>.var, <span class="hljs-string">&quot;!&quot;</span>)
+
+    julia&gt; throw(MyException(<span class="hljs-string">&quot;this code&quot;</span>))
+    ERROR: Something is wrong with this code.
+</code></pre>
+<h2 id="handling-exceptions">Handling exceptions</h2>
+<h3 id="the-trycatch-structure">The <code>try</code>/<code>catch</code> structure</h3>
+<p>Using the keywords <code>try</code> and <code>catch</code>, you can handle exceptions, both generally and dependent on a variable. The general structure of <code>try</code>/<code>catch</code> is as follows:</p>
+<ol>
+<li><strong><code>try</code> block</strong>: This is where you would normally introduce the main body of your function. Julia will attempt to execute the code within this section.</li>
+<li><strong><code>catch</code></strong>: The <code>catch</code> keyword, on its own, catches all errors. It is helpful to instead use it with a variable, to which the exception will be assigned, e.g. <code>catch err</code>.</li>
+<li>If the exception was assigned to a variable, <strong>testing for the exception</strong>: using <code>if</code>/<code>elseif</code>/<code>else</code> structures, you can test for the exception and provide ways to handle it. Usually, type assertions for errors will use <code>isa(err, ErrorType)</code>, which will return true if <code>err</code> is an instance of the error type <code>ErrorType</code> (i.e. if it has been called by <code>ErrorType()</code>).</li>
+<li><code>end</code> all blocks.</li>
+</ol>
+<p>This structure is demonstrated by the following function, creating a resilient, non-fussy <code>sqrt()</code> implementation that returns the complex square root of negative inputs using the <code>catch</code> syntax:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">function</span> resilient_square_root(x<span class="hljs-type">::</span><span class="hljs-built_in">Number</span>)
+        <span class="hljs-keyword">try</span>
+            sqrt(x)
+        <span class="hljs-keyword">catch</span> err
+            <span class="hljs-keyword">if</span> isa(err, <span class="hljs-built_in">DomainError</span>)
+                sqrt(complex(x))
+            <span class="hljs-keyword">end</span>
+        <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>There is no need to specify a variable to hold the error instance. Similarly to not testing for the identity of the error, such a clause would result in a catch-all sequence. This is not necessarily a bad thing, but good code is responsive to the nature of errors, rather than their mere existence, and good programmers would always be interested in <em>why</em> their code doesn&apos;t work, not merely in the fact that it failed to execute. Therefore, good code would check for the types of exceptions and only use catch-alls sparingly.</p>
+<h4 id="one-line-trycatch">One-line <code>try</code>/<code>catch</code></h4>
+<p>If you are an aficionado of brevity, you should be careful when trying to put a <code>try</code>/<code>catch</code> expression. Consider the following code:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">try</span> sqrt(x) <span class="hljs-keyword">catch</span> y <span class="hljs-keyword">end</span>
+</code></pre>
+<p>To Julia, this means <code>try sqrt(x)</code>, and if an exception is raised, pass it onto the variable <code>y</code>, when what you probably meant is <code>return y</code>. For that, you would need to separate <code>y</code> from the <code>catch</code> keyword using a semicolon:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">try</span> sqrt(x) <span class="hljs-keyword">catch</span>; y <span class="hljs-keyword">end</span>
+</code></pre>
+<h4 id="finally-clauses"><code>finally</code> clauses</h4>
+<p>Once the <code>try</code>/<code>catch</code> loops have finished, Julia allows you to execute code that has to be executed whether the operation has succeeded or not. <code>finally</code> executes whether there was an exception or not. This is important for &apos;teardown&apos; tasks, gracefully closing files and dealing with other stateful elements and resources that need to be closed whether there was an exception or not.</p>
+<p>Consider the following example from the <a href="http://docs.julialang.org/en/latest/manual/control-flow/#finally-clauses" target="_blank">Julia documentation</a>, which involves opening a file, something we have not dealt with yet explicitly. <code>open(&quot;file&quot;)</code> opens a file in path <code>file</code>, and assigns it to an object, <code>f</code>. It then tries to operate on <code>f</code>. Whether those operations are successful or not, the file will need to be closed. <code>finally</code> allows for the execution of <code>close(f)</code>, closing down the file, regardless of whether an exception was raised in the code in the <code>try</code> section:</p>
+<pre><code class="lang-julia">    f = open(<span class="hljs-string">&quot;file&quot;</span>)
+    <span class="hljs-keyword">try</span>
+        <span class="hljs-comment"># operate on file f</span>
+    <span class="hljs-keyword">finally</span>
+        close(f)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>It&apos;s good practice to ensure that teardown operations are executed regardless of whether the actual main operation has been successful, and <code>finally</code> is a great way to achieve this end.</p>
+<h2 id="advanced-error-handling">Advanced error handling</h2>
+<h3 id="info-and-warn"><code>info</code> and <code>warn</code></h3>
+<p>We have seen that calling <code>error</code> will interrupt execution. What, however, if we just want to display a warning or an informational message without interrupting execution, as is common in debugging code? Julia provides the <code>info</code> and <code>warn</code> functions, which allow for the display of notifications without raising an interrupt:</p>
+<pre><code class="lang-julia">    julia&gt; info(<span class="hljs-string">&quot;This code is looking pretty good.&quot;</span>)
+    INFO: This code is looking pretty good.
+
+    julia&gt; warn(<span class="hljs-string">&quot;You&apos;re not looking too good. Best check yourself.&quot;</span>)
+    WARNING: You&apos;re not looking too good. Best check yourself.
+</code></pre>
+<h3 id="rethrow-backtrace-and-catchbacktrace"><code>rethrow</code>, <code>backtrace</code> and <code>catch_backtrace</code></h3>
+<p>Julia provides three functions that allow you to delve deeper into the errors raised by an operation.</p>
+<ul>
+<li><code>rethrow</code>, as the name suggests, raises the last raised error again,</li>
+<li><code>backtrace</code> executes a stack trace at the current point, and</li>
+<li><code>catch_backtrace</code> gives you a stack trace of the last caught error.</li>
+</ul>
+<p>Consider our resilient square root function from the listing above. Using <code>rethrow()</code>, we can see exceptions that have been handled by the function itself:</p>
+<pre><code class="lang-julia">    julia&gt; resilient_square_root(-<span class="hljs-number">2.345</span>)
+    <span class="hljs-number">0.0</span> + <span class="hljs-number">1.5313392831113555</span><span class="hljs-literal">im</span>
+
+    julia&gt; rethrow()
+    ERROR: <span class="hljs-built_in">DomainError</span>
+     <span class="hljs-keyword">in</span> resilient_square_root at none:<span class="hljs-number">3</span>
+</code></pre>
+<p>As it&apos;s evident from this example, <code>rethrow()</code> does not require the error to be actually one that is <code>throw</code>n - if the error itself is handled, it will still be retrieved by <code>rethrow()</code>.</p>
+<p><code>backtrace</code> and <code>catch_backtrace</code> are functions that return stack traces at the time of call and at the last caught exception, respectively:</p>
+<pre><code class="lang-julia">    julia&gt; resilient_square_root(-<span class="hljs-number">4</span>)
+    <span class="hljs-number">0.0</span> + <span class="hljs-number">2.0</span><span class="hljs-literal">im</span>
+
+    julia&gt; x^<span class="hljs-number">2</span> - <span class="hljs-number">2</span>x + <span class="hljs-number">3</span>
+    <span class="hljs-number">11</span>
+
+    julia&gt; backtrace()
+    <span class="hljs-number">13</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>},<span class="hljs-number">1</span>}:
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013cbfae</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x000000010349ec30</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x000000010349ebb0</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013776e8</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013c6982</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013c5203</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013d4abd</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x000000010137cdfd</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x0000000103455c41</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x0000000103455747</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013776e8</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x0000000103451cca</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013cccc8</span>
+
+    julia&gt; catch_backtrace()
+    <span class="hljs-number">14</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>},<span class="hljs-number">1</span>}:
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013cc506</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013cc5a9</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001034a58e7</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001034a56a7</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013776e8</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013c6982</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013c5203</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013d4abd</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x000000010137cdfd</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x0000000103455c41</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x0000000103455747</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013776e8</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x0000000103451cca</span>
+     <span class="hljs-built_in">Ptr</span>{<span class="hljs-built_in">Void</span>} @<span class="hljs-number">0x00000001013cccc8</span>
+</code></pre>
+<p>The first backtrace block shows the stack trace for the time after the function <code>x^2 - 2x + 3</code> has been executed. The second stacktrace, invoked by the <code>catch_backtrace()</code> call, shows the call stack as it was at the time of the <code>catch</code> in the <code>resilient_square_root</code> function.</p>
+</todo:>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10-ex7.html" class="navigation navigation-prev " aria-label="Previous page: Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12-ex9.html" class="navigation navigation-next " aria-label="Next page: I/O">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Handling errors","level":"1.4.9","depth":2,"next":{"title":"I/O","level":"1.4.10","depth":2,"path":"_chapters/12-ex9.md","ref":"_chapters/12-ex9.md","articles":[]},"previous":{"title":"Functions","level":"1.4.8","depth":2,"path":"_chapters/10-ex7.md","ref":"_chapters/10-ex7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/11-ex8.md","mtime":"2021-02-24T18:37:29.883Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

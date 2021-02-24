@@ -1,0 +1,992 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Strings · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="09-ex6.html" />
+    
+    
+    <link rel="prev" href="07-ex4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Strings</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-5-strings">Chapter 5: Strings</h1>
+<p>A string is a sequence of one or more characters, and one of the most frequently used types in programming. It is therefore fitting that we acquaint ourselves with the idea of operating on strings.</p>
+<h2 id="string-and-character-literals">String and character literals</h2>
+<p>You might be familiar by now with string and character literals from the introductory chapter, which introduced some literals, or from other programming languages. A string literal is surrounded by <em>double quotes</em>: <code>&quot; string &quot;</code>. Within the string, you can escape a double-quote using a backslash:</p>
+<pre><code class="lang-julia">    <span class="hljs-string">&quot;This string contains a \&quot; double quote \&quot; &quot;</span>
+</code></pre>
+<p>Strings are <em>immutable</em> and <em>indexable</em> &#x2013; indices return the characters at the index position, starting from 1.</p>
+<h3 id="the-difference-between-string-and-character-literals">The difference between string and character literals</h3>
+<p>String and character literals are differentiated by two indicia:</p>
+<ul>
+<li>strings may have a length other than one while a <code>Char</code> type object necessarily has the length one (or potentially zero),</li>
+<li>strings are introduced and terminated by double quotation marks <code>&quot;&quot;</code>, <code>Char</code> type objects are introduced by single apostrophes <code>&apos;&apos;</code>.</li>
+</ul>
+<p>The second of these tends to be somewhat vexing for many programmers who are used to the equivalence of <code>&apos;&apos;</code> and <code>&quot;&quot;</code> in languages that do not necessarily have an implemented type or class for characters mirroring <code>Char</code>. So while for instance in Python, <code>&apos;a&apos; == &quot;a&quot;</code> holds, this is not the case in Julia:</p>
+<pre><code class="lang-julia">    julia&gt; typeof(<span class="hljs-string">&quot;a&quot;</span>)
+    <span class="hljs-built_in">String</span> (constructor with <span class="hljs-number">2</span> methods)
+
+    julia&gt; typeof(<span class="hljs-string">&apos;a&apos;</span>)
+    <span class="hljs-built_in">Char</span>
+
+    julia&gt; <span class="hljs-string">&quot;a&quot;</span> == <span class="hljs-string">&apos;a&apos;</span>
+    <span class="hljs-literal">false</span>
+</code></pre>
+<h3 id="heredocs-and-multiline-literals">Heredocs and multiline literals</h3>
+<p>Multiline literals allow you to keep longer spans of text within a single string, with line breaks. They are introduced, similarly to Python, by triple double quotation marks <code>&quot;&quot;&quot;</code>:</p>
+<pre><code class="lang-julia">    multiline_declaration = <span class="hljs-string">&quot;&quot;&quot;
+        We hold these truths to be self-evident,
+        that all men are created equal,
+        that they are endowed by their Creator with certain unalienable Rights,
+        that among these are Life, Liberty and the pursuit of Happiness.
+
+        That to secure these rights, Governments are instituted among Men,
+        deriving their just powers from the consent of the governed...
+    &quot;&quot;&quot;</span>
+
+    julia&gt; println(multiline_declaration)
+        We hold these truths to be self-evident,
+        that all men are created equal,
+        that they are endowed by their Creator with certain unalienable Rights,
+        that among these are Life, Liberty and the pursuit of Happiness.
+
+        That to secure these rights, Governments are instituted among Men,
+        deriving their just powers from the consent of the governed...
+</code></pre>
+<p>As you can see, the use of the <code>&quot;&quot;&quot;</code> or &apos;heredoc&apos; format has preserved the line breaks and structure of the text, a rather helpful feature where longer texts are concerned.</p>
+<h2 id="regex-literals">Regex literals</h2>
+<p>Regular expressions (regexes) are special strings that represent particular patterns. They are useful in matching and searching text, and a good knowledge of regex should be essential knowledge for any good functional programmer.</p>
+<p>To construct a regex literal, preface the string with <code>r</code>:</p>
+<pre><code class="lang-julia">    julia&gt; regex_literal = <span class="hljs-string">r&quot;a|e|i|o|u&quot;</span>
+    <span class="hljs-string">r&quot;a|e|i|o|u&quot;</span>
+</code></pre>
+<p>This is a regex literal that matches (English) vowels. Julia recognises regex literals as the type <code>regex</code>:</p>
+<pre><code class="lang-julia">    julia&gt; typeof(regex_literal)
+    <span class="hljs-built_in">Regex</span>
+</code></pre>
+<h2 id="string-operations">String operations</h2>
+<h3 id="substrings">Substrings</h3>
+<p>Because strings are indexable, we can use <em>ranges</em> to select a part of a string, something we generally refer to as a <em>substring</em> or <em>string subsetting</em>:</p>
+<pre><code class="lang-julia">    julia&gt; declaration = <span class="hljs-string">&quot;When in the Course of human events&quot;</span>
+    <span class="hljs-string">&quot;When in the Course of human events&quot;</span>
+
+    julia&gt; declaration[<span class="hljs-number">1</span>:<span class="hljs-number">4</span>]
+    <span class="hljs-string">&quot;When&quot;</span>
+</code></pre>
+<p>You might recall that a range might actually have a <code>step</code> attribute, which we can use to obtain every <em>n_th</em> letter within a text. Let&apos;s see every odd-numbered letter within the first few words of the Declaration of Independence:</p>
+<pre><code class="lang-julia">    julia&gt; declaration[<span class="hljs-number">1</span>:<span class="hljs-number">2</span>:<span class="hljs-keyword">end</span>]
+    <span class="hljs-string">&quot;We nteCus fhmneet&quot;</span>
+</code></pre>
+<p>You might remember that <code>end</code>, which we used above to extend the range across the entire length of the string, behaves like a number. Therefore, you can use it to create a substring that excludes the last, say, five letters:</p>
+<pre><code class="lang-julia">     julia&gt; declaration[<span class="hljs-number">1</span>:<span class="hljs-keyword">end</span>-<span class="hljs-number">5</span>]
+     <span class="hljs-string">&quot;When in the Course of human e&quot;</span>
+</code></pre>
+<h3 id="concatenation-splitting-and-interpolation">Concatenation, splitting and interpolation</h3>
+<h4 id="concatenating-and-repeating">Concatenating and repeating</h4>
+<p>In most programming languages, maths and string operations correspond, so you can use <code>+</code> to concatenate and <code>*</code> to repeat a string. This is <em>not</em> the case in Julia. <code>+</code> has no method for <code>String</code>s. What you would expect <code>+</code> to do is accomplished by <code>*</code>:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;I&quot;</span> * <span class="hljs-string">&quot; &lt;3 &quot;</span> * <span class="hljs-string">&quot;Julia&quot;</span>
+    <span class="hljs-string">&quot;I &lt;3 Julia&quot;</span>
+</code></pre>
+<p>So how do you multiply a sequence of text? Easy &#x2013; use the <code>^</code> operator. This is useful if you happen to have been set the old school punishment of &apos;lines&apos; (writing the same sentence all over again).</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;I will not say bad things about functional languages again. &quot;</span> ^ <span class="hljs-number">10</span>
+    <span class="hljs-string">&quot;I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. I will not say bad things about functional languages again. &quot;</span>
+</code></pre>
+<h4 id="split"><code>split()</code></h4>
+<p>The <code>split()</code> function separates a piece of text at a particular character, which it also removes. The result is an array of the chunks. By default, split() will separate at spaces, but you can provide any other string &#x2013; not even necessarily a single character, as the third example shows:</p>
+<pre><code class="lang-julia">    julia&gt; split(declaration)
+    <span class="hljs-number">7</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">SubString</span>{<span class="hljs-built_in">String</span>},<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;When&quot;</span>
+     <span class="hljs-string">&quot;in&quot;</span>
+     <span class="hljs-string">&quot;the&quot;</span>
+     <span class="hljs-string">&quot;Course&quot;</span>
+     <span class="hljs-string">&quot;of&quot;</span>
+     <span class="hljs-string">&quot;human&quot;</span>
+     <span class="hljs-string">&quot;events&quot;</span>
+
+    julia&gt; split(declaration, <span class="hljs-string">&quot;e&quot;</span>)
+    <span class="hljs-number">6</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">SubString</span>{<span class="hljs-built_in">String</span>},<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;Wh&quot;</span>
+     <span class="hljs-string">&quot;n in th&quot;</span>
+     <span class="hljs-string">&quot; Cours&quot;</span>
+     <span class="hljs-string">&quot; of human &quot;</span>
+     <span class="hljs-string">&quot;v&quot;</span>
+     <span class="hljs-string">&quot;nts&quot;</span>
+
+    julia&gt; split(declaration, <span class="hljs-string">&quot;the&quot;</span>)
+    <span class="hljs-number">2</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">SubString</span>{<span class="hljs-built_in">String</span>},<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;When in &quot;</span>
+     <span class="hljs-string">&quot; Course of human events&quot;</span>
+</code></pre>
+<p>If you provide <code>&quot;&quot;</code> as the string to split at, Julia will split the text into individual letters.</p>
+<p>You may also use a regex to split your text at:</p>
+<pre><code class="lang-julia">    julia&gt; regex_literal = <span class="hljs-string">r&quot;a|e|i|o|u&quot;</span>
+    julia&gt; split(declaration, regex_literal)
+    <span class="hljs-number">12</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">SubString</span>{<span class="hljs-built_in">String</span>},<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;Wh&quot;</span>
+     <span class="hljs-string">&quot;n &quot;</span>
+     <span class="hljs-string">&quot;n th&quot;</span>
+     <span class="hljs-string">&quot; C&quot;</span>
+     <span class="hljs-string">&quot;&quot;</span>
+     <span class="hljs-string">&quot;rs&quot;</span>
+     <span class="hljs-string">&quot; &quot;</span>
+     <span class="hljs-string">&quot;f h&quot;</span>
+     <span class="hljs-string">&quot;m&quot;</span>
+     <span class="hljs-string">&quot;n &quot;</span>
+     <span class="hljs-string">&quot;v&quot;</span>
+     <span class="hljs-string">&quot;nts&quot;</span>
+</code></pre>
+<p>Needless to say, since strings are immutable, the original string is not affected by the application of <code>split()</code>.</p>
+<h4 id="interpolation">Interpolation</h4>
+<p>String interpolation refers to the incredibly useful capability of including variable values within a string. As you might remember, we have used <code>*</code> above to concatenate strings:</p>
+<pre><code class="lang-julia">    julia&gt; love = <span class="hljs-string">&quot;&lt;3&quot;</span>
+    <span class="hljs-string">&quot;&lt;3&quot;</span>
+
+    julia&gt; <span class="hljs-string">&quot;I &quot;</span> * love * <span class="hljs-string">&quot; Julia&quot;</span>
+    <span class="hljs-string">&quot;I &lt;3 Julia&quot;</span>
+</code></pre>
+<p>While this is technically correct, it is much faster by using string interpolation, in which case we would refer back to the variable <code>love</code> as <code>$(love)</code> within the string. Julia knows this means it is to replace <code>$(love)</code> with the contents of the variable <code>love</code>:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;I <span class="hljs-subst">$(love)</span> Julia&quot;</span>
+    <span class="hljs-string">&quot;I &lt;3 Julia&quot;</span>
+</code></pre>
+<p>You can put anything within the parentheses in string interpolation &#x2013; anything Julia knows how to handle. For instance, including an expression in a string, you get</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;Three plus four is <span class="hljs-subst">$(<span class="hljs-number">3</span>+<span class="hljs-number">4</span>)</span>.&quot;</span>
+    <span class="hljs-string">&quot;Three plus four is 7.&quot;</span>
+</code></pre>
+<p>If, and only if, you are referring to a variable, you can omit the parentheses (but not if you are referring to an expression):</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-string">&quot;I <span class="hljs-variable">$love</span> Julia&quot;</span>
+    <span class="hljs-string">&quot;I &lt;3 Julia&quot;</span>
+</code></pre>
+<h2 id="regular-expressions-and-finding-text-within-strings">Regular expressions and finding text within strings</h2>
+<p>As it has been mentioned, the main utility of regular expressions (Regexes) is to find things within long pieces of text. In the following, we will introduce the three main regex search functions of Julia - <code>match()</code>, <code>matchall()</code> and <code>eachmatch()</code>, with reference to a bit of the Declaration of Independence:</p>
+<pre><code class="lang-julia">    declaration = <span class="hljs-string">&quot;We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness. Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.--Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.&quot;</span>
+</code></pre>
+<p>If you are familiar with regular expressions, plod ahead! However, if</p>
+<pre><code class="lang-julia">    (GIR <span class="hljs-number">0</span>AA)|((([A-Z-[QVX]][<span class="hljs-number">0</span>-<span class="hljs-number">9</span>][<span class="hljs-number">0</span>-<span class="hljs-number">9</span>]?)|(([A-Z-[QVX]][A-Z-[IJZ]][<span class="hljs-number">0</span>-<span class="hljs-number">9</span>][<span class="hljs-number">0</span>-<span class="hljs-number">9</span>]?)|(([A-Z-[QVX]][<span class="hljs-number">0</span>-<span class="hljs-number">9</span>][A-HJKSTUW])|([A-Z-[QVX]][A-Z-[IJZ]][<span class="hljs-number">0</span>-<span class="hljs-number">9</span>][ABEHMNPRVWXY])))) [<span class="hljs-number">0</span>-<span class="hljs-number">9</span>][A-Z-[CIKMOV]]{<span class="hljs-number">2</span>})
+</code></pre>
+<p>looks like gobbledygook to you or you feel your regex fu is a little rusty, put down this book and consult the <a href="http://www.rexegg.com/regex-quickstart.html#ref" target="_blank">Regex cheatsheet</a> or, even better, <a href="http://regex.info/book.html" target="_blank">Jeffrey Friedl&apos;s amazing book on mastering regexes</a>.</p>
+<h3 id="finding-substring">Finding Substring</h3>
+<p>If you are only concerned with finding a single instance of a search term within a string, the <code>findfirst()</code> function returns the range index of where the search expression appears:</p>
+<pre><code class="lang-julia">    julia&gt; findfirst(<span class="hljs-string">&quot;Government&quot;</span>,declaration)
+    <span class="hljs-number">241</span>:<span class="hljs-number">250</span>
+</code></pre>
+<p><code>findfirst()</code> also accepts regular expressions:</p>
+<pre><code class="lang-julia">    julia&gt; findfirst(<span class="hljs-string">r&quot;th.{2,3}&quot;</span>, declaration)
+    <span class="hljs-number">9</span>:<span class="hljs-number">13</span>
+</code></pre>
+<p>To retrieve the result, rather than its index, you can pass the resulting index off to the string as the subsetting range, using the square bracket <code>[]</code> syntax:</p>
+<pre><code class="lang-julia">    julia&gt; declaration[findfirst(<span class="hljs-string">r&quot;th.{2,3}&quot;</span>, declaration)]
+    <span class="hljs-string">&quot;these&quot;</span>
+</code></pre>
+<p>Ah, so that&apos;s the word it found!</p>
+<p>Where a search string is not found, <code>findfirst()</code> will yield <code>nothing</code>.</p>
+<h3 id="finding-using-the-match-family-of-functions">Finding using the <code>match()</code> family of functions</h3>
+<p>The problem with <code>findfirst()</code> is that it retrieves one, and only one, result &#x2013; the first within the string passed to it. The <code>match()</code> family of functions can help us with finding more results:</p>
+<ul>
+<li><code>match()</code> retrieves <em>either the first match or nothing</em> within the text,</li>
+<li><code>matchall()</code> returns <em>an array of all matching substrings</em>, and</li>
+<li><code>eachmatch()</code> returns an <em>iterator over all matches</em>.</li>
+</ul>
+<p>The <code>match()</code> family of functions needs a regular expression literal as a search argument. This is so even if the regular expression does not make use of any pattern matching beyond a simple string. Thus,</p>
+<pre><code class="lang-julia">    julia&gt; match(<span class="hljs-string">r&quot;truths&quot;</span>, declaration)
+</code></pre>
+<p>is valid, while</p>
+<pre><code class="lang-julia">    julia&gt; match(<span class="hljs-string">&quot;truths&quot;</span>, declaration)
+</code></pre>
+<p>yields an error:</p>
+<pre><code class="lang-julia">    ERROR: <span class="hljs-built_in">MethodError</span>: no method matching match(<span class="hljs-type">::</span><span class="hljs-built_in">String</span>, <span class="hljs-type">::</span><span class="hljs-built_in">String</span>)
+</code></pre>
+<h4 id="understanding-regexmatch-objects">Understanding <code>RegexMatch</code> objects</h4>
+<p>Most regex search functions return an object of type <code>RegexMatch</code>. As the name reveals, a <code>RegexMatch</code> is a composite type representing a match. As such, it encapsulates (to use a little more OOP terminology than one would normally be allowed to in a book on functional programming) four values, the first three of which will be of immediate interest to us:</p>
+<ul>
+<li><code>RegexMatch.match</code> is the matched substring,</li>
+<li><code>RegexMatch.captures</code> is an array of types that represent the type of what the regex would capture,</li>
+<li><code>RegexMatch.offset</code> is generally an <code>Int64</code> that represents the index of the first character of the matched string where there is a single match (e.g. when using <code>match()</code>).</li>
+</ul>
+<p>To illustrate, let&apos;s consider the result of a <code>match()</code> call, which will be introduced in the next subsection:</p>
+<pre><code class="lang-julia">    m = match(<span class="hljs-string">r&quot;That .*?,&quot;</span>, declaration)
+
+    julia&gt; m.match
+    <span class="hljs-string">&quot;That to secure these rights,&quot;</span>
+
+    julia&gt; m.captures
+    <span class="hljs-number">0</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Union</span>(<span class="hljs-built_in">SubString</span>{<span class="hljs-built_in">UTF8String</span>},<span class="hljs-built_in">Nothing</span>),<span class="hljs-number">1</span>}
+
+    julia&gt; m.offset
+    <span class="hljs-number">212</span>
+</code></pre>
+<h4 id="match"><code>match()</code></h4>
+<p><code>match()</code> retrieves the first match or nothing - in this sense, it is rather similar to <code>findfirst()</code>:</p>
+<pre><code class="lang-julia">    julia&gt; match(<span class="hljs-string">r&quot;That .*?,&quot;</span>, declaration)
+    <span class="hljs-built_in">RegexMatch</span>(<span class="hljs-string">&quot;That to secure these rights,&quot;</span>)
+</code></pre>
+<p>The result is a <code>RegexMatch</code> object. The object can be inspected using <code>.match</code> (e.g. <code>match(r&quot;truths&quot;, declaration).match</code>).</p>
+<h4 id="eachmatch"><code>eachmatch()</code></h4>
+<p><code>eachmatch()</code> returns an object known as an iterator, specifically of the type <code>RegexMatchIterator</code>. We have on and off encountered iterators, but we will not really deal with them in depth until chapter [X], which deals with control flow. Suffice it to say an iterator is an object that contains a list of items that can be iterated through. The iterator will iterate over a list of <code>RegexMatch</code> objects, so if we want the results themselves, we will need to call the <code>.match</code> method on each of them:</p>
+<pre><code class="lang-julia">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> eachmatch(<span class="hljs-string">r&quot;That .*?,&quot;</span>, declaration)
+        println(<span class="hljs-string">&quot;A matching search result is: <span class="hljs-subst">$(i.match)</span>&quot;</span>)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>gives following result:</p>
+<pre><code class="lang-julia">    A matching search result is: That to secure these rights,
+    A matching search result is: That whenever any Form of Government becomes destructive of these ends,
+</code></pre>
+<h4 id="occursin"><code>occursin()</code></h4>
+<p><code>occursin()</code> returns a boolean value depending on whether the search text contains a match for the regex provided.</p>
+<pre><code class="lang-julia">    julia&gt; occursin(<span class="hljs-string">r&quot;truth(s)?&quot;</span>, declaration)
+    <span class="hljs-literal">true</span>
+
+    julia&gt; occursin(<span class="hljs-string">r&quot;sausage(s)?&quot;</span>, declaration)
+    <span class="hljs-literal">false</span>
+</code></pre>
+<h3 id="replacing-substrings">Replacing substrings</h3>
+<p>Julia can replace substrings using the <code>replace()</code> syntax... let&apos;s try putting some sausages into the Declaration of Independence!</p>
+<pre><code class="lang-julia">    julia&gt; replace(declaration, <span class="hljs-string">&quot;truth&quot;</span>=&gt;<span class="hljs-string">&quot;sausage&quot;</span>,count=<span class="hljs-number">1</span>)
+    <span class="hljs-string">&quot;We hold these sausages to be self-evident, that all men are created equal,...&quot;</span>
+</code></pre>
+<p>By increasing the value of count you can replace remaining &quot;truth&quot;.</p>
+<p>Much more dignified than self-evident sausages, I&apos;d say! At risk of repeating myself, it is important to note that since strings are immutable, <code>replace()</code> merely returns a copy of the string with the search string replaced by the replacement string or the result of the replacement function, and the original string itself will remain unaffected.</p>
+<p>Where the substring is not found, the result will be, unsurprisingly, an unaltered string.</p>
+<h3 id="regex-flags">Regex flags</h3>
+<p>A little-known feature of Julia regexes is the ability for a regex to be appended one or more flags. These, like most of Julia&apos;s regex capability, derive from Perl&apos;s regex module <code>perlre</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Flag</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">i</td>
+<td>Case-insensitive pattern matching</td>
+</tr>
+<tr>
+<td style="text-align:center">m</td>
+<td>Treats string as a multiline string, so that <code>^</code> and <code>$</code> will refer to the start or end of any line within the string.</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td>Treats line as a single line. This will result in <code>.</code> accepting a newline as well. When used together with <code>m</code>, it will result in <code>.</code> matching every possible character while still allowing <code>^</code> and <code>$</code> to match, just after and just before newlines within the string.</td>
+</tr>
+<tr>
+<td style="text-align:center">x</td>
+<td>Ignore non-backslashed, non-classed whitespace.</td>
+</tr>
+</tbody>
+</table>
+<p>Flags are appended to the end of each regex, which might strike users more familiar with e.g. the Pythonic way of modifying the regex search object itself, as somewhat unusual:</p>
+<pre><code class="lang-julia">    multiline = <span class="hljs-string">r&quot;^We&quot;m</span>
+</code></pre>
+<p>In this case, the regex <code>r&quot;^We&quot;</code> was augmented by the multiline flag, appended at its end.</p>
+<h2 id="string-transformation-and-testing">String transformation and testing</h2>
+<h3 id="case-transformations">Case transformations</h3>
+<p>Case transformations are functions that act on <code>String</code>s and transform character case. Let&apos;s examine the effect of these transformations in turn.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Function</th>
+<th>Effect</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>uppercase()</code></td>
+<td>Converts the entire string to upper-case characters</td>
+<td><code>WE HOLD THESE TRUTHS TO BE SELF-EVIDENT</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>lowercase()</code></td>
+<td>Converts the entire string to lower-case characters</td>
+<td><code>we hold these truths to be self-evident</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>uppercasefirst()</code></td>
+<td>Converts the first character of the string to upper-case</td>
+<td><code>We hold these truths to be self-evident</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>lowercasefirst()</code></td>
+<td>Converts the first character of the string ot lower-case</td>
+<td><code>we hold these truths to be self-evident</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="testing-and-attributes">Testing and attributes</h3>
+<todo: to="" be="" written...="">
+</todo:>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="07-ex4.html" class="navigation navigation-prev " aria-label="Previous page: Collections">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="09-ex6.html" class="navigation navigation-next " aria-label="Next page: Control flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Strings","level":"1.4.6","depth":2,"next":{"title":"Control flow","level":"1.4.7","depth":2,"path":"_chapters/09-ex6.md","ref":"_chapters/09-ex6.md","articles":[]},"previous":{"title":"Collections","level":"1.4.5","depth":2,"path":"_chapters/07-ex4.md","ref":"_chapters/07-ex4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/08-ex5.md","mtime":"2021-02-24T18:37:29.882Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,889 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Variables · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-ex3.html" />
+    
+    
+    <link rel="prev" href="04-ex1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Variables</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-2-variables">Chapter 2: Variables</h1>
+<p>We have, of course, encountered variables in the previous chapter, where we used some for string substitution. For a functional programming language, mastery of how variables work is essential. Julia is extremely flexible when it comes to variables, but wielding this flexibility will require finesse.</p>
+<h2 id="assigning-variables">Assigning variables</h2>
+<p>To assign a variable, simply use <code>=</code> (a single equals sign). That, really, is <em>it</em>. Nice, huh?</p>
+<pre><code class="lang-julia">    julia&gt; m = <span class="hljs-number">2.32</span>
+    <span class="hljs-number">2.32</span> 
+
+    julia&gt; m
+    <span class="hljs-number">2.32</span>
+</code></pre>
+<p>Accessing an undefined variable yields an exception, of course:</p>
+<pre><code class="lang-julia">    julia&gt; n
+    ERROR: n not defined
+</code></pre>
+<p>Julia does not require you to explicitly declare variables before assignment (indeed, there is no explicit way to do so).</p>
+<h3 id="variable-naming">Variable naming</h3>
+<p>In general, you can use just about anything you want as a variable name. This includes Unicode characters from a quite astounding range. In case you ever wanted to give your code some Christmas spirit, you are free to do so. In the following, we will be proving, using the comparison operator (<code>&gt;</code>), that winter is not warmer than summer:</p>
+<pre><code class="lang-julia">    julia&gt; &#x2744; = -<span class="hljs-number">12</span>
+    -<span class="hljs-number">12</span>
+
+    julia&gt; &#x2739; = <span class="hljs-number">27</span>
+    <span class="hljs-number">27</span>
+
+    julia&gt; &#x2744; &gt; &#x2739;
+    <span class="hljs-literal">false</span>
+</code></pre>
+<p>The above is, believe it or not, perfectly valid Julia. Whether it is perfectly sensible Julia, too, is a different question. In general, using Unicode variable names for anything but commonly accepted scientific symbols, such as <code>&#x45B;</code>, is not the best idea, lest you will leave readers of your code trying to figure out meanings of the thirty or so similar looking Unicode symbols.</p>
+<p>The stylistic convention of Julia is to use lowercase variable names, and with words separated by <code>_</code> (underscore) only if necessary for the sake of legibility. <strong>Variable names may not start with a number nor an exclamation mark.</strong></p>
+<h3 id="goodwins-dream">Goodwin&apos;s dream</h3>
+<p>In 1894, an amateur mathematician from Indiana, Edward J. Goodwin, proposed a way to square the circle (a feat proven to be impossible by the Lindeman-Weierstrass theorem proven a decade or so earlier) <a href="https://en.wikipedia.org/wiki/Indiana_Pi_Bill" target="_blank">[wikipedia]</a>. He lobbied long enough for his &apos;new mathematical truth&apos; to be introduced as a Bill in the Indiana House of Representatives, in what became known as the <em>Indiana Pi Bill</em> of 1897. This inferred a value of approximately 3.2 for &#x3C0;. Fortunately, the intervention of Purdue professor C.A. Waldo helped to defeat the already much-ridiculed bill in the Senate, and the matter was laid to rest.</p>
+<p>Julia, on the other hand, allows you to redefine the value of &#x3C0;. The following is entirely correct Julia:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-literal">&#x3C0;</span>
+    <span class="hljs-literal">&#x3C0;</span> = <span class="hljs-number">3.1415926535897</span>...
+
+    julia&gt; <span class="hljs-literal">&#x3C0;</span> = <span class="hljs-number">3.2</span>
+    Warning: imported binding <span class="hljs-keyword">for</span> <span class="hljs-literal">&#x3C0;</span> overwritten <span class="hljs-keyword">in</span> <span class="hljs-keyword">module</span> Main
+    <span class="hljs-number">3.2</span>
+
+    julia&gt; <span class="hljs-literal">&#x3C0;</span>
+    <span class="hljs-number">3.2</span>
+</code></pre>
+<p>It is, on the other hand, really bad practice to redefine set constants. Therefore, should you encounter the opportunity to redefine &#x3C0;, learn from the sad case of Mr. Goodwin and try to resist the temptation.</p>
+<h3 id="assigning-variables-to-variables">Assigning variables to variables</h3>
+<p>It is important to understand what the effect of assigning a variable to a variable is. It is perfectly valid Julia to have multiple variables point at each other. However, doing so creates a &apos;shallow copy&apos; &#x2013; that is, a reference to the same memory address of where the original copy is located. If you modify one variable pointing at it, the value of the other changes, too. In the following example, we will be creating an array <code>m</code>, then set <code>n</code> be equal to <code>m</code>. We then carry out an operation that changes the value of <code>m</code>, marked by the exclamation mark (don&apos;t worry if that part is new to you, it will be explained in <a href="https://github.com/chrisvoncsefalvay/learn-julia-the-hard-way/blob/master/_chapters/06-ex3.md" target="_blank">Exercise 3: Collections</a> &#x2013; for now, all you need to know is that <code>pop!</code> takes the last element of an indexable collection, returns it and removes it from the collection). When we then call <code>n</code>, we see that its value, too, has been affected by the operation &#x2013; that is because it did not so much have a value but acted merely as a reference to &apos;whatever is in m&apos;.</p>
+<pre><code class="lang-julia">    julia&gt; m = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]        <span class="hljs-comment"># Creating array</span>
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+
+    julia&gt; n = m                <span class="hljs-comment"># Setting n to point to m</span>
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+
+    julia&gt; pop!(m)                <span class="hljs-comment"># Altering m</span>
+    <span class="hljs-number">4</span>
+
+    julia&gt; n                    <span class="hljs-comment"># n is also changed as a result.</span>
+    <span class="hljs-number">3</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+</code></pre>
+<p>We will be considering a way to get around this by &apos;deep copying&apos; a value in chapter [X].</p>
+<h2 id="literals">Literals</h2>
+<p><em>Literals</em> are ways to enter various data types, whether into the REPL or a program. </p>
+<h3 id="strings">Strings</h3>
+<p>We have already encountered string literals. To enter a string literal, simply delimit it by <code>&quot;</code> (double quotation marks). Unlike Python or JavaScript, Julia does <strong>not</strong> accept single quotation marks.  See <a href="08-ex5.html">[Chapter 5]</a> for more information.</p>
+<h3 id="one-dimensional-arrays">One-dimensional arrays</h3>
+<p>1D array literals are delimited by square brackets (<code>[]</code>). Each element they contain has to be either a variable or an otherwise valid literal, but they do not all have to be the same type (something true for most collections within Julia). Values are separated by a <code>,</code> (comma):</p>
+<pre><code class="lang-julia">    julia&gt; arr1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;sausage&quot;</span>, <span class="hljs-literal">&#x3C0;</span>]
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Any</span>,<span class="hljs-number">1</span>}:
+         <span class="hljs-number">1</span>
+         <span class="hljs-number">2</span>
+          <span class="hljs-string">&quot;sausage&quot;</span>
+         <span class="hljs-literal">&#x3C0;</span> = <span class="hljs-number">3.1415926535897</span>...
+</code></pre>
+<h3 id="ranges">Ranges</h3>
+<p>A range, in Julia, is simply a shorthand for a sequence of numbers that are all spaced equally. A range can be created using the <code>range()</code> function as <code>range(start, end)</code>, but it is usually denoted in a shorthand literal, <code>start:end</code>. Ranges are <em>lazy</em>, meaning that the values are not immediately available until they are needed.  You can, however, force the generation of the values by using the <code>collect()</code> function.</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-number">0</span>:<span class="hljs-number">5</span>
+    <span class="hljs-number">0</span>:<span class="hljs-number">5</span>
+
+    julia&gt; typeof(<span class="hljs-number">0</span>:<span class="hljs-number">5</span>)
+    <span class="hljs-built_in">UnitRange</span>{<span class="hljs-built_in">Int64</span>}
+
+    julia&gt; collect(<span class="hljs-number">0</span>:<span class="hljs-number">5</span>)
+    <span class="hljs-number">6</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">0</span>
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+     <span class="hljs-number">5</span>
+</code></pre>
+<p>As you can see, a range in Julia includes both its start and end element. A range doesn&apos;t have to be created between integers &#x2013; <code>[0.5:3.5]</code> would return an array of <code>[0.5, 1.5, 2.5, 3.5]</code>.</p>
+<p>A range may have an optional middle <code>step</code> attribute. To obtain an array of the numbers from 0 to 30 in steps of 10:</p>
+<pre><code class="lang-julia">    julia&gt; collect(<span class="hljs-number">0</span>:<span class="hljs-number">10</span>:<span class="hljs-number">30</span>)
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">0</span>
+     <span class="hljs-number">10</span>
+     <span class="hljs-number">20</span>
+     <span class="hljs-number">30</span>
+</code></pre>
+<p>Because range is largely implemented as <a href="https://docs.julialang.org/en/stable/stdlib/collections" target="_blank">[Collections]</a>, you can use most of the convenience functions:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:<span class="hljs-number">3</span> println(<span class="hljs-string">&quot;<span class="hljs-variable">$i</span> great&quot;</span>) <span class="hljs-keyword">end</span>
+    <span class="hljs-number">1</span> great
+    <span class="hljs-number">2</span> great
+    <span class="hljs-number">3</span> great
+
+    julia&gt; <span class="hljs-number">2</span> <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:<span class="hljs-number">10</span>
+    <span class="hljs-literal">true</span>
+
+    julia&gt; length(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>)
+    <span class="hljs-number">10</span>
+
+    julia&gt; sum(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>)
+    <span class="hljs-number">55</span>
+
+    julia&gt; reduce(*, <span class="hljs-number">1</span>:<span class="hljs-number">10</span>)
+    <span class="hljs-number">3628800</span>
+</code></pre>
+<h3 id="multidimensional-arrays">Multidimensional arrays</h3>
+<p>In some languages, multidimensional arrays can be created by enclosing one-dimensional arrays in another array, and so on. Unfortunately, that is not the case in Julia, so <code>[[1,2],[3,4]]</code> would yield the one-dimensional array <code>[1,2,3,4]</code>. Rather, to create a multidimensional array, separate values by empty space and rows by a <code>;</code> (semicolon):</p>
+<pre><code class="lang-julia">    julia&gt; md_array = [<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">5</span>; <span class="hljs-number">8</span> <span class="hljs-number">13</span> <span class="hljs-number">21</span> <span class="hljs-number">34</span> <span class="hljs-number">55</span>; <span class="hljs-number">89</span> <span class="hljs-number">144</span> <span class="hljs-number">233</span> <span class="hljs-number">377</span> <span class="hljs-number">610</span>]
+    <span class="hljs-number">3</span>x5 <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">2</span>}:
+      <span class="hljs-number">1</span>    <span class="hljs-number">1</span>    <span class="hljs-number">2</span>    <span class="hljs-number">3</span>    <span class="hljs-number">5</span>
+      <span class="hljs-number">8</span>   <span class="hljs-number">13</span>   <span class="hljs-number">21</span>   <span class="hljs-number">34</span>   <span class="hljs-number">55</span>
+     <span class="hljs-number">89</span>  <span class="hljs-number">144</span>  <span class="hljs-number">233</span>  <span class="hljs-number">377</span>  <span class="hljs-number">610</span>
+</code></pre>
+<p>Alternatively, you can enter columns, using square brackets (remember not to let your ingrained reflexes from Python take over and put a comma between the arrays!):</p>
+<pre><code class="lang-julia">    julia&gt; [[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]]
+    <span class="hljs-number">3</span>x2 <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">2</span>}:
+     <span class="hljs-number">1</span>  <span class="hljs-number">4</span>
+     <span class="hljs-number">2</span>  <span class="hljs-number">5</span>
+     <span class="hljs-number">3</span>  <span class="hljs-number">6</span>
+</code></pre>
+<p>When entering a multidimensional array, each row has to have the same length. Failing to do so raises an error:</p>
+<pre><code class="lang-julia">    julia&gt; md_sparse_array = [<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>; <span class="hljs-number">8</span> <span class="hljs-number">13</span> <span class="hljs-number">21</span> <span class="hljs-number">34</span> <span class="hljs-number">55</span>]
+    ERROR: argument count does not match specified shape
+     <span class="hljs-keyword">in</span> hvcat at abstractarray.jl:<span class="hljs-number">802</span>
+</code></pre>
+<h3 id="tuples">Tuples</h3>
+<p>Tuples are similar to one-dimensional arrays, in that they consist of a number of values. They are, however, unlike array literals in that they are immutable &#x2013; once assigned, you cannot change the values in a tuple. Tuples are delimited by <code>()</code> (round brackets) and values are separated by commas.</p>
+<pre><code class="lang-julia">    julia&gt; fibo_tuple = (<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
+    (<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>)
+</code></pre>
+<p>To demonstrate the difference between arrays and tuples, consider the following:</p>
+<pre><code class="lang-julia">    julia&gt; fibo_arr = [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>]
+    <span class="hljs-number">5</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">5</span>
+
+    julia&gt; fibo_arr[<span class="hljs-number">2</span>] = <span class="hljs-number">0</span>
+    <span class="hljs-number">0</span>
+
+    julia&gt; fibo_arr
+    <span class="hljs-number">5</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">0</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">5</span>
+
+    julia&gt; fibo_tuple[<span class="hljs-number">2</span>] = <span class="hljs-number">0</span>
+    ERROR: <span class="hljs-string">`setindex!`</span> has no method matching setindex!(<span class="hljs-type">::</span>(<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Int64</span>), <span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>, <span class="hljs-type">::</span><span class="hljs-built_in">Int64</span>)
+</code></pre>
+<p>In this listing, we have created an array with the first five non-zero elements of the Fibonacci sequence. We then have used an accessor (<code>fibo_arr[2]</code> is an accessor that retrieves the second element of the array <code>fibo_arr</code>) to change the second value in the array to zero. Calling the array shows that this was successful. On the other hand, trying to do the same with the tuple <code>fibo_tuple</code> of the same values that we declared earlier yields an error. This is because tuples are immutable.</p>
+<h3 id="dicts">Dicts</h3>
+<p>Dicts are what in some other languages are known as <em>associative arrays</em> or <em>maps</em>: they contain key-value pairs. A dict is delimited by round brackets. Individual mappings (key-value pairs) are separated by commas. Keys are separated from values by <code>=&gt;</code> (a double-arrow).</p>
+<pre><code class="lang-julia">    julia&gt; statisticians = <span class="hljs-built_in">Dict</span>(<span class="hljs-string">&quot;Gosset&quot;</span> =&gt; <span class="hljs-string">&quot;1876-1937&quot;</span>, <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>, <span class="hljs-string">&quot;Galton&quot;</span> =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>)
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Gosset&quot;</span>  =&gt; <span class="hljs-string">&quot;1876-1937&quot;</span>
+</code></pre>
+<h3 id="sets">Sets</h3>
+<p>Sets are similar to other collections in that they contain various values. However, unlike arrays and tuples, they are unordered and unique-constrained: no element may occur multiple times within the set. </p>
+<p>Sets do not have a specific notation, but rather are created using a syntax we will use a great deal for creating all kinds of objects: by using the type (<code>Set</code>) and entering the values to constitute the set in round brackets <em>and</em> square braces:</p>
+<pre><code class="lang-julia">    julia&gt; stooges = <span class="hljs-built_in">Set</span>([<span class="hljs-string">&quot;Moe&quot;</span>, <span class="hljs-string">&quot;Curly&quot;</span>, <span class="hljs-string">&quot;Larry&quot;</span>])
+    <span class="hljs-built_in">Set</span>(<span class="hljs-built_in">String</span>[<span class="hljs-string">&quot;Moe&quot;</span>,<span class="hljs-string">&quot;Larry&quot;</span>,<span class="hljs-string">&quot;Curly&quot;</span>])
+</code></pre>
+<p>Sets do accept duplicates at time of construction, but the resulting set will still only contain one of each unique element:</p>
+<pre><code class="lang-julia">    julia&gt; beatles = <span class="hljs-built_in">Set</span>([<span class="hljs-string">&quot;Lennon&quot;</span>, <span class="hljs-string">&quot;McCartney&quot;</span>, <span class="hljs-string">&quot;Harrison&quot;</span>, <span class="hljs-string">&quot;Starr&quot;</span>, <span class="hljs-string">&quot;Lennon&quot;</span>])
+    <span class="hljs-built_in">Set</span>(<span class="hljs-built_in">String</span>[<span class="hljs-string">&quot;Starr&quot;</span>,<span class="hljs-string">&quot;Harrison&quot;</span>,<span class="hljs-string">&quot;McCartney&quot;</span>,<span class="hljs-string">&quot;Lennon&quot;</span>])
+</code></pre>
+<p>Sets are unordered, meaning that two sets containing the same elements are equal:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-built_in">Set</span>([<span class="hljs-string">&quot;Marsellus&quot;</span>, <span class="hljs-string">&quot;Jules&quot;</span>, <span class="hljs-string">&quot;Vincent&quot;</span>]) == <span class="hljs-built_in">Set</span>([<span class="hljs-string">&quot;Jules&quot;</span>, <span class="hljs-string">&quot;Vincent&quot;</span>, <span class="hljs-string">&quot;Marsellus&quot;</span>])
+    <span class="hljs-literal">true</span>
+</code></pre>
+<p>An empty set is created by</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-built_in">Set</span>([])
+    <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">Any</span>}()
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this chapter, we have learned how to construct a handful of literals for the main data types and assign them to variables. This should give us a promising start for our next chapter, in which we are going to explore collections. </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-ex1.html" class="navigation navigation-prev " aria-label="Previous page: Printing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-ex3.html" class="navigation navigation-next " aria-label="Next page: Types">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Variables","level":"1.4.3","depth":2,"next":{"title":"Types","level":"1.4.4","depth":2,"path":"_chapters/06-ex3.md","ref":"_chapters/06-ex3.md","articles":[]},"previous":{"title":"Printing","level":"1.4.2","depth":2,"path":"_chapters/04-ex1.md","ref":"_chapters/04-ex1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/05-ex2.md","mtime":"2021-02-24T18:37:29.880Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1295 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Collections · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="08-ex5.html" />
+    
+    
+    <link rel="prev" href="06-ex3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../CONTRIBUTORS.html">
+            
+                <a href="../CONTRIBUTORS.html">
+            
+                    
+                    Contributors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../LICENSE.html">
+            
+                <a href="../LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PART 1: Understanding Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="03-ex0.html">
+            
+                <a href="03-ex0.html">
+            
+                    
+                    The Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="04-ex1.html">
+            
+                <a href="04-ex1.html">
+            
+                    
+                    Printing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="05-ex2.html">
+            
+                <a href="05-ex2.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-ex3.html">
+            
+                <a href="06-ex3.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="07-ex4.html">
+            
+                <a href="07-ex4.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="08-ex5.html">
+            
+                <a href="08-ex5.html">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="09-ex6.html">
+            
+                <a href="09-ex6.html">
+            
+                    
+                    Control flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="10-ex7.html">
+            
+                <a href="10-ex7.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="11-ex8.html">
+            
+                <a href="11-ex8.html">
+            
+                    
+                    Handling errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="12-ex9.html">
+            
+                <a href="12-ex9.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" >
+            
+                <span>
+            
+                    
+                    Streams - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" >
+            
+                <span>
+            
+                    
+                    Macros and metaprogramming - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" >
+            
+                <span>
+            
+                    
+                    Unit testing - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="16-ex13.html">
+            
+                <a href="16-ex13.html">
+            
+                    
+                    Writing good Julia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PART 2: Applied Julia
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Quadratic solver - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    FizzBuzz - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    Bob - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    Levenshtein distance - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    Dice - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    Great Circle distances - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    Data frames - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    Plotting a time series - TODO - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" >
+            
+                <span>
+            
+                    
+                    Consuming a RESTful API - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" >
+            
+                <span>
+            
+                    
+                    Shell management from Julia - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" >
+            
+                <span>
+            
+                    
+                    Moving average in a DataFrame - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" >
+            
+                <span>
+            
+                    
+                    Naive Bayes classifier - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" >
+            
+                <span>
+            
+                    
+                    Fun with nucleotide sequences - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" >
+            
+                <span>
+            
+                    
+                    ? Save the Apollo astronauts ? (waiting for perm) - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" >
+            
+                <span>
+            
+                    
+                    Twulia! - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" >
+            
+                <span>
+            
+                    
+                    Longest Collatz sequence - TODO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Collections</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-4-collections">Chapter 4: Collections</h1>
+<h2 id="a-taxonomy-of-collections">A taxonomy of collections</h2>
+<p>We have already encountered some collections in the previous chapter &#x2013; arrays, tuples, dicts and sets. This chapter examines what we can do with collections and how to best use them for maximum effectiveness. A collection may be <em>indexable</em>, <em>associative</em> or neither. This refers primarily to the way we access individual elements within the collection.</p>
+<p>Think of an <em>indexable</em> collection as a shopping list &#x2013; the only way to identify individual elements is by pointing out their position. If you want to refer to, say, <em>1 pint of milk</em>, you refer to it as <em>the fifth entry on my shopping list</em>. Elements of an indexable collection are accessed using the square bracket notation <code>collection[index]</code>, e.g. <code>shopping_list[5]</code>. Unusually for most programming languages and in sharp contrast to other languages like Python, indices begin with 1, rather than 0. An indexable collection is also only equal to a collection with the same elements if they are in the same order &#x2013; thus <code>[1, 3, 5, 7] == [3, 7, 1, 5]</code> yields, as one would expect, <code>false</code>.</p>
+<p><em>Associative</em> collections, on the other hand, resemble a page from a phone book instead (if any of you actually still remember what one of those things is!). You wouldn&apos;t say that your phone number is on page 217, left column, fifth from the bottom. Rather, you would have a <em>key</em> (your name), by reference to which someone can find your phone number (the <em>value</em>). Associative arrays do follow the key-value pair form. They are, therefore, not accessed in the <code>collection[index]</code> form but rather in the <code>collection[key]</code> form. An associative collection is not indexable, therefore the order of entries does not matter: two associative collections will be equal as long as they contain the same key-value pairs, order regardless.</p>
+<p>Collections that are neither associative nor indexable are a somewhat complex case. Sets are the only frequently used collection that is neither associative nor indexable. They are also special because of the uniqueness constraint, that is, a set may contain each value once and only once. A set does not support the commonly used methods of access, but it does support many of the collection manipulation functions, such as <code>push!()</code> and <code>pop!()</code>. The latter, in case you were wondering, returns items in a random order, since the absence of an index means sets are not ordered. Sets are not indexable, consequently two sets that contain the same elements will be considered equal, order regardless.</p>
+<p>In addition, collections may be <em>mutable</em> or <em>non-mutable</em>. Put quite simply, a mutable collection is one where you can change particular values after creation, while in an immutable collection, you cannot do so. The typical immutable collections are, of course, tuples &#x2013; once you have assigned a value to a tuple, you cannot change that value (although you can assign some other tuple or indeed an entirely different value to the variable that holds the tuple). Sets again represent a special case &#x2013; they are what could be best described as <em>pseudo-immutable</em> &#x2013; there is no way to access values in a way that could change them, since you normally access an element of a set by its value (which is sufficient in a set thanks to the uniqueness constraint).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>Mutable</strong></th>
+<th style="text-align:center"><strong>Immutable</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Indexable</strong></td>
+<td style="text-align:center">Arrays</td>
+<td style="text-align:center">Tuples</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Associative</strong></td>
+<td style="text-align:center">Dicts</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Non-indexable and non-associative</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Sets</td>
+</tr>
+</tbody>
+</table>
+<h2 id="indexable-collections">Indexable collections</h2>
+<h3 id="access">Access</h3>
+<p>Elements of an indexable collection can be accessed using the square bracket notation, by their ordinal:</p>
+<pre><code class="lang-julia">    julia&gt; prime_array = [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>]
+    <span class="hljs-number">5</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">3</span>
+      <span class="hljs-number">5</span>
+      <span class="hljs-number">7</span>
+     <span class="hljs-number">11</span>
+
+    julia&gt; prime_array[<span class="hljs-number">3</span>]
+    <span class="hljs-number">5</span>
+</code></pre>
+<p>In Julia, a range of numbers is written as <code>start:end</code> or <code>start:steps:end</code>. You can use a range to access a range of elements:</p>
+<pre><code class="lang-julia">    julia&gt; prime_array[<span class="hljs-number">2</span>:<span class="hljs-number">3</span>]
+    <span class="hljs-number">2</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">5</span>
+</code></pre>
+<p> A range always returns a collection, even if it has the length 1. This is exemplified by the difference between <code>prime_array[3]</code>, the call we made above, and <code>prime_array[3:3]</code>, which returns</p>
+<pre><code class="lang-julia">    julia&gt; prime_array[<span class="hljs-number">3</span>:<span class="hljs-number">3</span>]
+    <span class="hljs-number">1</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">5</span>
+
+    julia&gt; prime_array[<span class="hljs-number">3</span>:<span class="hljs-number">3</span>] == <span class="hljs-number">5</span>
+    <span class="hljs-literal">false</span>
+</code></pre>
+<p>You can access the last element of an indexable collection using <code>[end]</code>:</p>
+<pre><code class="lang-julia">    julia&gt; prime_array[<span class="hljs-keyword">end</span>]
+     <span class="hljs-number">11</span>
+</code></pre>
+<p>Incidentally, <code>end</code> behaves like a number &#x2013; so <code>prime_array[end-1]</code> returns the penultimate element of the collection.</p>
+<h4 id="setting">Setting</h4>
+<p>If the indexable collection you are using is also mutable (e.g. an array), any of these methods will act as a pseudo-variable and will allow you to assign a value to it. Thus <code>prime_array[end] = 12</code> would change the last element of <code>prime_array</code> to 12. You also aren&apos;t restricted to a single element: calling <code>prime_array[2:4] .= 0</code> would result in</p>
+<pre><code class="lang-julia">    julia&gt; prime_array
+    <span class="hljs-number">5</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">0</span>
+      <span class="hljs-number">0</span>
+      <span class="hljs-number">0</span>
+     <span class="hljs-number">11</span>
+</code></pre>
+<p>And, of course, you can use an array or another indexable collection to replace values:</p>
+<pre><code class="lang-julia">    julia&gt; prime_array[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>] = [<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>]
+    <span class="hljs-number">3</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">5</span>
+     <span class="hljs-number">7</span>
+
+    julia&gt; prime_array
+    <span class="hljs-number">5</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">3</span>
+      <span class="hljs-number">5</span>
+      <span class="hljs-number">7</span>
+     <span class="hljs-number">11</span>
+</code></pre>
+<h4 id="unpacking">Unpacking</h4>
+<p>Indexable collections can <em>unpack</em>: that is, they can be assigned in a single line to as many distinct variables as they have elements. This is a very useful convenience feature, and is much used in functional programming:</p>
+<pre><code class="lang-julia">    julia&gt; actors = [<span class="hljs-string">&quot;Ian McKellen&quot;</span>, <span class="hljs-string">&quot;Martin Freeman&quot;</span>, <span class="hljs-string">&quot;Elijah Wood&quot;</span>]
+    <span class="hljs-number">3</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">String</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;Ian McKellen&quot;</span>
+     <span class="hljs-string">&quot;Martin Freeman&quot;</span>
+     <span class="hljs-string">&quot;Elijah Wood&quot;</span>
+
+    julia&gt; gandalf, bilbo, frodo = actors
+    <span class="hljs-number">3</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">String</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;Ian McKellen&quot;</span>
+     <span class="hljs-string">&quot;Martin Freeman&quot;</span>
+     <span class="hljs-string">&quot;Elijah Wood&quot;</span>
+
+    julia&gt; gandalf
+    <span class="hljs-string">&quot;Ian McKellen&quot;</span>
+</code></pre>
+<p>Unpacking can also be used to swap the contents of variables:</p>
+<pre><code class="lang-julia">    julia&gt; firstname = <span class="hljs-string">&quot;Irving&quot;</span>
+    julia&gt; lastname = <span class="hljs-string">&quot;Washington&quot;</span>
+
+    julia&gt; firstname, lastname = lastname, firstname
+    (<span class="hljs-string">&quot;Washington&quot;</span>,<span class="hljs-string">&quot;Irving&quot;</span>)
+
+    julia&gt; lastname
+    <span class="hljs-string">&quot;Irving&quot;</span>
+</code></pre>
+<h3 id="common-functions">Common functions</h3>
+<h4 id="push-pop-and-append"><code>push!</code>, <code>pop!</code> and <code>append!</code></h4>
+<p><code>push!</code> appends the value to the end of the collection. <code>pop!</code> takes the last element of the list, returns it and removes it from the collection.</p>
+<pre><code class="lang-julia">    julia&gt; array = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+
+    julia&gt; push!(array, <span class="hljs-number">5</span>)
+    <span class="hljs-number">5</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+     <span class="hljs-number">5</span>
+
+    julia&gt; pop!(array)
+    <span class="hljs-number">5</span>
+
+    julia&gt; array
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+</code></pre>
+<p><code>append!</code>, somewhat unusually, puts the elements of a collection to the end of another collection:</p>
+<pre><code class="lang-julia">    julia&gt; array2 = [<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>]
+    <span class="hljs-number">3</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">5</span>
+     <span class="hljs-number">6</span>
+     <span class="hljs-number">7</span>
+
+    julia&gt; append!(array, array2)
+    <span class="hljs-number">7</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+     <span class="hljs-number">5</span>
+     <span class="hljs-number">6</span>
+     <span class="hljs-number">7</span>
+</code></pre>
+<h4 id="shift-and-unshift"><code>shift!</code> and <code>unshift!</code></h4>
+<p><code>shift!</code> and <code>unshift!</code> are the front equivalent of <code>pop!</code> and <code>push!</code>.
+Similarly to <code>pop!</code>, <code>shift!</code> retrieves the first element of the collection and removes it from the collection (which <em>shifts</em> it):</p>
+<pre><code class="lang-julia">    julia&gt; shift!(array)
+    <span class="hljs-number">1</span>
+</code></pre>
+<p>Similarly to <code>push!</code>, <code>unshift!</code> puts an element to the front of the collection:</p>
+<pre><code class="lang-julia">    julia&gt; unshift!(array, <span class="hljs-number">8</span>)
+    <span class="hljs-number">7</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-number">8</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">3</span>
+     <span class="hljs-number">4</span>
+     <span class="hljs-number">5</span>
+     <span class="hljs-number">6</span>
+     <span class="hljs-number">7</span>
+</code></pre>
+<h4 id="find-functions"><code>find</code> functions</h4>
+<p>There&apos;s a set of functions starting with find &#x2014; such as <code>findall()</code>, <code>findfirst()</code>, and <code>findnext()</code> &#x2014; that you can use to get the index or indices of values within an indexable collection that match a specific value, or pass a test. These functions share three properties.</p>
+<ol>
+<li>Their result is the <em>index or indices of the value sought or tested for</em>, with the <em>n_th</em> element&apos;s index being <em>n</em>, not <em>n-1</em> as you might be used to from other languages.</li>
+<li>You can use these functions in two principal forms: you can test for a value or you can test for a function, in which case the results will be the values for which the function returns <code>true</code>.</li>
+<li>The <code>find</code> functions&apos; way of telling you they haven&apos;t found anything is returning zero, since there is no element of index zero.</li>
+</ol>
+<p>Let&apos;s try to find things within the following <code>Array</code>: <code>primes_and_one = [1,2,3,5,7,11,13,17,19,23]</code></p>
+<h5 id="findfirst"><code>findfirst()</code></h5>
+<p><code>findfirst()</code> finds the first occurrence of a value and returns its index (or zero):</p>
+<pre><code class="lang-julia">    julia&gt; findfirst(isequal(<span class="hljs-number">5</span>),primes_and_one)
+    <span class="hljs-number">4</span>
+</code></pre>
+<p>As noted above, we can feed the <code>find</code> functions a function as well &#x2013; it will return values for which the function would return a <code>true</code> value. We have not really discussed functions, but the general idea should be familiar to you. A function of the form <code>x -&gt; x == 13</code> results in <code>true</code> if the value of <code>x</code> is 13 and <code>false</code> otherwise. Let&apos;s try to see which prime number is the first to equal 13 (don&apos;t expect big surprises):</p>
+<pre><code class="lang-julia">    julia&gt; findfirst(x -&gt; x == <span class="hljs-number">13</span>, primes_and_one)
+    <span class="hljs-number">7</span>
+</code></pre>
+<p>A lot more of this will be explored in Chapter [X].</p>
+<h5 id="findall"><code>findall()</code></h5>
+<p><code>findall()</code> returns an array of results. Thus, for instance, let&apos;s use the <code>isinteger</code> function to see which of our primes are integers (yet again, the result should not come as a shock):</p>
+<pre><code class="lang-julia">    julia&gt; findall(isinteger, primes_and_one)
+    <span class="hljs-number">10</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">1</span>
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">3</span>
+      <span class="hljs-number">4</span>
+      <span class="hljs-number">5</span>
+      <span class="hljs-number">6</span>
+      <span class="hljs-number">7</span>
+      <span class="hljs-number">8</span>
+      <span class="hljs-number">9</span>
+     <span class="hljs-number">10</span>
+</code></pre>
+<h5 id="findnext"><code>findnext()</code></h5>
+<p><code>findnext()</code> returns results from a given index onwards. Thus, if you want to know the index of the first odd number after 3 in the list of primes, you would proceed as follows (using the function <code>isodd</code>, which, as you could guess, returns <code>true</code> for odd integers and <code>false</code> otherwise):</p>
+<pre><code class="lang-julia">    julia&gt; findnext(isodd, primes_and_one, <span class="hljs-number">4</span>)
+    <span class="hljs-number">4</span>
+</code></pre>
+<p>Wait, why <code>4</code>? As you might remember, Julia is 1-indexed, not 0-indexed. Therefore, an index &apos;begins before&apos; the number. The number after the first index is the first number in the sequence and so on. As such, the number after the third item in a collection is the item next to (= following) the index <code>4</code>, not <code>3</code>.</p>
+<p>As you might have noticed, when you use a function as an argument, you do not use the parentheses you would normally use to call a function. That is because <code>function()</code> means <code>call this function</code> while <code>function</code> is merely a reference to the function object itself.</p>
+<h5 id="get-elements-not-indices">Get elements, not indices</h5>
+<p>So far, we&apos;ve only been getting indices. How do we get the actual elements? The answer is, of course, by using our magical <code>[]</code>(square brackets) syntax. We&apos;ll also use this as a good opportunity to introduce a very useful function, <code>isprime()</code>, which returns <code>true</code> for primes and false otherwise. </p>
+<p>First, you may have to add Primes package:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">import</span> Pkg;
+    julia&gt; Pkg.add(<span class="hljs-string">&quot;Primes&quot;</span>)
+</code></pre>
+<p>If you already have it, let&apos;s import <code>isprime()</code> and use it:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">import</span> Primes.isprime
+
+    julia&gt; findall(isprime, primes_and_one)
+    <span class="hljs-number">9</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">3</span>
+      <span class="hljs-number">4</span>
+      <span class="hljs-number">5</span>
+      <span class="hljs-number">6</span>
+      <span class="hljs-number">7</span>
+      <span class="hljs-number">8</span>
+      <span class="hljs-number">9</span>
+     <span class="hljs-number">10</span>
+
+    julia&gt; primes_and_one[findall(isprime,primes_and_one)]
+    <span class="hljs-number">9</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">3</span>
+      <span class="hljs-number">5</span>
+      <span class="hljs-number">7</span>
+     <span class="hljs-number">11</span>
+     <span class="hljs-number">13</span>
+     <span class="hljs-number">17</span>
+     <span class="hljs-number">19</span>
+     <span class="hljs-number">23</span>
+</code></pre>
+<h4 id="filtering">Filtering</h4>
+<p>The <code>filter()</code> function works quite similar to <code>findall</code>, except in this case returns only the elements that satisfy the condition (it is, effectively, a shorthand for the previous listing).</p>
+<pre><code class="lang-julia">    julia&gt; filter(isodd, primes_and_one)
+    <span class="hljs-number">9</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">1</span>
+      <span class="hljs-number">3</span>
+      <span class="hljs-number">5</span>
+      <span class="hljs-number">7</span>
+     <span class="hljs-number">11</span>
+     <span class="hljs-number">13</span>
+     <span class="hljs-number">17</span>
+     <span class="hljs-number">19</span>
+     <span class="hljs-number">23</span>
+</code></pre>
+<p><code>filter()</code> can be used in-place, by using the <code>!</code> after the name of the function. Thus, using <code>filter!()</code>, alters the actual array rather than returning a filtered copy. Note, however, that functions ending with <code>!</code> modify the object, so, obviously, the type they act on must be mutable &#x2013; you would, therefore, not be able to <code>filter!()</code> a tuple, even though you would be able to <code>filter()</code> it.</p>
+<h4 id="sorting">Sorting</h4>
+<p>The <code>sort()</code> function sorts an array lexicographically, generally in an ascending order:</p>
+<pre><code class="lang-julia">    julia&gt; sort([-<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>])
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+     -<span class="hljs-number">3</span>
+     <span class="hljs-number">1</span>
+     <span class="hljs-number">2</span>
+     <span class="hljs-number">7</span>
+</code></pre>
+<p>You can specify the sort criterion using <code>by</code> &#x2013; in this case, we will be using the absolute value function <code>abs</code> (remember not to use the parentheses symbolising function call, just the name of the function):</p>
+<pre><code class="lang-julia">    julia&gt; sort([-<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">7</span>], by=abs)
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">1</span>
+      <span class="hljs-number">2</span>
+     -<span class="hljs-number">3</span>
+      <span class="hljs-number">7</span>
+</code></pre>
+<p>You can change the order of sorting using <code>rev</code>:</p>
+<pre><code class="lang-julia">    julia&gt; sort([-<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">7</span>], by=abs, rev=<span class="hljs-literal">true</span>)
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">7</span>
+     -<span class="hljs-number">3</span>
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">1</span>
+</code></pre>
+<p>And, for the great joy of algorithm nerds like me, you can choose the sort algorithm using <code>alg</code>. Julia currently supports three sorting algorithms (<code>InsertionSort</code>, <code>QuickSort</code> and <code>MergeSort</code>).</p>
+<pre><code class="lang-julia">    julia&gt; sort([-<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">7</span>], by=abs, rev=<span class="hljs-literal">true</span>, alg=<span class="hljs-literal">MergeSort</span>)
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+      <span class="hljs-number">7</span>
+     -<span class="hljs-number">3</span>
+      <span class="hljs-number">2</span>
+      <span class="hljs-number">1</span>
+</code></pre>
+<p>For mutable indexable collections, such as arrays, you can use <code>sort!()</code>, which sorts &apos;in place&apos;. Of course, you can also sort non-numeric elements, or indeed anything for which the <code>isless()</code> function is defined, which sorting uses internally.</p>
+<pre><code class="lang-julia">    julia&gt; sort([<span class="hljs-string">&quot;Bayes&quot;</span>, <span class="hljs-string">&quot;Laplace&quot;</span>, <span class="hljs-string">&quot;Poisson&quot;</span>, <span class="hljs-string">&quot;Gauss&quot;</span>])
+    <span class="hljs-number">4</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">String</span>,<span class="hljs-number">1</span>}:
+     <span class="hljs-string">&quot;Bayes&quot;</span>
+     <span class="hljs-string">&quot;Gauss&quot;</span>
+     <span class="hljs-string">&quot;Laplace&quot;</span>
+     <span class="hljs-string">&quot;Poisson&quot;</span>
+</code></pre>
+<h4 id="counting">Counting</h4>
+<p><code>count()</code> tells you the number of instances in the collection that satisfy the criterion:</p>
+<pre><code class="lang-julia">    julia&gt; count(isodd, primes_and_one)
+    <span class="hljs-number">9</span>
+</code></pre>
+<h4 id="all-and-any"><code>all()</code> and <code>any()</code></h4>
+<p><code>all()</code> and <code>any()</code> implement two of the mathematical concepts known as <em>quantifiers</em>, with <code>all()</code> representing the universal quantifier $$\forall$$, while <code>any()</code> implements the existential quantifier $$\exists$$. These functions test whether all or any elements, respectively, of a collection satisfies a certain criterion, and return a single truth value.</p>
+<h4 id="existence-of-a-particular-value">Existence of a particular value</h4>
+<p>To find out whether an array has a particular value among its elements, you can use <code>in()</code>. <code>primes(1,10)</code> returns a collection of prime numbers from 1 to 10.</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">import</span> Primes.primes
+    julia&gt; <span class="hljs-keyword">in</span>(<span class="hljs-number">2</span>, primes(<span class="hljs-number">1</span>,<span class="hljs-number">10</span>))
+    <span class="hljs-literal">true</span>
+</code></pre>
+<p>Somewhat strangely, in the <code>in()</code> syntax, the needle comes before the haystack, i.e. <code>in(value, array)</code>, where <code>value</code> denotes the value you are looking for.</p>
+<h3 id="particular-types">Particular types</h3>
+<h4 id="arrays">Arrays</h4>
+<p>Arrays (the ones we used in our examples so far in this section) are mutable indexable collections. The type <code>Array{T,N}</code> indicates an <code>N</code>-dimensional array which elements&apos; types are subtypes of <code>T</code>. For instance, <code>Array{Number, 2}</code> is an 2-dimensional array. Its elements&apos; types descend from <code>Number</code> (e.g.<code>Int</code>, <code>Float64</code>).</p>
+<h5 id="access-in-multidimensional-arrays">Access in multidimensional arrays</h5>
+<p>How do we access elements in a multidimensional array, a special form of indexable collection? Simple &#x2013; in a multidimensional array, indexes go down each row, then from left to right. Therefore, this array</p>
+<pre><code class="lang-julia">    julia&gt; md_array = [<span class="hljs-string">&quot;A&quot;</span> <span class="hljs-string">&quot;B&quot;</span>; <span class="hljs-string">&quot;C&quot;</span> <span class="hljs-string">&quot;D&quot;</span>]
+    <span class="hljs-number">2</span>x2 <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">String</span>,<span class="hljs-number">2</span>}:
+     <span class="hljs-string">&quot;A&quot;</span>  <span class="hljs-string">&quot;B&quot;</span>
+     <span class="hljs-string">&quot;C&quot;</span>  <span class="hljs-string">&quot;D&quot;</span>
+</code></pre>
+<p>would be indexed as follows:</p>
+<pre><code>md_array[1] = &quot;A&quot;
+md_array[2] = &quot;C&quot;
+md_array[3] = &quot;B&quot;
+md_array[4] = &quot;D&quot;
+</code></pre><p>This is a little counterintuitive and different from the usual row/column notation, where you would use <code>array[row][column]</code>. To retrieve a cell by row and column, use <code>array[row, column]</code>:</p>
+<pre><code class="lang-julia">    julia&gt; md_array[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]
+    <span class="hljs-string">&quot;B&quot;</span>
+</code></pre>
+<p>This generalizes for higher dimension arrays.</p>
+<h4 id="tuples">Tuples</h4>
+<p>A tuple is an ordered sequence of elements, like an array. A tuple is represented by parentheses and commas, rather than the square brackets used by arrays. The important difference between arrays and tuples is that <em>tuples are immutable</em>: you can&apos;t change the elements of a tuple, or the tuple itself, after creating it.</p>
+<p>Tuples are generally used for small fixed-length collections &#x2014; they&apos;re ubiquitous across Julia, for example as argument lists. Where a function returns multiple values, which, as we see, is pretty often the case, the result is a tuple.</p>
+<p>A corollary of immutability is that none of the <code>!</code> functions work on tuples - but at the same time, using functions such as <code>push()</code> is perfectly acceptable, since it returns <em>a copy of the tuple with the added element</em>, which does not alter the original tuple.</p>
+<h2 id="associative-collections-dicts">Associative collections: dicts</h2>
+<p>An associative collection is a kind of non-indexed collection that stores (usually) pairs of values. The indexable collections you have encountered correspond to real-life examples such as a shopping list or a sequential list of train stations. Associative collections, on the other hand, have a <em>key</em> and a <em>value</em> (for this reason, they are sometimes referred to as <em>key-value pairs</em>). Julia, like many other programming languages, implements associative collections in an object called a <code>dict</code> (short for <code>dictionary</code>), which corresponds to &apos;maps&apos;, &apos;hash tables&apos; or &apos;dictionaries&apos; in other programming languages.</p>
+<p>A dict, as we have seen, is usually created using the dict literal</p>
+<pre><code class="lang-julia">    dict = <span class="hljs-built_in">Dict</span>(<span class="hljs-string">&quot;a&quot;</span> =&gt; <span class="hljs-number">1</span>, <span class="hljs-string">&quot;b&quot;</span> =&gt; <span class="hljs-number">2</span>, <span class="hljs-string">&quot;c&quot;</span> =&gt; <span class="hljs-number">3</span>)
+</code></pre>
+<p>The key of a key-value pair is <em>unique</em>, meaning that while several keys might point at the same value (and a key might point at a collection as a value), you cannot have duplicate keys (in database terminology, you might have heard this referred to as a <em>one-to-many relationship</em>).</p>
+<h3 id="creating-dicts">Creating dicts</h3>
+<p>Other than the <code>Dict()</code> literal, there are three more ways to create a dict.</p>
+<p>First, you can create a dict using the <em>comprehension syntax</em> for dicts. An example is</p>
+<pre><code class="lang-julia">    [i =&gt; sqrt(i) <span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>:<span class="hljs-number">2</span>:<span class="hljs-number">15</span>]
+</code></pre>
+<p>This creates a dict with the square root of every odd number from 1 to 15. In this case, <code>i</code> can be any iterable &#x2013; while ranges are the most frequently used, there is no reason why</p>
+<pre><code class="lang-julia">    <span class="hljs-built_in">Dict</span>(i =&gt; sqrt(i) <span class="hljs-keyword">for</span> i = [<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">12</span>, <span class="hljs-number">64</span>])
+</code></pre>
+<p>would not be equally valid.</p>
+<p>Secondly, you can also create an empty dictionary. <code>Dict()</code> will construct an empty dictionary that permits any elements, while <code>Dict{type1, type2}()</code> will create an empty dictionary that permits any elements with keys of <code>type1</code> and values of <code>type2</code>.</p>
+<p>Finally, earlier versions of Julia used to support what is sometimes referred to as <em>zip creation</em> of a dict, namely entering two equal-length tuples, one for keys and one for values. This is now regarded as deprecated &#x2013; it still works, but you should not use it. Instead, the correct syntax is <code>Dict(zip(ks, vs))</code>:</p>
+<pre><code class="lang-julia">    ks = (<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>)
+    vs = (<span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;3&quot;</span>)
+
+    julia&gt; <span class="hljs-built_in">Dict</span>(zip(ks,vs))
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;c&quot;</span> =&gt; <span class="hljs-string">&quot;3&quot;</span>
+      <span class="hljs-string">&quot;b&quot;</span> =&gt; <span class="hljs-string">&quot;2&quot;</span>
+      <span class="hljs-string">&quot;a&quot;</span> =&gt; <span class="hljs-string">&quot;1&quot;</span>
+</code></pre>
+<h3 id="access">Access</h3>
+<p>Just like items in an indexable arrays are keyed by their index, items in a dict are identified by their key and retrieved using the square bracket syntax:</p>
+<pre><code class="lang-julia">    julia&gt; statisticians = <span class="hljs-built_in">Dict</span>(<span class="hljs-string">&quot;Gosset&quot;</span> =&gt; <span class="hljs-string">&quot;1876-1937&quot;</span>, <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>, <span class="hljs-string">&quot;Galton&quot;</span> =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>)
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Gosset&quot;</span>  =&gt; <span class="hljs-string">&quot;1876-1937&quot;</span>
+
+    julia&gt; statisticians[<span class="hljs-string">&quot;Gosset&quot;</span>]
+    <span class="hljs-string">&quot;1876-1937&quot;</span>
+</code></pre>
+<p>One drawback of the bracket syntax is that if there is no entry for the key provided, Julia will raise an error:</p>
+<pre><code class="lang-julia">    julia&gt; statisticians[<span class="hljs-string">&quot;Kendall&quot;</span>]
+    ERROR: key not found: <span class="hljs-string">&quot;Kendall&quot;</span>
+     <span class="hljs-keyword">in</span> getindex at dict.jl:<span class="hljs-number">644</span>
+</code></pre>
+<p>An alternative form of accessing a dictionary is using the <code>get()</code> function. <code>get()</code> takes three arguments, collection name, key, and a default value to print if the key is not present in the dictionary:</p>
+<pre><code class="lang-julia">    julia&gt; get(statisticians, <span class="hljs-string">&quot;Pearson&quot;</span>, <span class="hljs-string">&quot;I&apos;m sorry, I don&apos;t know when this person lived.&quot;</span>)
+    <span class="hljs-string">&quot;1857-1936&quot;</span>
+
+    julia&gt; get(statisticians, <span class="hljs-string">&quot;Kendall&quot;</span>, <span class="hljs-string">&quot;I&apos;m sorry, I don&apos;t know when this person lived.&quot;</span>)
+    <span class="hljs-string">&quot;I&apos;m sorry, I don&apos;t know when this person lived.&quot;</span>
+</code></pre>
+<h4 id="get-or-create-get">Get or create (<code>get!()</code>)</h4>
+<p>Because dicts are mutable, <code>get!()</code> can try to access a value by its key and create it if not found, then return the new value. Its syntax is identical to <code>get()</code>:</p>
+<pre><code class="lang-julia">    julia&gt; get!(statisticians, <span class="hljs-string">&quot;Kendall&quot;</span>, <span class="hljs-string">&quot;I&apos;m sorry, I don&apos;t know when this person lived.&quot;</span>)
+    <span class="hljs-string">&quot;I&apos;m sorry, I don&apos;t know when this person lived.&quot;</span>
+
+    julia&gt; statisticians
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">4</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;I&apos;m sorry, I don&apos;t know when this person lived.&quot;</span>
+      <span class="hljs-string">&quot;Gosset&quot;</span>  =&gt; <span class="hljs-string">&quot;1876-1937&quot;</span>
+</code></pre>
+<h4 id="pop"><code>pop!()</code></h4>
+<p><code>pop!()</code> delete and returns the value matching the key. If the key does not exist, it returns an optional default value or throws an error:</p>
+<pre><code class="lang-julia">    julia&gt; pop!(statisticians, <span class="hljs-string">&quot;Gosset&quot;</span>)
+    <span class="hljs-string">&quot;1876-1937&quot;</span>
+
+    julia&gt; statisticians
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+</code></pre>
+<h4 id="change-values">Change values</h4>
+<p>To change a value, access it via the bracket syntax, then assign it the new value:</p>
+<pre><code class="lang-julia">    julia&gt; statisticians[<span class="hljs-string">&quot;Kendall&quot;</span>] = <span class="hljs-string">&quot;1907-1983&quot;</span>
+    <span class="hljs-string">&quot;1907-1983&quot;</span>
+
+    julia&gt; statisticians
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">4</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+      <span class="hljs-string">&quot;Gosset&quot;</span>  =&gt; <span class="hljs-string">&quot;1876-1937&quot;</span>
+</code></pre>
+<h4 id="checking-for-existence-of-a-key-or-a-key-value-pair">Checking for existence of a key or a key-value pair</h4>
+<p>To check for the existence of a key without retrieving it, you can use <code>haskey()</code>:</p>
+<pre><code class="lang-julia">    julia&gt; haskey(statisticians, <span class="hljs-string">&quot;Galton&quot;</span>)
+    <span class="hljs-literal">true</span>
+
+    julia&gt; haskey(statisticians, <span class="hljs-string">&quot;Bayes&quot;</span>)
+    <span class="hljs-literal">false</span>
+</code></pre>
+<p>You can also check for the existence of a key-value pair in a dict using the <code>in()</code> function you might be familiar with from arrays. Dicts look for <code>key=&gt;value</code> pairs:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-keyword">in</span>(<span class="hljs-string">&quot;Bayes&quot;</span>=&gt;<span class="hljs-string">&quot;1702-1761&quot;</span>, statisticians)
+    <span class="hljs-literal">false</span>
+</code></pre>
+<h4 id="retrieving-keys-or-values">Retrieving keys or values</h4>
+<p>To retrieve all keys of a dict, use <code>keys()</code>. This will retrieve an object of type <code>KeySet</code>, which does just what the name suggests - it iterates through the keys of an array. This will be useful later on when we want to iterate through the dictionary by keys:</p>
+<pre><code class="lang-julia">    julia&gt; keys(statisticians)
+    KeySet <span class="hljs-keyword">for</span> a <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries. Keys:
+      <span class="hljs-string">&quot;Galton&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span>
+</code></pre>
+<p>You can retrieve values, predictably, by using the <code>values()</code> function:</p>
+<pre><code class="lang-julia">    julia&gt; values(statisticians)
+    ValueIterator <span class="hljs-keyword">for</span> a <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries. Values:
+      <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;1907-1983&quot;</span>
+</code></pre>
+<h3 id="sorting">Sorting</h3>
+<p>You may have noticed that dicts are unordered. Even a dict generated by reference to a range, such as the one seen above, will not be in any particular order:</p>
+<pre><code class="lang-julia">    julia&gt; <span class="hljs-built_in">Dict</span>([i =&gt; sqrt(i) <span class="hljs-keyword">for</span> i = <span class="hljs-number">1</span>:<span class="hljs-number">2</span>:<span class="hljs-number">15</span>])
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-built_in">Float64</span>} with <span class="hljs-number">8</span> entries:
+      <span class="hljs-number">7</span>  =&gt; <span class="hljs-number">2.6457513110645907</span>
+      <span class="hljs-number">9</span>  =&gt; <span class="hljs-number">3.0</span>
+      <span class="hljs-number">13</span> =&gt; <span class="hljs-number">3.605551275463989</span>
+      <span class="hljs-number">3</span>  =&gt; <span class="hljs-number">1.7320508075688772</span>
+      <span class="hljs-number">11</span> =&gt; <span class="hljs-number">3.3166247903554</span>
+      <span class="hljs-number">5</span>  =&gt; <span class="hljs-number">2.23606797749979</span>
+      <span class="hljs-number">15</span> =&gt; <span class="hljs-number">3.872983346207417</span>
+      <span class="hljs-number">1</span>  =&gt; <span class="hljs-number">1.0</span>
+</code></pre>
+<p>This is because dicts are not indexable, therefore there is no ordering that would make inherent sense. However, sometimes, we like dictionaries sorted. Disappointingly, sorting dicts is not as easy as sorting arrays: <code>sort(statisticians)</code> tells us that <code>&apos;sort&apos; has no method matching sort(::Dict{String,String})</code>. Therefore, you have to write your own sort function that first converts <code>statisticians</code> from a dict into an array of 2-element tuples. This is because the <code>sort()</code> function has no defined methods for dicts, but it can sort arrays, including tuples, where it sorts by the first element in the tuple. Then, it iterates through the result and represents it as a dict again:</p>
+<pre><code class="lang-julia">    result = <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>, <span class="hljs-built_in">String</span>}
+    <span class="hljs-keyword">for</span> (k,v) <span class="hljs-keyword">in</span> sort(collect(statisticians))
+        result[k] =&gt; v
+        println(result)
+    <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This yields the expected result:</p>
+<pre><code class="lang-julia">    Galton =&gt; <span class="hljs-number">1822</span>-<span class="hljs-number">1911</span>
+    Kendall =&gt; <span class="hljs-number">1907</span>-<span class="hljs-number">1983</span>
+    Pearson =&gt; <span class="hljs-number">1857</span>-<span class="hljs-number">1936</span>
+</code></pre>
+<p>If you want the output to be in-place or yield an actual dict, you will have to augment your code a little:</p>
+<pre><code class="lang-julia">    result = <span class="hljs-built_in">Dict</span>()
+    <span class="hljs-keyword">for</span> (k<span class="hljs-type">::</span><span class="hljs-built_in">String</span>,v<span class="hljs-type">::</span><span class="hljs-built_in">String</span>) <span class="hljs-keyword">in</span> sort(collect(statisticians))
+        setindex!(result, v, k)
+    <span class="hljs-keyword">end</span>
+
+    julia&gt; result
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">Any</span>,<span class="hljs-built_in">Any</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+</code></pre>
+<h3 id="merging">Merging</h3>
+<p>The function <code>merge()</code> merges two or more dicts.</p>
+<pre><code class="lang-julia">    julia&gt; mathematicians = <span class="hljs-built_in">Dict</span>(<span class="hljs-string">&quot;Gauss&quot;</span> =&gt; <span class="hljs-string">&quot;1777-1855&quot;</span>, <span class="hljs-string">&quot;Leibniz&quot;</span> =&gt; <span class="hljs-string">&quot;1646-1716&quot;</span>, <span class="hljs-string">&quot;Abel&quot;</span> =&gt; <span class="hljs-string">&quot;1802-1829&quot;</span>)
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;Abel&quot;</span>    =&gt; <span class="hljs-string">&quot;1802-1829&quot;</span>
+      <span class="hljs-string">&quot;Leibniz&quot;</span> =&gt; <span class="hljs-string">&quot;1646-1716&quot;</span>
+      <span class="hljs-string">&quot;Gauss&quot;</span>   =&gt; <span class="hljs-string">&quot;1777-1855&quot;</span>
+
+    julia&gt; merge(mathematicians, statisticians)
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">6</span> entries:
+      <span class="hljs-string">&quot;Abel&quot;</span>    =&gt; <span class="hljs-string">&quot;1802-1829&quot;</span>
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Leibniz&quot;</span> =&gt; <span class="hljs-string">&quot;1646-1716&quot;</span>
+      <span class="hljs-string">&quot;Gauss&quot;</span>   =&gt; <span class="hljs-string">&quot;1777-1855&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+</code></pre>
+<p>Its bang counterpart, <code>merge!()</code>, merges them in place, overwriting the first dict mentioned while leaving the second intact.</p>
+<pre><code class="lang-julia">    julia&gt; merge!(mathematicians, statisticians)
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">6</span> entries:
+      <span class="hljs-string">&quot;Abel&quot;</span>    =&gt; <span class="hljs-string">&quot;1802-1829&quot;</span>
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Leibniz&quot;</span> =&gt; <span class="hljs-string">&quot;1646-1716&quot;</span>
+      <span class="hljs-string">&quot;Gauss&quot;</span>   =&gt; <span class="hljs-string">&quot;1777-1855&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+
+    julia&gt; mathematicians
+    <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">6</span> entries:
+      <span class="hljs-string">&quot;Abel&quot;</span>    =&gt; <span class="hljs-string">&quot;1802-1829&quot;</span>
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Leibniz&quot;</span> =&gt; <span class="hljs-string">&quot;1646-1716&quot;</span>
+      <span class="hljs-string">&quot;Gauss&quot;</span>   =&gt; <span class="hljs-string">&quot;1777-1855&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+
+    julia&gt; statisticians
+      <span class="hljs-built_in">Dict</span>{<span class="hljs-built_in">String</span>,<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> entries:
+      <span class="hljs-string">&quot;Galton&quot;</span>  =&gt; <span class="hljs-string">&quot;1822-1911&quot;</span>
+      <span class="hljs-string">&quot;Pearson&quot;</span> =&gt; <span class="hljs-string">&quot;1857-1936&quot;</span>
+      <span class="hljs-string">&quot;Kendall&quot;</span> =&gt; <span class="hljs-string">&quot;1907-1983&quot;</span>
+</code></pre>
+<h2 id="non-indexable-non-associative-collections-sets">Non-indexable non-associative collections: sets</h2>
+<p>You might be familiar with the idea of sets from maths/set theory. A set is a non-indexable, non-associative and non-mutable collection that also has unique elements. No element may occur twice, so an element&apos;s value identifies it conclusively.</p>
+<h3 id="creating-sets">Creating sets</h3>
+<p>To create a set, use the <code>Set()</code> constructor function. You can create a set that accepts any data type</p>
+<pre><code class="lang-julia">    julia&gt; primes = <span class="hljs-built_in">Set</span>()
+    <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">Any</span>}()
+</code></pre>
+<p>&#x2013; or you can specify what sort of data types it would accept:</p>
+<pre><code class="lang-julia">    julia&gt; primes = <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">Int64</span>}()
+    <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">Int64</span>}()
+</code></pre>
+<p>You can create and fill sets in one go by listing elements surrounded by square brackets <code>[]</code>:</p>
+<pre><code class="lang-julia">    julia&gt; mersenne_primes_set = <span class="hljs-built_in">Set</span>([<span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">31</span>, <span class="hljs-number">127</span>])
+    <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">Int64</span>} with <span class="hljs-number">4</span> elements:
+    <span class="hljs-number">7</span>
+    <span class="hljs-number">31</span>
+    <span class="hljs-number">3</span>
+    <span class="hljs-number">127</span>
+</code></pre>
+<h3 id="set-operations">Set operations</h3>
+<p>Sets have some unique functions that accommodate certain problems well-known from set theory: the functions <code>union()</code>, <code>intersect()</code> and <code>setdiff()</code> each, respectively, implement the union, intersection and difference of sets. Let&apos;s see how we can use this to find some similarities between the cast of two blockbusters, <em>The Lord of the Rings</em> and <em>The Matrix</em>.</p>
+<p>First, let&apos;s create two sets with some actors from each movie:</p>
+<pre><code class="lang-julia">    lotr_actors = <span class="hljs-built_in">Set</span>([<span class="hljs-string">&quot;Elijah Wood&quot;</span>, <span class="hljs-string">&quot;Ian McKellen&quot;</span>, <span class="hljs-string">&quot;Viggo Mortensen&quot;</span>, <span class="hljs-string">&quot;Hugo Weaving&quot;</span>])
+    matrix_actors = <span class="hljs-built_in">Set</span>([<span class="hljs-string">&quot;Keanu Reeves&quot;</span>, <span class="hljs-string">&quot;Lawrence Fishburne&quot;</span>, <span class="hljs-string">&quot;Hugo Weaving&quot;</span>]
+</code></pre>
+<p>To find shared actors, we can use <code>intersect()</code>:</p>
+<pre><code class="lang-julia">    julia&gt; intersect(lotr_actors, matrix_actors)
+    <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">String</span>} with <span class="hljs-number">1</span> element:
+      <span class="hljs-string">&quot;Hugo Weaving&quot;</span>
+</code></pre>
+<p>To find actors who only starred in <em>Lord of the Rings</em> but not in <em>The Matrix</em>, we can use <code>setdiff()</code>, which shows all elements that are in the first <code>Set</code> but not the second:</p>
+<pre><code class="lang-julia">     julia&gt; setdiff(lotr_actors, matrix_actors)
+     <span class="hljs-built_in">Set</span>(<span class="hljs-built_in">String</span>[<span class="hljs-string">&quot;Elijah Wood&quot;</span>,<span class="hljs-string">&quot;Ian McKellen&quot;</span>,<span class="hljs-string">&quot;Viggo Mortensen&quot;</span>])
+</code></pre>
+<p>Finally, we can see actors who played in either of the movies, by using <code>union()</code>:</p>
+<pre><code class="lang-julia">    julia&gt; union(lotr_actors, matrix_actors)
+    <span class="hljs-built_in">Set</span>{<span class="hljs-built_in">String</span>} with <span class="hljs-number">3</span> elements:
+    <span class="hljs-string">&quot;Elijah Wood&quot;</span>
+    <span class="hljs-string">&quot;Viggo Mortensen&quot;</span>
+    <span class="hljs-string">&quot;Ian McKellen&quot;</span>
+</code></pre>
+<h2 id="collections-and-types">Collections and types</h2>
+<p>Until now, we have generally created collections using literals, and with precious little regard to the types of information that go in them. While types will be discussed in quite a bit of detail later on, what we do know about types is that they are individual categories of data.</p>
+<p>Julia operates what is called <em>type inference</em>: unless you tell it explicitly what type something is, it tries to figure it out best as it can. We see this in operation when we create a new collection. When a collection is created and Julia is not told that this is going to be a collection containing elements of only a particular kind or particular kinds of values, it makes an educated guess. The REPL tells us this much:</p>
+<pre><code class="lang-julia">    julia&gt; mersenne_primes = [<span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">31</span>, <span class="hljs-number">127</span>, <span class="hljs-number">8191</span>, <span class="hljs-number">131071</span>]
+    <span class="hljs-number">6</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Int64</span>,<span class="hljs-number">1</span>}:
+          <span class="hljs-number">3</span>
+          <span class="hljs-number">7</span>
+         <span class="hljs-number">31</span>
+        <span class="hljs-number">127</span>
+       <span class="hljs-number">8191</span>
+     <span class="hljs-number">131071</span>
+</code></pre>
+<p>Upon creating the array, the REPL reports to us that it&apos;s an array consisting of six elements, all of type <code>Int64</code> &#x2013; a type of signed 64-bit integer (don&apos;t worry if that means quite little to you just yet, we will be discussing various integer types in Chapter [X]). It also, helpfully, reports to us that we&apos;ve got a 1-dimensional array.</p>
+<h3 id="type-inference-and-dissimilar-types">Type inference and dissimilar types</h3>
+<p>What, however, if I want to play it a little wild and mix it up? Consider the following array:</p>
+<pre><code class="lang-julia">     julia&gt; not_really_mersenne_primes = [<span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;potato&quot;</span>, <span class="hljs-number">127</span>, <span class="hljs-literal">&#x3C0;</span>, <span class="hljs-string">&quot;wallaby&quot;</span>]
+     <span class="hljs-number">6</span>-element <span class="hljs-built_in">Array</span>{<span class="hljs-built_in">Any</span>,<span class="hljs-number">1</span>}:
+          <span class="hljs-number">3</span>
+          <span class="hljs-number">7</span>
+           <span class="hljs-string">&quot;potato&quot;</span>
+          <span class="hljs-number">127</span>
+          <span class="hljs-literal">&#x3C0;</span> = <span class="hljs-number">3.1415926535897</span>...
+          <span class="hljs-string">&quot;wallaby&quot;</span>
+</code></pre>
+<p>As you have guessed, Julia is at a loss as to what to do with this, since we&apos;ve got a mix of integers, strings and a constant thrown in for good measure. Therefore, it tells us that it has inferred the type of the collection to be <code>Any</code> &#x2013; a type that applies to all objects.</p>
+<h3 id="type-inference-and-empty-collections">Type inference and empty collections</h3>
+<p>The other marginal case is that of the empty set. Julia has a dedicated type, <code>None</code> &#x2013; a subtype of <code>Any</code> &#x2013; that applies to the empty set:</p>
+<pre><code class="lang-julia">    julia&gt; empty_set = []
+    <span class="hljs-number">0</span>-element <span class="hljs-built_in">Array</span>{None,<span class="hljs-number">1</span>}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06-ex3.html" class="navigation navigation-prev " aria-label="Previous page: Types">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="08-ex5.html" class="navigation navigation-next " aria-label="Next page: Strings">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Collections","level":"1.4.5","depth":2,"next":{"title":"Strings","level":"1.4.6","depth":2,"path":"_chapters/08-ex5.md","ref":"_chapters/08-ex5.md","articles":[]},"previous":{"title":"Types","level":"1.4.4","depth":2,"path":"_chapters/06-ex3.md","ref":"_chapters/06-ex3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_chapters/07-ex4.md","mtime":"2021-02-24T18:37:29.881Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-24T19:13:12.894Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
